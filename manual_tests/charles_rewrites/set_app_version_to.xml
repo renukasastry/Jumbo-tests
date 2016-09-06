@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<?charles serialisation-version='2.0' ?>
+<rewriteSet-array>
+  <rewriteSet>
+    <active>false</active>
+    <name>Set app version to</name>
+    <hosts>
+      <locationPatterns>
+        <locationMatch>
+          <location>
+            <host>mobileapi.acc.jomni.nl*</host>
+          </location>
+          <enabled>true</enabled>
+        </locationMatch>
+        <locationMatch>
+          <location>
+            <host>mobileapi.test.jomni.nl*</host>
+          </location>
+          <enabled>false</enabled>
+        </locationMatch>
+      </locationPatterns>
+    </hosts>
+    <rules>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>3</ruleType>
+        <matchHeader>User-Agent</matchHeader>
+        <matchValue>4.1 (Acceptance)</matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>true</matchRequest>
+        <matchResponse>false</matchResponse>
+        <newHeader></newHeader>
+        <newValue>1.0.0 (Acceptance)</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>1</replaceType>
+      </rewriteRule>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>3</ruleType>
+        <matchHeader>User-Agent</matchHeader>
+        <matchValue>4.1.79 Apple</matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>true</matchRequest>
+        <matchResponse>false</matchResponse>
+        <newHeader></newHeader>
+        <newValue>1.0.0 Apple</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+      <rewriteRule>
+        <active>false</active>
+        <ruleType>3</ruleType>
+        <matchHeader>User-Agent</matchHeader>
+        <matchValue>4.0 (Acceptance) motorola</matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>true</matchRequest>
+        <matchResponse>false</matchResponse>
+        <newHeader></newHeader>
+        <newValue>3.1.4 (Acceptance) motorola</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+      <rewriteRule>
+        <active>false</active>
+        <ruleType>3</ruleType>
+        <matchHeader>User-Agent</matchHeader>
+        <matchValue></matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>true</matchRequest>
+        <matchResponse>false</matchResponse>
+        <newHeader></newHeader>
+        <newValue>3.0</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+    </rules>
+  </rewriteSet>
+</rewriteSet-array>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<?charles serialisation-version='2.0' ?>
+<rewriteSet-array>
+  <rewriteSet>
+    <active>false</active>
+    <name>Throw forced update on every call</name>
+    <hosts>
+      <locationPatterns/>
+    </hosts>
+    <rules>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>11</ruleType>
+        <matchValue>200 OK</matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>false</matchRequest>
+        <matchResponse>false</matchResponse>
+        <newValue>403 BAD REQUEST</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>7</ruleType>
+        <matchValue></matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>false</matchRequest>
+        <matchResponse>true</matchResponse>
+        <newValue>{     &quot;code&quot;: &quot;9003&quot;,     &quot;message&quot;: &quot;Please Update your Application&quot;, &quot;url&quot;: &quot;https://play.google.com/store/apps/details?id=com.icemobile.jumboclient&quot; }</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+    </rules>
+  </rewriteSet>
+</rewriteSet-array>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<?charles serialisation-version='2.0' ?>
+<rewriteSet-array>
+  <rewriteSet>
+    <active>true</active>
+    <name>Set Configurations response Android</name>
+    <hosts>
+      <locationPatterns>
+        <locationMatch>
+          <location>
+            <path>/v2/configuration</path>
+          </location>
+          <enabled>true</enabled>
+        </locationMatch>
+      </locationPatterns>
+    </hosts>
+    <rules>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>7</ruleType>
+        <matchValue>{&quot;homedelivery&quot;:{&quot;enabled&quot;:true},&quot;maintenance&quot;:{&quot;enabled&quot;:false},&quot;communication&quot;:{&quot;general&quot;:{&quot;enabled&quot;:true,&quot;version&quot;:1,&quot;url&quot;:&quot;http://mobiel.jumbo.com/actueel&quot;,&quot;title&quot;:&quot;Jumbo nieuws&quot;},&quot;seasonal&quot;:{&quot;enabled&quot;:false,&quot;version&quot;:1,&quot;url&quot;:&quot;http://mobiel.jumbo.com/kerst&quot;,&quot;title&quot;:&quot;Vier Kerst met Jumbo&quot;}},&quot;banners&quot;:{&quot;noshippingfee&quot;:{&quot;enabled&quot;:true},&quot;themes&quot;:{&quot;enabled&quot;:true,&quot;title&quot;:&quot;Handige productlijstjes&quot;,&quot;subtitle&quot;:&quot;Voor jou bij elkaar gezocht&quot;}},&quot;notOrderedColl&quot;:{&quot;tag&quot;:&quot;eerste bestelling&quot;}}</matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>false</matchRequest>
+        <matchResponse>true</matchResponse>
+        <newValue>{ 	&quot;homedelivery&quot;: { 		&quot;enabled&quot;: true 	}, 	&quot;maintenance&quot;: { 		&quot;enabled&quot;: false 	}, 	&quot;communication&quot;: { 		&quot;general&quot;: { 			&quot;enabled&quot;: true, 			&quot;version&quot;: 1, 			&quot;url&quot;: &quot;http://mobiel.jumbo.com/actueel&quot;, 			&quot;title&quot;: &quot;Jumbo nieuws&quot; 		}, 		&quot;seasonal&quot;: { 			&quot;enabled&quot;: false, 			&quot;version&quot;: 1, 			&quot;url&quot;: &quot;http://mobiel.jumbo.com/kerst&quot;, 			&quot;title&quot;: &quot;Vier Kerst met Jumbo&quot; 		} 	}, 	&quot;banners&quot;: { 		&quot;noshippingfee&quot;: { 			&quot;enabled&quot;: true 		}, 		&quot;themes&quot;: { 			&quot;enabled&quot;: true, 			&quot;title&quot;: &quot;Handige productlijstjes&quot;, 			&quot;subtitle&quot;: &quot;Voor jou bij elkaar gezocht&quot; 		} 	}, 	&quot;notOrderedColl&quot;: { 		&quot;tag&quot;: &quot;eerste bestelling&quot; 	}, 	&quot;ratingApp&quot;: { 		&quot;feedbackEmailAddress&quot;: &quot;elkedagbeter@jumbo.com&quot; 	} }</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+    </rules>
+  </rewriteSet>
+</rewriteSet-array>

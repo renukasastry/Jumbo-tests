@@ -1,0 +1,237 @@
+
+For the following we're not going to show the express checkout
+//	Empty
+{
+	
+}
+
+//	only fulfilment
+{
+	"fulfilment": "COLLECTION"
+}
+
+
+//	Fulfilment type COLLECTION	//
+//	Only a store = Location is available
+{
+    "fulfilment": "COLLECTION",
+    "store": {
+        "id": "8841",
+        "complexNumber": "35001",
+        "name": "Jumbo Tilburg Rosa Castellanosstraat",
+        "type": "pickupPoint",
+        "streetAddress": "Rosa Castellanosstraat 5",
+        "cityName": "Tilburg",
+        "zipCode": "5032 MG",
+        "longitude": 5.045158,
+        "latitude": 51.536668,
+        "newLocation": false
+    }
+}
+//	Store & Timeslot = slot and location are available
+{
+    "fulfilment": "COLLECTION",
+    "store": {
+        "id": "8841",
+        "complexNumber": "35001",
+        "name": "Jumbo Tilburg Rosa Castellanosstraat",
+        "type": "pickupPoint",
+        "streetAddress": "Rosa Castellanosstraat 5",
+        "cityName": "Tilburg",
+        "zipCode": "5032 MG",
+        "longitude": 5.045158,
+        "latitude": 51.536668,
+        "newLocation": false
+    },
+    "slot": {
+        "type": "COLLECTION",
+        "startDateTime": 1466582400000,
+        "endDateTime": 1466589600000,
+        "available": true,
+        "price": {
+            "currency": "EUR",
+            "amount": 100
+        },
+        "validityTime": 9000000,
+        "bookings": [{
+            "id": "1049576",
+            "storeId": "6"
+        }]
+    }
+}
+
+
+
+//	Fulfilment type HOMEDELIVERY	//
+
+//	Store is available = Invalid for Home Delivery, Express checkout options should not be shown
+{
+    "fulfilment": "HOMEDELIVERY",
+    "store": {
+        "id": "8841",
+        "complexNumber": "35001",
+        "name": "Jumbo Tilburg Rosa Castellanosstraat",
+        "type": "pickupPoint",
+        "streetAddress": "Rosa Castellanosstraat 5",
+        "cityName": "Tilburg",
+        "zipCode": "5032 MG",
+        "longitude": 5.045158,
+        "latitude": 51.536668,
+        "newLocation": false
+    }
+}
+
+//	Store & slot are available = Invalid for HD because of lack of address, Options should not be shown
+{
+    "fulfilment": "HOMEDELIVERY",
+    "store": {
+        "id": "ID-009",
+        "complexNumber": "112233",
+        "name": "AmsterdamWesterstraat",
+        "type": "pickupPoint",
+        "streetAddress": "Westerstraat 98-102 2",
+        "cityName": "Amsterdam",
+        "zipCode": "1015 MN",
+        "longitude": 4.8836283,
+        "latitude": 52.3785438,
+        "newLocation": false
+    },
+    "slot": {
+        "type": "COLLECTION",
+        "startDateTime": 1469708709000,
+        "endDateTime": 1469723109000,
+        "available": true,
+        "validityDuration": 9000000,
+        "price": {
+            "currency": "EUR",
+            "amount": 0
+        },
+        "bookings": [{
+            "id": "26517875040",
+            "storeId": "265"
+        }, {
+            "id": "26517875041",
+            "storeId": "266"
+        }],
+        "cheapest": true
+    }
+}
+
+//	Store & delivery address are available = Location is available for HD. Show options for the pickup location
+{
+    "fulfilment": "HOMEDELIVERY",
+    "store": {
+        "id": "ID-009",
+        "complexNumber": "112233",
+        "name": "AmsterdamWesterstraat",
+        "type": "pickupPoint",
+        "streetAddress": "Westerstraat 98-102 2",
+        "cityName": "Amsterdam",
+        "zipCode": "1015 MN",
+        "longitude": 4.8836283,
+        "latitude": 52.3785438,
+        "newLocation": false
+    },
+    "deliveryAddress": {
+        "addressLine": "Sint Teunislaan",
+        "houseNumber": "3",
+        "postalcode": "5231BS",
+        "city": "'S-HERTOGENBOSCH"
+    }
+}
+
+//	Store, Delivery addres and Timeslot are available = Timeslot is available for HD. Show options for pickup location & timeslot
+{
+    "fulfilment": "HOMEDELIVERY",
+    "store": {
+        "id": "ID-009",
+        "complexNumber": "112233",
+        "name": "AmsterdamWesterstraat",
+        "type": "pickupPoint",
+        "streetAddress": "Westerstraat 98-102 2",
+        "cityName": "Amsterdam",
+        "zipCode": "1015 MN",
+        "longitude": 4.8836283,
+        "latitude": 52.3785438,
+        "newLocation": false
+    },
+    "slot": {
+        "type": "COLLECTION",
+        "startDateTime": 1469708709000,
+        "endDateTime": 1469723109000,
+        "available": true,
+        "validityDuration": 9000000,
+        "price": {
+            "currency": "EUR",
+            "amount": 0
+        },
+        "bookings": [{
+            "id": "26517875040",
+            "storeId": "265"
+        }, {
+            "id": "26517875041",
+            "storeId": "266"
+        }],
+        "cheapest": true
+    },
+    "deliveryAddress": {
+        "addressLine": "Sint Teunislaan",
+        "houseNumber": "3",
+        "postalcode": "5231BS",
+        "city": "'S-HERTOGENBOSCH"
+    }
+}
+
+//	Same goes for the deliveryStores which are currently ignored for now. These will be used once we're going to implement the flow behind the buttons.
+{
+    "fulfilment": "HOMEDELIVERY",
+    "store": {
+        "id": "ID-009",
+        "complexNumber": "112233",
+        "name": "AmsterdamWesterstraat",
+        "type": "pickupPoint",
+        "streetAddress": "Westerstraat 98-102 2",
+        "cityName": "Amsterdam",
+        "zipCode": "1015 MN",
+        "longitude": 4.8836283,
+        "latitude": 52.3785438,
+        "newLocation": false
+    },
+    "slot": {
+        "type": "COLLECTION",
+        "startDateTime": 1469708709000,
+        "endDateTime": 1469723109000,
+        "available": true,
+        "validityDuration": 9000000,
+        "price": {
+            "currency": "EUR",
+            "amount": 0
+        },
+        "bookings": [{
+            "id": "26517875040",
+            "storeId": "265"
+        }, {
+            "id": "26517875041",
+            "storeId": "266"
+        }],
+        "cheapest": true
+    },
+    "deliveryAddress": {
+        "addressLine": "Sint Teunislaan",
+        "houseNumber": "3",
+        "postalcode": "5231BS",
+        "city": "'S-HERTOGENBOSCH"
+    },
+    "deliveryStores": [{
+        "id": "3605",
+        "complexNumber": "33249",
+        "name": "Jumbo 's Gravendeel Gravendeel Centrum",
+        "type": "store",
+        "streetAddress": "Kerkstraat 37",
+        "cityName": "'s Gravendeel",
+        "zipCode": "3295 BD",
+        "longitude": 4.615972,
+        "latitude": 51.778456,
+        "newLocation": false
+    }]
+}
