@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<?charles serialisation-version='2.0' ?>
+<rewriteSet-array>
+  <rewriteSet>
+    <active>false</active>
+    <name>Enable Express Checkout</name>
+    <hosts>
+      <locationPatterns>
+        <locationMatch>
+          <location>
+            <host>*</host>
+            <path>/v2/basket/oneclickcheckout</path>
+          </location>
+          <enabled>true</enabled>
+        </locationMatch>
+      </locationPatterns>
+    </hosts>
+    <rules>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>7</ruleType>
+        <matchValue></matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>false</matchRequest>
+        <matchResponse>true</matchResponse>
+        <newValue>{ 	&quot;fulfilment&quot;: &quot;HOMEDELIVERY&quot;, 	&quot;store&quot;: { 		&quot;id&quot;: &quot;3429&quot;, 		&quot;complexNumber&quot;: &quot;33026&quot;, 		&quot;name&quot;: &quot;Jumbo Amsterdam Wisseloord&quot;, 		&quot;type&quot;: &quot;pickupPointAndStore&quot;, 		&quot;streetAddress&quot;: &quot;Wisseloord 126&quot;, 		&quot;cityName&quot;: &quot;Amsterdam&quot;, 		&quot;zipCode&quot;: &quot;1106 MC&quot;, 		&quot;longitude&quot;: 4.98755, 		&quot;latitude&quot;: 52.29695, 		&quot;newLocation&quot;: false 	}, 	&quot;slot&quot;: { 		&quot;type&quot;: &quot;HOMEDELIVERY&quot;, 		&quot;startDateTime&quot;: 1472097600000, 		&quot;endDateTime&quot;: 1472112000000, 		&quot;available&quot;: true, 		&quot;validityDuration&quot;: 9000000, 		&quot;price&quot;: { 			&quot;currency&quot;: &quot;EUR&quot;, 			&quot;amount&quot;: 400 		}, 		&quot;bookings&quot;: [{ 			&quot;id&quot;: &quot;98562_68602_3643_1&quot;, 			&quot;storeId&quot;: &quot;8847&quot; 		}] 	}, 	&quot;deliveryAddress&quot;: { 		&quot;addressLine&quot;: &quot;Sint Teunislaan&quot;, 		&quot;houseNumber&quot;: &quot;3&quot;, 		&quot;postalcode&quot;: &quot;5231BS&quot;, 		&quot;city&quot;: &quot;&apos;S-HERTOGENBOSCH&quot; 	}, 	&quot;deliveryStores&quot;: [{ 		&quot;id&quot;: &quot;8847&quot;, 		&quot;complexNumber&quot;: &quot;24324234&quot;, 		&quot;name&quot;: &quot;Jumbo Oud Beijerland Rotterdam&quot;, 		&quot;streetAddress&quot;: &quot;Koninginneplein 17&quot;, 		&quot;zipCode&quot;: &quot;1011GX&quot;, 		&quot;newLocation&quot;: true, 		&quot;type&quot;: &quot;pickupPointAndStore&quot;, 		&quot;cityName&quot;: &quot;Rotterdam&quot;, 		&quot;longitude&quot;: 120.44, 		&quot;latitude&quot;: 36.1 	}] }</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+    </rules>
+  </rewriteSet>
+</rewriteSet-array>
