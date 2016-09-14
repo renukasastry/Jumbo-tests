@@ -8,6 +8,7 @@ Feture: Relavant Order Cell
 		Given I have a new user email address
 		And I am at the loginScreen 
 		Then I see the 'firstOrder' cell 
+	
 	@smode_test 	
 	Scenario: A user with completed orders should not see the first order cell
 	    Given I have an old email account 
