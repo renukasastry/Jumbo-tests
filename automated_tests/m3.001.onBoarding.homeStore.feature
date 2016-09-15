@@ -15,7 +15,7 @@ Feature: Home store selection
     When I tap the next button
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
-    Then the listOfStores view is displayed
+    Then the selectStoreCell view is displayed
 
   @smoke_test
   Scenario: Empty state screen should be displayed when the searched address returns no matches
