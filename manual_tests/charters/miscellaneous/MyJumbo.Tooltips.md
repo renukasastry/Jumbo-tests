@@ -45,7 +45,7 @@ Tooltips in My Jumbo on product search and SL button (for now) and Visual Shoppi
 
 ###Other Test Ideas
 * Check the tooltip on different resolution and screen size devices, the overlay behind the tooltip should cover all the app area
-* iOS only: Check if each tooltip is displayed correctly when the 'collored statusbar' is displayed and after  
+* iOS only: Check if each tooltip is displayed correctly when the 'colored status bar' is displayed and after  
 * Install a version of the app that only has the 'visual shopping list button tooltip'. View and dismiss this tooltip and update to a version that has also the 'My Jumbo' tooltips. Check if the 'My Jumbo' tooltips are displayed but the SL tooltip is not displayed again
 * Open the app (first time, or after update) by using a deeplink to products, then go to My Jumbo and Shopping list to see if the tooltips are displayed  
 
@@ -53,7 +53,7 @@ Tooltips in My Jumbo on product search and SL button (for now) and Visual Shoppi
 
 ## Bugs
 ###iOS
-[JUMBOAPP-4306](https://icemobile.atlassian.net/browse/JUMBOAPP-4306) - Tooltip is not aligned if colored statusbar is displayed
+[JUMBOAPP-4306](https://icemobile.atlassian.net/browse/JUMBOAPP-4306) - Tooltip is not aligned if colored status bar is displayed
 
 ###Android
 
