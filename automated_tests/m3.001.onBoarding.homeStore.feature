@@ -8,7 +8,7 @@ Feature: Home store selection
     And I tap the next button
     And I tap the location button
     And I tap the Allow button
-    Then the listOfStores view is displayed
+    Then the selectStoreCell view is displayed
 
   @smoke_test
   Scenario: List of stores should be ordered by proximity to the searched address
@@ -29,6 +29,5 @@ Feature: Home store selection
     When I tap the next button
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
-    And the listOfStores view is displayed
     And I tap the selectStoreCell view 
     Then the welcomeScreen view is displayed
