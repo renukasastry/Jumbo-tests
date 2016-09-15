@@ -26,7 +26,7 @@ Tooltips in My Jumbo on product search and SL button (for now) and Visual Shoppi
 * Check if the tooltips arn't displayed after login when they're already dismissed by anonymous user
 * Put the app on the background when each tooltip is displayed and then come back to the app (should display the last displayed tooltip again)
 * Kill the app when each tooltip is displayed and then come back to the app (should show all tooltips again)
-* Kill the app after last tooltip is dismissed and then come back (tooltips are not shown agai)
+* Kill the app after last tooltip is dismissed and then come back (tooltips are not shown again)
 * Check if the tooltip is dismissed when you tap the screen
 * Android only: Tap the back button when each tooltip is displayed (should close the app)
  
