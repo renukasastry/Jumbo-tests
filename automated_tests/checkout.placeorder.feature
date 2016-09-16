@@ -12,21 +12,18 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the selectStore button
     And I tap the Allow button
     And I tap the select button
-    And I tap the welcomeScreen button
+    And I tap the whatsNew button
     And I tap the login button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline messages button
-    And I tap the tooltip view
-    And I tap the tooltip view
     And I tap the shopping list button
     And I tap the addProduct button
     And I set the value bier on the searchItemName field
     And I tap the enter button
-    And I tap the vague term button
-    And I tap the magnifying glass button
-    And I tap the replace button
+    And I tap the SKU plus button
+    And I tap the close button
     And I tap the checkout button
     And I tap the choosePup button
     And I tap the searchPup button
@@ -47,19 +44,18 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the selectStore button
     And I tap the Allow button
     And I tap the select button
-    And I tap the welcomeScreen button
+    And I tap the whatsNew button
     And I tap the login button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline messages button
-    And I tap the tooltip view
-    And I tap the tooltip view
     And I tap the shopping list button
     And I tap the addProduct button
     And I set the value bier on the searchItemName field
     And I tap the enter button
-    And I tap the vague term button
+    And I tap the vague term plus button
+    And I tap the close button
     And I tap the checkout button
     And I tap the magnifying glass button
     And I tap the replace button
@@ -83,14 +79,12 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the selectStore button
     And I tap the Allow button
     And I tap the select button
-    And I tap the welcomeScreen button
+    And I tap the whatsNew button
     And I tap the login button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline messages button
-    And I tap the tooltip view
-    And I tap the tooltip view
     And I tap the recipes tab
     And I tap the recipe button
     And I tap the addToShoppingList button
