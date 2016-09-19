@@ -10,26 +10,26 @@
 - [JUMBOAPP-4183](https://icemobile.atlassian.net/browse/JUMBOAPP-4183) - Implement new scanner flow for shoppinglist
 - [JUMBOAPP-4106](https://icemobile.atlassian.net/browse/JUMBOAPP-4106) - Add barcode icon to empty state of SL
 - [JUMBOAPP-4145](https://icemobile.atlassian.net/browse/JUMBOAPP-4145) - Barcode scanner in Boodschappen
-- [List of Barcodes](https://icemobile.atlassian.net/wiki/display/JUM/Barcodes+List) 
 
 ***
 
 ## Test setup
 
-N/A
+- [List of Barcodes](https://icemobile.atlassian.net/wiki/display/JUM/Barcodes+List) 
+
 ***
 
 ##Test Ideas
 
 - Click to open the Barcode scanner screen for the very first time and the permission to use the camera should be requested (android >= 6, iOS > 7)
 - All barcodes scanner screens should have an empty state image
-- Products (barcodes EAN-8 or EAN-13) and recipes (QR Code 128) can be scanned
+- Only products (barcodes EAN-8 or EAN-13) and recipes (QR Code 128) can be scanned
 - Valid scanned products or recipes ingredients can be added to the shopping list
 - Invalid codes can be scanned and an error feedback message should be displayed
 - Unavailable products can be scanned and the unavailable badge should be displayed
 - Out of Assortment products can be scanned and the Out of Assortment badge should be displayed
-- Scanned codes can be deleted
-- Pointing to the same barcode for a few seconds will rescan the code one more time
+- Scanned items can be deleted
+- Pointing to the same barcode for 5 seconds will rescan the code
 - A product can also be rescanned after deleted
 - A feedback message and checkmark are displayed after scanning a valid product
 - In case there is no connection when scanning, a retry button is displayed
