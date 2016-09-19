@@ -10,7 +10,10 @@
 - [JUMBOAPP-4183](https://icemobile.atlassian.net/browse/JUMBOAPP-4183) - Implement new scanner flow for shoppinglist
 - [JUMBOAPP-4106](https://icemobile.atlassian.net/browse/JUMBOAPP-4106) - Add barcode icon to empty state of SL
 - [JUMBOAPP-4145](https://icemobile.atlassian.net/browse/JUMBOAPP-4145) - Barcode scanner in Boodschappen
+- [List of Barcodes](https://icemobile.atlassian.net/wiki/display/JUM/Barcodes+List) 
+
 ***
+
 ## Test setup
 
 N/A
