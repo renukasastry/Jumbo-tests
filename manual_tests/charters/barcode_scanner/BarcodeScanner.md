@@ -21,6 +21,8 @@
 
 ##Test Ideas
 
+The following ideas are applicable to the barcode screen available in the Shopping List, Categories browsing, My Jumbo and Update order, when testing, keep in mind to check all these places:
+
 - Click to open the Barcode scanner screen for the very first time and the permission to use the camera should be requested (android >= 6, iOS > 7)
 - All barcodes scanner screens should have an empty state image
 - Only products (barcodes EAN-8 or EAN-13) and recipes (QR Code 128) can be scanned
@@ -40,32 +42,14 @@
 - Multiple recipes can be scanned and multiple recipes headers should be displayed
 - Check the merge when you add a recipe that contains a ingredient that is already on your shopping list. Products from recipes merge to the products with same recipe id 
 - Check the merge when you scan a product that is already on your shopping list. Products from single scanned products are merged into products with the same product id
-
-###Shopping List 
-- Scan a valid EAN, check if the image, name, additional info of the product and value are displayed  
-- Scan an invalid EAN (product not available in Jumbo), check if an error feedback message is displayed 
-- Scan barcodes that are not recognized by the app (e.g. barcode 39 or 138), check if error feedback message is displayed 
-- Scan barcodes with device in landscape and portrait mode, check if the app recognizes the barcode, scanning in landscape mode is a plus
-- Scan a valid product put the app in background, resume and keep scanning, it should scan normally 
-- Scan a valid product put the app in background, kill the activity(android only), reopen the app and keep scanning, it should scan normally 
-
-###Categories browsing
-- Scan a valid EAN, check if the PDP of that product is displayed 
-- Scan an invalid EAN (product not available in Jumbo), check if an error feedback message is displayed 
-- Scan barcodes that are not recognized by the app (e.g. barcode 39 or 138), check if error feedback message is displayed 
-- Scan barcodes with device in landscape and portrait mode, check if the app recognizes the barcode, scanning in landscape mode is a plus
-- Scan a valid product put the app in background, resume, check the PDP, it should show show all info about the product 
-- Scan a valid product put the app in background, kill the activity(for android use android studio to do that), reopen the app and scan a new product, it should work normally 
-
-###Update order 
 - Scan a valid EAN, check if the image, name, additional info of the product and value are displayed  
 - Scan an invalid EAN (product not available in Jumbo), check if an error feedback message is displayed 
 - Scan barcodes that are not recognized by the app (e.g. barcode 39 or 138), check if error feedback message is displayed 
 - Scan barcodes with device in landscape and portrait mode, check if the app recognizes the barcode, scanning in landscape mode is a plus
 - Scan a valid product put the app in background, resume and keep scanning, it should work normally 
 - Scan a valid product put the app in background, kill the activity(android only), reopen the app and keep scanning, it should scan normally 
-- Add scanned products to the open order, they should be displayed as new products 
-- Add a scanned recipe to the open order, they should be displayed as new products    
+- Add scanned products to an open order, they should be displayed in the new products list 
+- Add a scanned recipe to the open order, they should be displayed in the new products list 
 
 
 ***
