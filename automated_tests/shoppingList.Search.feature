@@ -37,7 +37,7 @@ Feature: Shopping List Search
     And I tap the addProduct button
     And I set the value appel on the searchItemName field
     And I tap the enter button
-    And I tap the SKU plus button
+    And I tap the add product button
     And I tap the close button
     Then the SKU label is displayed
 
@@ -55,11 +55,11 @@ Feature: Shopping List Search
     And I tap the addProduct button
     And I set the value appel on the searchItemName field
     And I tap the enter button
-    And I tap the SKU plus button
+    And I tap the add product button
     And I tap the addProduct field
     And I set the value bier on the searchItemName field
     And I tap the enter button
-    And I tap the SKU plus button
+    And I tap the add product button
     And I tap the close button
     Then the value appel is displayed on the vague term label
     And the SKU label is displayed
@@ -100,7 +100,7 @@ Feature: Shopping List Search
     And I tap the addProduct button
     And I set the value appel on the searchItemName field
     And I tap the enter button
-    And I tap the SKU plus button
+    And I tap the add product button
     And I tap the close button
     Then the SKU label is displayed
 
@@ -119,11 +119,11 @@ Feature: Shopping List Search
     And I tap the addProduct button
     And I set the value appel on the searchItemName field
     And I tap the enter button
-    And I tap the SKU plus button
+    And I tap the add product button
     And I tap the addProduct field
     And I set the value bier on the searchItemName field
     And I tap the enter button
-    And I tap the SKU plus button
+    And I tap the add product button
     And I tap the close button
     Then the value appel is displayed on the vague term label
     And the SKU label is displayed
