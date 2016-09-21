@@ -22,9 +22,8 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the addProduct button
     And I set the value bier on the searchItemName field
     And I tap the enter button
-    And I tap the vague term button
-    And I tap the magnifying glass button
-    And I tap the replace button
+    And I tap the SKU plus button
+    And I tap the close button    
     And I tap the checkout button
     And I tap the choosePup button
     And I tap the searchPup button
@@ -55,7 +54,8 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the addProduct button
     And I set the value bier on the searchItemName field
     And I tap the enter button
-    And I tap the vague term button
+    And I tap the vague term plus button
+    And I tap the close button    
     And I tap the checkout button
     And I tap the magnifying glass button
     And I tap the replace button
