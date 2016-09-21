@@ -29,9 +29,9 @@ Feature: User registration
     And I tap the select button
     And I tap the welcomeScreen button
     Then the Shopping list tooltip is displayed
-    And I tap the view
+    And I tap the tooltip
     Then the Products tooltip is displayed
-    And I tap the view
+    And I tap the tooltip
     Then logged in button is displayed
 
   @smoke_test
@@ -62,7 +62,7 @@ Feature: User registration
     And I tap the select button
     And I tap the welcomeScreen button
     Then the Shopping list tooltip is displayed
-    And I tap the view
+    And I tap the tooltip
     Then the Products tooltip is displayed
-    And I tap the view
+    And I tap the tooltip
     Then logged in button is displayed
