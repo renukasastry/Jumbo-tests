@@ -15,6 +15,7 @@ Feature: Barcode scanner
     Then the emptyState image is displayed 
     And the camera view is displayed 
 
+  @smoke_test  
   Scenario: I want to access the barcode scanner from the Products screen and check if the barcode elements are displayed correctly
     When I login with a new B2C 
     And I tap the products button
@@ -27,7 +28,7 @@ Feature: Barcode scanner
 
 
   #Scenario: I want to access the barcode scanner from My Jumbo Screen and check if the barcode elements are displayed correctly
-
+  @smoke_test
   Scenario: I want to access the barcode scanner from the Recipes Screen and check if the barcode elements are displayed correctly
     When I login with a new B2C 
     And I tap the recipes button
@@ -38,6 +39,7 @@ Feature: Barcode scanner
     Then the emptyState image is displayed 
     And the camera view is displayed 
 
+  @smoke_test
   Scenario: I want to deny access to use the camera and check if a message instructing how to enable it is displayed when I access the barcode scanner screen
     When I login with a new B2C 
     And I tap the shoppinglist button
