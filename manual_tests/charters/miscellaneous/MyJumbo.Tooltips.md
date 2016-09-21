@@ -28,8 +28,15 @@ Tooltips in My Jumbo on product search and SL button (for now) and Visual Shoppi
 * Kill the app when each tooltip is displayed and then come back to the app (should show the tooltip again)
 * Kill the app after last tooltip is dismissed and then come back (tooltips are not shown again)
 * Check if the tooltip is dismissed when you tap the screen
-* Android only: Tap the back button when each tooltip is displayed (should close the app)
- 
+
+**Android only**
+
+* Tap the back button when each tooltip is displayed (dismisses the tooltip, MyJumbo is displayed)
+* After dismiss the first tooltip with the backbutton go to recipes and go back to My Jumbo (second tooltip is displayed)
+* After dismiss the first tooltip with the backbutton kill the app and go back to My Jumbo (second tooltip is displayed)
+* After dismiss the first tooltip with the backbutton go to recipes, then go to products and then go back to My Jumbo (second tooltip is not displayed)
+* After dismiss the first tooltip with the backbutton put the app in background and open it again (second tooltip is not displayed)
+* After dismiss the first tooltip with the backbutton swipe to producs and back to My Jumbo (second tooltip is not displayed)
 
 ###Shopping List
 
@@ -39,7 +46,7 @@ Tooltips in My Jumbo on product search and SL button (for now) and Visual Shoppi
 * Put the app on the background when tooltip is displayed and then come back to the app (the tooltip should not be displayed)
 * Kill the app when tooltip is displayed and then come back to the app (the tooltip should not be displayed)
 * Check if the tooltip isn't displayed after login when it's already dismissed by anonymous user
-* * Android only: Tap the back button when tooltip is displayed (should dismiss the tooltip)
+* Android only: Tap the back button when tooltip is displayed (should dismiss the tooltip)
 
 
 
