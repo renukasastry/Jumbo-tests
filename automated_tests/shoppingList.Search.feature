@@ -15,8 +15,8 @@ Feature: Shopping List Search
     # And I tap the tooltip view
     And I tap the shopping list button
     And I tap the tooltip view
-    And I tap the seaaddProductrch button
-    And I set the value appel on the search field
+    And I tap the addProduct button
+    And I set the value appel on the searchItemName field
     And I tap the enter button
 	And the value appel is displayed on the vague term label
     And I tap the vague term plus button
@@ -35,7 +35,7 @@ Feature: Shopping List Search
     And I tap the shopping list button
     And I tap the tooltip view
     And I tap the addProduct button
-    And I set the value appel on the search field
+    And I set the value appel on the searchItemName field
     And I tap the enter button
     And I tap the SKU plus button
     And I tap the close button
@@ -53,11 +53,11 @@ Feature: Shopping List Search
     And I tap the shopping list button
     And I tap the tooltip view
     And I tap the addProduct button
-    And I set the value appel on the search field
+    And I set the value appel on the searchItemName field
     And I tap the enter button
     And I tap the SKU plus button
     And I tap the addProduct field
-    And I set the value bier on the search field
+    And I set the value bier on the searchItemName field
     And I tap the enter button
     And I tap the SKU plus button
     And I tap the close button
@@ -78,7 +78,7 @@ Feature: Shopping List Search
     And I tap the shopping list button
     And I tap the tooltip view
     And I tap the addProduct button
-    And I set the value appel on the search field
+    And I set the value appel on the searchItemName field
     And I tap the enter button
     And the value appel is displayed on the vague term label
     And I tap the vague term plus button
@@ -98,7 +98,7 @@ Feature: Shopping List Search
     And I tap the shopping list button
     And I tap the tooltip view
     And I tap the addProduct button
-    And I set the value appel on the search field
+    And I set the value appel on the searchItemName field
     And I tap the enter button
     And I tap the SKU plus button
     And I tap the close button
@@ -117,11 +117,11 @@ Feature: Shopping List Search
     And I tap the shopping list button
     And I tap the tooltip view
     And I tap the addProduct button
-    And I set the value appel on the search field
+    And I set the value appel on the searchItemName field
     And I tap the enter button
     And I tap the SKU plus button
     And I tap the addProduct field
-    And I set the value bier on the search field
+    And I set the value bier on the searchItemName field
     And I tap the enter button
     And I tap the SKU plus button
     And I tap the close button
