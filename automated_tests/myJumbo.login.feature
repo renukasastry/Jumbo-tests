@@ -16,38 +16,38 @@ Feature: User login
    	And I set the property password on the password field
    	And I tap the login button
    	And I tap the decline messages button
- 	Then the Shopping list tooltip is displayed
-    And I tap the tooltip
- 	Then the Products tooltip is displayed
-    And I tap the tooltip
+ 	  Then the Shopping list tooltip is displayed
+    And I tap the tooltip view
+ 	  Then the Products tooltip is displayed
+    And I tap the tooltip view
    	Then logged in button is displayed
 
  @smoke_test
  Scenario: I want to log in a B2C user via on-boarding
    	Given I have a new registered B2C user
-	When I tap the login button
+  	When I tap the login button
    	And I set the property username on the emailAddress field
    	And I set the property password on the password field
    	And I tap the login button
    	And I tap the decline messages button
- 	Then the Shopping list tooltip is displayed
-    And I tap the tooltip
- 	Then the Products tooltip is displayed
-    And I tap the tooltip
+ 	  Then the Shopping list tooltip is displayed
+    And I tap the tooltip view
+ 	  Then the Products tooltip is displayed
+    And I tap the tooltip view
    	Then logged in button is displayed
 
  @smoke_test
  Scenario: I want to log in a B2B regular user via on-boarding
- 	Given I have a new registered B2B user
+ 	  Given I have a new registered B2B user
    	When I tap the login button
    	And I set the property username on the emailAddress field
    	And I set the property password on the password field
    	And I tap the login button
    	And I tap the decline messages button
- 	Then the Shopping list tooltip is displayed
-    And I tap the tooltip
- 	Then the Products tooltip is displayed
-    And I tap the tooltip
+ 	  Then the Shopping list tooltip is displayed
+    And I tap the tooltip view
+ 	  Then the Products tooltip is displayed
+    And I tap the tooltip view
    	Then logged in button is displayed
 
  @smoke_test
@@ -56,10 +56,10 @@ Feature: User login
    	And I set the value Condigne+1@gmail.com on the emailAddress field
    	And I set the value cTsKYxMpZ1sAAAFTK6U3sHRp on the password field
    	And I tap the login button
- 	Then the Shopping list tooltip is displayed
-    And I tap the tooltip
- 	Then the Products tooltip is displayed
-    And I tap the tooltip
+ 	  Then the Shopping list tooltip is displayed
+    And I tap the tooltip view
+ 	  Then the Products tooltip is displayed
+    And I tap the tooltip view
    	Then logged in button is displayed
 
  @smoke_test

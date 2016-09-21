@@ -40,7 +40,7 @@ Feature: Home store selection
     And I tap the selectStoreCell view 
     And I tap the welcomeScreen button
     Then the Shopping list tooltip is displayed
-    And I tap the tooltip
+    And I tap the tooltip view
     Then the Products tooltip is displayed
-    And I tap the tooltip
+    And I tap the tooltip view
     Then the login button is displayed

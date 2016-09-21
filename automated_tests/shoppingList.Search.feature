@@ -11,10 +11,10 @@ Feature: Shopping List Search
     And I tap the enter button
     And I tap the selectStoreCell view 
     And I tap the continue button
-    And I tap the tooltip
-    And I tap the tooltip
+    And I tap the tooltip view
+    And I tap the tooltip view
     And I tap the shopping list button
-    And I tap the tooltip
+    And I tap the tooltip view
     And I tap the search button
     And I set the value appel on the search field
     And I tap the enter button
@@ -30,10 +30,10 @@ Feature: Shopping List Search
     And I tap the enter button
     And I tap the selectStoreCell view 
     And I tap the continue button
-    And I tap the tooltip
-    And I tap the tooltip
+    And I tap the tooltip view
+    And I tap the tooltip view
     And I tap the shopping list button
-    And I tap the tooltip
+    And I tap the tooltip view
     And I tap the search button
     And I set the value appel on the search field
     And I tap the enter button
@@ -48,10 +48,10 @@ Feature: Shopping List Search
     And I tap the enter button
     And I tap the selectStoreCell view 
     And I tap the continue button
-    And I tap the tooltip
-    And I tap the tooltip
+    And I tap the tooltip view
+    And I tap the tooltip view
     And I tap the shopping list button
-    And I tap the tooltip
+    And I tap the tooltip view
     And I tap the search button
     And I set the value appel on the search field
     And I tap the enter button
@@ -73,10 +73,10 @@ Feature: Shopping List Search
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline messages button
-    And I tap the tooltip
-    And I tap the tooltip
+    And I tap the tooltip view
+    And I tap the tooltip view
     And I tap the shopping list button
-    And I tap the tooltip
+    And I tap the tooltip view
     And I tap the search button
     And I set the value appel on the search field
     And I tap the enter button
@@ -93,10 +93,10 @@ Feature: Shopping List Search
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline messages button
-    And I tap the tooltip
-    And I tap the tooltip
+    And I tap the tooltip view
+    And I tap the tooltip view
     And I tap the shopping list button
-    And I tap the tooltip
+    And I tap the tooltip view
     And I tap the search button
     And I set the value appel on the search field
     And I tap the enter button
@@ -112,10 +112,10 @@ Feature: Shopping List Search
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline messages button
-    And I tap the tooltip
-    And I tap the tooltip
+    And I tap the tooltip view
+    And I tap the tooltip view
     And I tap the shopping list button
-    And I tap the tooltip
+    And I tap the tooltip view
     And I tap the search button
     And I set the value appel on the search field
     And I tap the enter button
