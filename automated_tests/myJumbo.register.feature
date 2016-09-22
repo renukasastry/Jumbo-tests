@@ -27,7 +27,11 @@ Feature: User registration
     And I tap the selectStore button
     And I tap the Allow button
     And I tap the select button
-    And I tap the whatsNew button
+    Then the Shopping list tooltip is displayed
+    And I tap the continue button
+    And I tap the tooltip view
+    Then the Products tooltip is displayed
+    And I tap the tooltip view
     Then logged in button is displayed
 
   @smoke_test
@@ -56,5 +60,9 @@ Feature: User registration
     And I tap the selectStore button
     And I tap the Allow button
     And I tap the select button
-    And I tap the whatsNew button
+    Then the Shopping list tooltip is displayed
+    And I tap the continue button
+    And I tap the tooltip view
+    Then the Products tooltip is displayed
+    And I tap the tooltip view
     Then logged in button is displayed
