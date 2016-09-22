@@ -38,9 +38,7 @@ Feature: Home store selection
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
     And I tap the selectStoreCell view 
-    And I tap the welcomeScreen button
-    Then the Shopping list tooltip is displayed
+    And I tap the continue button
     And I tap the tooltip view
-    Then the Products tooltip is displayed
     And I tap the tooltip view
     Then the login button is displayed

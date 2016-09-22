@@ -7,7 +7,7 @@ Feature: Barcode scanner
   Scenario: I want to access the barcode screen from the Shopping List screen and check if all the elements are displayed correctly
     When I login with a new B2C 
     And I tap the shoppinglist button
-    And I tap the closeTooltip button
+    And I tap the tooltip view
     And I tap the addProduct button
     And the barcodeScanner button is displayed
     And I tap the barcodeScanner button 
@@ -43,7 +43,7 @@ Feature: Barcode scanner
   Scenario: I want to deny access to use the camera and check if a message instructing how to enable it is displayed when I access the barcode scanner screen
     When I login with a new B2C 
     And I tap the shoppinglist button
-    And I tap the closeTooltip button
+    And I tap the tooltip view
     And I tap the addProduct button
     And the barcodeScanner button is displayed
     And I tap the barcodeScanner button 
