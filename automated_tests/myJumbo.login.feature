@@ -7,19 +7,19 @@ Feature: User login
  Scenario: I want to log in via my Jumbo
    	Given I have a new registered B2C user
    	And I tap the next button
-   	And I tap the selectStore button
+   	And I tap the location button
    	And I tap the Allow button
    	And I tap the select button
-   	And I tap the welcomeScreen button
-   	When I tap the login button
+   	And I tap the continue button
+	Then the Shopping list tooltip is displayed
+	And I tap the tooltip view
+	Then the Products tooltip is displayed
+	And I tap the tooltip view
+	When I tap the login button
    	And I set the property username on the emailAddress field
    	And I set the property password on the password field
    	And I tap the login button
    	And I tap the decline messages button
- 	  Then the Shopping list tooltip is displayed
-    And I tap the tooltip view
- 	  Then the Products tooltip is displayed
-    And I tap the tooltip view
    	Then logged in button is displayed
 
  @smoke_test
