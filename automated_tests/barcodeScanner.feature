@@ -48,6 +48,6 @@ Feature: Barcode scanner
     And I tap the addProduct button
     And the barcodeScanner button is displayed
     And I tap the barcodeScanner button 
-    And I tap the decline messages button
+    And I tap the decline button
     Then the instructionMessage view is displayed 
     And the camera view is not displayed 
