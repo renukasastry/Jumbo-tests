@@ -10,19 +10,19 @@ Feature: Products Search
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
     And I tap the selectStoreCell view 
-    And I tap the continue button
+    And I tap the next button
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the products button
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
-	And the value appel is displayed on the vague term label
-    And I tap the vague term plus button
+	And the value appel is displayed on the vagueTerm label
+    And I tap the vagueTermPlus button
     And I tap the close button
-    And I tap the shopping list button
+    And I tap the shoppingList button
     And I tap the tooltip view
-    Then the value appel is displayed on the vague term label
+    Then the value appel is displayed on the vagueTerm label
 
   @smoke_test
   Scenario: I want to search and add a SKU to the SL from the products section search
@@ -30,19 +30,19 @@ Feature: Products Search
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
     And I tap the selectStoreCell view 
-    And I tap the continue button
+    And I tap the next button
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the products button
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
-    And I tap the add product button
+    And I tap the addProduct button
     And I tap the close button
-    And I tap the shopping list button
+    And I tap the shoppingList button
     And I tap the tooltip view
-    Then the value appel is displayed on the vague term label    
-    Then the SKU label is displayed
+    Then the value appel is displayed on the vagueTerm label    
+    Then the skuCell view is displayed
 
   @smoke_test
   Scenario: I want to search and add multiple items to the SL from the products section search
@@ -50,23 +50,23 @@ Feature: Products Search
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
     And I tap the selectStoreCell view 
-    And I tap the continue button
+    And I tap the next button
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the products button
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
-    And I tap the add product button
+    And I tap the addProduct button
     And I tap the addProduct field
-    And I set the value bier on the searchItemName field
+    And I set the value bier on the search field
     And I tap the enter button
-    And I tap the add product button
+    And I tap the addProduct button
     And I tap the close button
-    And I tap the shopping list button
+    And I tap the shoppingList button
     And I tap the tooltip view
-    Then the value appel is displayed on the vague term label
-    And the SKU label is displayed
+    Then the value appel is displayed on the vagueTerm label
+    And the skuCell view is displayed
 
 # Logged in scenarios category browser
   @smoke_test
@@ -76,19 +76,19 @@ Feature: Products Search
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
-    And I tap the decline messages button
+    And I tap the decline button
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the products button
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
-    And the value appel is displayed on the vague term label
-    And I tap the vague term plus button
+    And the value appel is displayed on the vagueTerm label
+    And I tap the vagueTermPlus button
     And I tap the close button
-    And I tap the shopping list button
+    And I tap the shoppingList button
     And I tap the tooltip view
-    Then I the value appel is displayed on the vague term label
+    Then I the value appel is displayed on the vagueTerm label
 
   @smoke_test
   Scenario: I want to search and add a SKU to the SL from the products section search
@@ -97,18 +97,18 @@ Feature: Products Search
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
-    And I tap the decline messages button
+    And I tap the decline button
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the products button
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
-    And I tap the add product button
+    And I tap the addProduct button
     And I tap the close button
-    And I tap the shopping list button
+    And I tap the shoppingList button
     And I tap the tooltip view
-    Then the SKU label is displayed
+    Then the skuCell view is displayed
 
   @smoke_test
   Scenario: I want to search and add multiple items to the SL from the products section search
@@ -117,23 +117,23 @@ Feature: Products Search
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
-    And I tap the decline messages button
+    And I tap the decline button
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the products button
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
-    And I tap the add product button
+    And I tap the addProduct button
     And I tap the addProduct field
-    And I set the value bier on the searchItemName field
+    And I set the value bier on the search field
     And I tap the enter button
-    And I tap the add product button
+    And I tap the addProduct button
     And I tap the close button
-    And I tap the shopping list button
+    And I tap the shoppingList button
     And I tap the tooltip view
-    Then the value appel is displayed on the vague term label
-    And the SKU label is displayed
+    Then the value appel is displayed on the vagueTerm label
+    And the skuCell view is displayed
 
 # Anonymous scearios product lister
   @smoke_test
@@ -142,22 +142,22 @@ Feature: Products Search
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
     And I tap the selectStoreCell view 
-    And I tap the continue button
+    And I tap the next button
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the products button
-    And I tap the first category button
-    And I tap the view everything button
-    And I see the product lister view
+    And I tap the firstCategory button
+    And I tap the viewEverything button
+    And I see the productLister view
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
-    And the value appel is displayed on the vague term label
-    And I tap the vague term plus button
+    And the value appel is displayed on the vagueTerm label
+    And I tap the vagueTermPlus button
     And I tap the close button
-    And I tap the shopping list button
+    And I tap the shoppingList button
     And I tap the tooltip view
-    Then the value appel is displayed on the vague term label
+    Then the value appel is displayed on the vagueTerm label
 
   @smoke_test
   Scenario: I want to search and add a SKU to the SL from the products section search
@@ -165,22 +165,22 @@ Feature: Products Search
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
     And I tap the selectStoreCell view 
-    And I tap the continue button
+    And I tap the next button
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the products button
-    And I tap the first category button
-    And I tap the view everything button
-    And I see the product lister view
+    And I tap the firstCategory button
+    And I tap the viewEverything button
+    And I see the productLister view
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
-    And I tap the add product button
+    And I tap the addProduct button
     And I tap the close button
-    And I tap the shopping list button
+    And I tap the shoppingList button
     And I tap the tooltip view
-    Then the value appel is displayed on the vague term label    
-    Then the SKU label is displayed
+    Then the value appel is displayed on the vagueTerm label    
+    Then the skuCell view is displayed
 
   @smoke_test
   Scenario: I want to search and add multiple items to the SL from the products section search
@@ -188,26 +188,26 @@ Feature: Products Search
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
     And I tap the selectStoreCell view 
-    And I tap the continue button
+    And I tap the next button
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the products button
-    And I tap the first category button
-    And I tap the view everything button
-    And I see the product lister view
+    And I tap the firstCategory button
+    And I tap the viewEverything button
+    And I see the productLister view
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
-    And I tap the add product button
+    And I tap the addProduct button
     And I tap the addProduct field
-    And I set the value bier on the searchItemName field
+    And I set the value bier on the search field
     And I tap the enter button
-    And I tap the add product button
+    And I tap the addProduct button
     And I tap the close button
-    And I tap the shopping list button
+    And I tap the shoppingList button
     And I tap the tooltip view
-    Then the value appel is displayed on the vague term label
-    And the SKU label is displayed
+    Then the value appel is displayed on the vagueTerm label
+    And the skuCell view is displayed
 
 # Logged in scenarios category browser
   @smoke_test
@@ -217,22 +217,22 @@ Feature: Products Search
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
-    And I tap the decline messages button
+    And I tap the decline button
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the products button
-    And I tap the first category button
-    And I tap the view everything button
-    And I see the product lister view
+    And I tap the firstCategory button
+    And I tap the viewEverything button
+    And I see the productLister view
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
-    And the value appel is displayed on the vague term label
-    And I tap the vague term plus button
+    And the value appel is displayed on the vagueTerm label
+    And I tap the vagueTermPlus button
     And I tap the close button
-    And I tap the shopping list button
+    And I tap the shoppingList button
     And I tap the tooltip view
-    Then I the value appel is displayed on the vague term label
+    Then I the value appel is displayed on the vagueTerm label
 
   @smoke_test
   Scenario: I want to search and add a SKU to the SL from the products section search
@@ -241,21 +241,21 @@ Feature: Products Search
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
-    And I tap the decline messages button
+    And I tap the decline button
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the products button
-    And I tap the first category button
-    And I tap the view everything button
-    And I see the product lister view
+    And I tap the firstCategory button
+    And I tap the viewEverything button
+    And I see the productLister view
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
-    And I tap the add product button
+    And I tap the addProduct button
     And I tap the close button
-    And I tap the shopping list button
+    And I tap the shoppingList button
     And I tap the tooltip view
-    Then the SKU label is displayed
+    Then the skuCell view is displayed
 
   @smoke_test
   Scenario: I want to search and add multiple items to the SL from the products section search
@@ -264,25 +264,25 @@ Feature: Products Search
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
-    And I tap the decline messages button
+    And I tap the decline button
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the products button
-    And I tap the first category button
-    And I tap the view everything button
-    And I see the product lister view
+    And I tap the firstCategory button
+    And I tap the viewEverything button
+    And I see the productLister view
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
-    And I tap the add product button
+    And I tap the addProduct button
     And I tap the addProduct field
-    And I set the value bier on the searchItemName field
+    And I set the value bier on the search field
     And I tap the enter button
-    And I tap the add product button
+    And I tap the addProduct button
     And I tap the close button
-    And I tap the shopping list button
+    And I tap the shoppingList button
     And I tap the tooltip view
-    Then the value appel is displayed on the vague term label
-    And the SKU label is displayed
+    Then the value appel is displayed on the vagueTerm label
+    And the skuCell view is displayed
 
 # Check for automating the Scanner
