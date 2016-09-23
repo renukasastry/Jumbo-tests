@@ -24,10 +24,8 @@ Feature: Barcode scanner
     And I tap the barcodeScanner button 
     And I tap the allow button
     Then the emptyState view is displayed 
-    And the camera view is displayed
+    And the camera view is displayed 
 
-
-  #Scenario: I want to access the barcode scanner from My Jumbo Screen and check if the barcode elements are displayed correctly
   @smoke_test
   Scenario: I want to access the barcode scanner from the Recipes Screen and check if the barcode elements are displayed correctly
     Given I am on the myJumbo screen
@@ -48,5 +46,9 @@ Feature: Barcode scanner
     And the barcodeScanner button is displayed
     And I tap the barcodeScanner button 
     And I tap the decline button
-    Then the instructionMessage view is displayed 
-    And the camera view is not displayed 
+    Then the instructionMessage view is displayed
+    Then the camera view is not displayed 
+
+#	On iOS it is impossible to check two dialog's behind each other.
+#	Therefore the last scenario will always fail on iOS. 
+#	We still need to implement a way to check for an 'optional' dialog, this will allow this scenario to pass.
