@@ -43,7 +43,7 @@ Feature: Shopping List Search
 
     And I tap the skuPlus button
     And I tap the close button
-#    Then the SKU label is displayed
+#    Then the skuCell view is displayed
 
   @smoke_test
   Scenario: I want to search and add multiple items to my shopping list
@@ -67,8 +67,8 @@ Feature: Shopping List Search
     And I tap the enter button
     And I tap the skuPlus button
     And I tap the close button
-#    Then the value appel is displayed on the vague term label
-#    And the SKU label is displayed
+#    Then the value appel is displayed on the vagueTerm label
+#    And the skuCell view is displayed
 
 # Logged in scenarios
   @smoke_test
@@ -91,7 +91,7 @@ Feature: Shopping List Search
 
     And I tap the vagueTermPlus button
     And I tap the close button
-#    Then I the value appel is displayed on the vague term label
+#    Then the value appel is displayed on the vagueTerm label
 
   @smoke_test
   Scenario: I want to search and add a SKU to the SL
@@ -113,7 +113,7 @@ Feature: Shopping List Search
 
     And I tap the skuPlus button
     And I tap the close button
-#    Then the SKU label is displayed
+#    Then the skuCell view is displayed
 
   @smoke_test
   Scenario: I want to search and add multiple items to my shopping list
@@ -138,7 +138,7 @@ Feature: Shopping List Search
     And I tap the enter button
     And I tap the skuPlus button
     And I tap the close button
-#    And the SKU label is displayed
+#    And the skuCell view is displayed
 
 
 # Check for automating the Scanner
