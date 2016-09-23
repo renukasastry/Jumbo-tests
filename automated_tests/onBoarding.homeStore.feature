@@ -8,7 +8,7 @@ Feature: Home store selection
   Scenario: List of stores ordered by proximity to GPS location 
     Given I am at the loginScreen
     When I tap the overslaan button
-    And I see 'De Laagsterprijsgarantie' screen
+    And I see the laagstePrijsgarantie view
     And I tap the location button
     And I tap the Allow button
     Then I see the list of stores ordered my proximity to my GPS location 
@@ -17,16 +17,16 @@ Feature: Home store selection
   Scenario: List of stores ordered by proximity to an address
     Given I am at the loginScreen
     When I tap the overslaan button
-    And I see 'De Laagsterprijsgarantie' screen
-    And I set 'Amsterdam' on the homeStore field
+    And I see the laagstePrijsgarantie view
+    And I set the value Amsterdam on the homeStore field
     And I tap the enter button
-    Then I see the list of stores ordered my proximity to 'Amsterdam'
+    Then I see the list of stores ordered my proximity to Amsterdam
 
   @smoke_test
   Scenario: Empty state
     Given I am at the loginScreen
     When I tap the overslaan button
-    And I see 'De Laagsterprijsgarantie' screen
+    And I see the laagstePrijsgarantie view
     And I set '' on the homeStore field
     And I tap the enter button
     Then I see the empty state image
@@ -35,10 +35,10 @@ Feature: Home store selection
   Scenario: Select home store
     Given I am at the loginScreen
     When I tap the overslaan button
-    And I see 'De Laagsterprijsgarantie' screen
-    And I set 'Amsterdam' on the homeStore field
+    And I see the laagstePrijsgarantie view
+    And I set the value Amsterdam on the homeStore field
     And I tap the enter button
-    And I see the list of stores ordered my proximity to 'Amsterdam'
+    And I see the list of stores ordered my proximity to Amsterdam
     And I tap the first Kies button 
     Then WelcomeScreen is displayed 
     
