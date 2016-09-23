@@ -9,13 +9,17 @@ Feature: Shopping List Search
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
     And I tap the selectStoreCell view
-    And I tap the whatsNew button
-    And I tap the shopping list button
-    And I tap the toolTip button
+    And I tap the next button
+#    And I tap the tooltip view
+#    And I tap the tooltip view
+    And I tap the shoppingList button
+    And I tap the tooltip view
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
+    
     And the value appel is displayed on the vague term title field
+
     And I tap the vagueTermPlus button
     And I tap the close button
 #    Then the value appel is displayed
@@ -26,14 +30,18 @@ Feature: Shopping List Search
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
     And I tap the selectStoreCell view
-    And I tap the whatsNew button
-    And I tap the shopping list button
-    And I tap the toolTip button
+    And I tap the next button
+#    And I tap the tooltip view
+#    And I tap the tooltip view
+    And I tap the shoppingList button
+    And I tap the tooltip view
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
+    
     And the value appel is displayed on the vague term title field
-    And I tap the SKU plus button
+
+    And I tap the skuPlus button
     And I tap the close button
 #    Then the SKU label is displayed
 
@@ -43,17 +51,21 @@ Feature: Shopping List Search
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
     And I tap the selectStoreCell view
-    And I tap the whatsNew button
-    And I tap the shopping list button
-    And I tap the toolTip button
+    And I tap the next button
+#    And I tap the tooltip view
+#    And I tap the tooltip view
+    And I tap the shoppingList button
+    And I tap the tooltip view
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
+    
     And the value appel is displayed on the vague term title field
-    And I tap the SKU plus button
-    And I set the value bier on the searchItemName field
+
+    And I tap the skuPlus button
+    And I set the value bier on the search field
     And I tap the enter button
-    And I tap the SKU plus button
+    And I tap the skuPlus button
     And I tap the close button
 #    Then the value appel is displayed on the vague term label
 #    And the SKU label is displayed
@@ -66,15 +78,17 @@ Feature: Shopping List Search
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
-    And I tap the decline messages button
-#    And I tap the view
-#    And I tap the view
-    And I tap the shopping list button
-    And I tap the toolTip button
+    And I tap the decline button
+#    And I tap the tooltip view
+#    And I tap the tooltip view
+    And I tap the shoppingList button
+    And I tap the tooltip view
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
+    
     And the value appel is displayed on the vague term title field
+
     And I tap the vagueTermPlus button
     And I tap the close button
 #    Then I the value appel is displayed on the vague term label
@@ -86,16 +100,18 @@ Feature: Shopping List Search
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
-    And I tap the decline messages button
-#    And I tap the view
-#    And I tap the view
-    And I tap the shopping list button
-    And I tap the toolTip button
+    And I tap the decline button
+#    And I tap the tooltip view
+#    And I tap the tooltip view
+    And I tap the shoppingList button
+    And I tap the tooltip view
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
+    
     And the value appel is displayed on the vague term title field
-    And I tap the SKU plus button
+
+    And I tap the skuPlus button
     And I tap the close button
 #    Then the SKU label is displayed
 
@@ -106,19 +122,21 @@ Feature: Shopping List Search
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
-    And I tap the decline messages button
-#    And I tap the view
-#    And I tap the view
-    And I tap the shopping list button
-    And I tap the toolTip button
+    And I tap the decline button
+#    And I tap the tooltip view
+#    And I tap the tooltip view
+    And I tap the shoppingList button
+    And I tap the tooltip view
     And I tap the addProduct button
-    And I set the value appel on the searchItemName field
+    And I set the value appel on the search field
     And I tap the enter button
+    
     And the value appel is displayed on the vague term title field
-    And I tap the SKU plus button
-    And I set the value bier on the searchItemName field
+
+    And I tap the skuPlus button
+    And I set the value bier on the search field
     And I tap the enter button
-    And I tap the SKU plus button
+    And I tap the skuPlus button
     And I tap the close button
 #    And the SKU label is displayed
 
