@@ -32,8 +32,8 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the searchPup button
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
-    And I tap the Pup button
-    And I tap the first available time slot
+    And I tap the pup button
+    And I tap the firstAvailableTimeSlot button
     And I tap the payAtPickUp button
     And I tap the ok button
     And I tap the next button
@@ -71,7 +71,7 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the first available time slot #i am here
+    And I tap the firstAvailableTimeSlot button #i am here
     And I tap the payAtPickUp button
     And I tap the ok button
     And I tap the next button
@@ -107,12 +107,11 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the searchPup button
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
-    And I tap the Pup button
-    And I tap the first available time slot
+    And I tap the pup button
+    And I tap the firstAvailableTimeSlot button
     And I tap the payAtPickUp button
     And I tap the ok button
     And I tap the next button
-    And I tap the back button
     And I tap the back button
     And I tap the orderHistory button
     Then orderDetail button is displayed
