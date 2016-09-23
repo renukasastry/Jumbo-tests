@@ -62,7 +62,7 @@ Feature: Shopping List Search
     
     And the value appel is displayed on the vague term title field
 
-    And I tap the skuPlus button
+    And I tap the vagueTermPlus button
     And I set the value bier on the search field
     And I tap the enter button
     And I tap the skuPlus button
