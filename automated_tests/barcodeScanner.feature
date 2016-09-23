@@ -6,7 +6,7 @@ Feature: Barcode scanner
   @smoke_test
   Scenario: I want to access the barcode screen from the Shopping List screen and check if all the elements are displayed correctly
     Given I am on the myJumbo screen
-    When I tap the shoppinglist button
+    When I tap the shoppingList button
     And I tap the tooltip view
     And I tap the addProduct button
     And the barcodeScanner button is displayed
@@ -23,8 +23,8 @@ Feature: Barcode scanner
     And the barcodeScanner button is displayed
     And I tap the barcodeScanner button 
     And I tap the allow button
-    Then the emptyState image is displayed 
-    And the camera is displayed
+    Then the emptyState view is displayed 
+    And the camera view is displayed
 
 
   #Scenario: I want to access the barcode scanner from My Jumbo Screen and check if the barcode elements are displayed correctly
@@ -43,11 +43,15 @@ Feature: Barcode scanner
   Scenario: I want to deny access to use the camera and check if a message instructing how to enable it is displayed when I access the barcode scanner screen
 
     Given I am on the myJumbo screen
-    When I tap the shoppinglist button
+    When I tap the shoppingList button
     And I tap the tooltip view
     And I tap the addProduct button
     And the barcodeScanner button is displayed
     And I tap the barcodeScanner button 
+<<<<<<< HEAD
     And I tap the decline button
+=======
+    And I tap the declineMessages button
+>>>>>>> 6ff2c7d5600ba5006a46b9f5a3045435e0befa12
     Then the instructionMessage view is displayed 
     And the camera view is not displayed 
