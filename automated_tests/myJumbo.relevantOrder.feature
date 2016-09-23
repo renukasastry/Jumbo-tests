@@ -7,11 +7,11 @@ Feture: Relavant Order Cell
 	Scenario: A new user should see the first order cell
 		Given I have a new user email address
 		And I am at the loginScreen 
-		Then I see the 'firstOrder' cell 
+		Then the firstOrderCell view is displayed 
 	
 	@smode_test 	
 	Scenario: A user with completed orders should not see the first order cell
 	    Given I have an old email account 
 	    And I am I am at the loginScreen
-	    Then I don't see the firstOrder
+	    Then the firstOrderCell view is not displayed
 	    
