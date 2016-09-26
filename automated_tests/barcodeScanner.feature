@@ -3,6 +3,12 @@ Feature: Barcode scanner
   I want to be able to access the barcode scanner screen from the Shopping List, Products, My Jumbo and Recipes. 
   so I can see the content of the screen
 
+#	iOS note:
+#	The settings to authorize the camera on the phone are only asked once. 
+#	A scenario will only succeed if the question regarding the camera permissions has not been asked before.
+#	These settings can be reset under Settings -> General  -> Reset -> Reset Location & Privacy
+
+
   @smoke_test
   Scenario: I want to access the barcode screen from the Shopping List screen and check if all the elements are displayed correctly
     Given I am on the myJumbo screen
