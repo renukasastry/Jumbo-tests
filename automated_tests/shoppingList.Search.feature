@@ -130,4 +130,4 @@ Feature: Shopping List Search
     And I tap the enter button
     And I tap the skuPlus button
     And I tap the close button
-#    And the skuCell view is displayed
+    And the skuCell view is displayed
