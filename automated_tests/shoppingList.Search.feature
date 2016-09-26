@@ -73,6 +73,7 @@ Feature: Shopping List Search
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline button
+    And I tap the next button
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the shoppingList button
