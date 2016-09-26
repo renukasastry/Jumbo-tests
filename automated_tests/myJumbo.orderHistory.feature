@@ -5,13 +5,13 @@ Feature: View and amend orders
 
   @smoke_test
   Scenario: I want to amend my order from the order history as a B2C user
-	Given I have a new registered B2C user
-	When I tap the login button
-	And I set the property username on the emailAddress field
-	And I set the property password on the password field
-	And I tap the login button
-	And I tap the decline button
-	And I tap the next button
+    Given I have a new registered B2C user
+    When I tap the login button
+    And I set the property username on the emailAddress field
+    And I set the property password on the password field
+    And I tap the login button
+    And I tap the decline button
+    And I tap the next button
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the shoppingList button
@@ -20,9 +20,11 @@ Feature: View and amend orders
     And I set the value bier on the search field
     And I tap the enter button
     And I tap the skuPlus button
-    And I tap the close button    
+    And I tap the close button
     And I tap the checkout button
     And I tap the choosePup button
+    # check if ios need authorization gfor location at this point
+    And I tap the allow button
     And I tap the searchPup button
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
@@ -40,9 +42,9 @@ Feature: View and amend orders
     And I set the value appel on the search field
     And I tap the enter button
     And the value appel is not displayed on the vague term title field
-	And I tap the skuPlus button
+    And I tap the skuPlus button
     And I tap the close button
-    Then the newSection is displayed  
+    Then the newSection is displayed
     # Add steps to actually change the order
 
      @smoke_test
