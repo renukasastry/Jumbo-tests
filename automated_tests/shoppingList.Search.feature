@@ -85,7 +85,7 @@ Feature: Shopping List Search
     And I tap the close button
     Then the value appel is displayed on the shoppingListItem view
 
-  @smoke_test @maja
+  @smoke_test
   Scenario: I want to search and add a SKU to the SL
     Given I have a new registered B2C user
     When I tap the login button
@@ -106,7 +106,7 @@ Feature: Shopping List Search
     Then the value appel is displayed on the shoppingListItem view
     Then the skuCell view is displayed
 
-  @smoke_test @maja
+  @smoke_test
   Scenario: I want to search and add multiple items to my shopping list
     Given I have a new registered B2C user
     When I tap the login button
