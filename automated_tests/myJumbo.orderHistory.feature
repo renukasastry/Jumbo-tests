@@ -3,7 +3,7 @@ Feature: View and amend orders
   I want to be able to view and amend my orders
   so I have a clear overview of my orders
 
-  @smoke_test
+  @smoke_test @thomas
   Scenario: I want to amend my order from the order history as a B2C user
     Given I have a new registered B2C user
     When I tap the login button
@@ -11,7 +11,7 @@ Feature: View and amend orders
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline button
-    And I tap the next button
+ #And I tap the next button
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the shoppingList button
@@ -23,7 +23,6 @@ Feature: View and amend orders
     And I tap the close button
     And I tap the checkout button
     And I tap the choosePup button
-    # check if ios need authorization for location at this point
     And I tap the allow button
     And I tap the searchPup button
     And I set the value Hapert on the pickUpPointSearch field
@@ -41,7 +40,7 @@ Feature: View and amend orders
     And I tap the enter button
     And I tap the skuPlus button
     And I tap the close button
-    Then the newSection view is displayed
+    Then the value Nieuw in je bestelling is displayed on the newSection view
     # Add steps to actually change the order
 
      @smoke_test
