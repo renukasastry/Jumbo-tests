@@ -23,7 +23,7 @@ Feature: View and amend orders
     And I tap the close button
     And I tap the checkout button
     And I tap the choosePup button
-    # check if ios need authorization gfor location at this point
+    # check if ios need authorization for location at this point
     And I tap the allow button
     And I tap the searchPup button
     And I set the value Hapert on the pickUpPointSearch field
@@ -41,10 +41,9 @@ Feature: View and amend orders
     And I tap the addProduct button
     And I set the value appel on the search field
     And I tap the enter button
-    And the value appel is not displayed on the vague term title field
     And I tap the skuPlus button
     And I tap the close button
-    Then the newSection is displayed
+    Then the newSection view is displayed
     # Add steps to actually change the order
 
      @smoke_test
@@ -83,10 +82,9 @@ Feature: View and amend orders
     And I tap the addProduct button
     And I set the value appel on the search field
     And I tap the enter button
-    And the value appel is not displayed on the vague term title field
 	And I tap the skuPlus button
     And I tap the close button
-    Then the newSection is displayed
+    Then the newSection view is displayed
     # Add steps to actually change the order
   
 
@@ -126,10 +124,9 @@ Feature: View and amend orders
     And I tap the addProduct button
     And I set the value appel on the search field
     And I tap the enter button
-    And the value appel is not displayed on the vague term title field
 	And I tap the skuPlus button
     And I tap the close button
-    Then the newSection is displayed  
+    Then the newSection view is displayed  
     # Add steps to actually change the order
     
 
@@ -169,10 +166,9 @@ Feature: View and amend orders
     And I tap the addProduct button
     And I set the value appel on the search field
     And I tap the enter button
-    And the value appel is not displayed on the vague term title field
 	And I tap the skuPlus button
     And I tap the close button
-    Then the newSection is displayed  
+    Then the newSection view is displayed  
     # Add steps to actually change the order
 
 
@@ -211,10 +207,9 @@ Feature: View and amend orders
   #   And I tap the addProduct button
   #   And I set the value appel on the search field
   #   And I tap the enter button
-  #   And the value appel is not displayed on the vague term title field
   #  	And I tap the skuPlus button
   #   And I tap the close button
-  #   Then the newSection is displayed  
+  #   Then the newSection view is displayed  
   #   # Add steps to actually change the order
   #   # Add steps to cancel the order    
 
@@ -253,10 +248,9 @@ Feature: View and amend orders
   #   And I tap the addProduct button
   #   And I set the value appel on the search field
   #   And I tap the enter button
-  #   And the value appel is not displayed on the vague term title field
   #  	And I tap the skuPlus button
   #   And I tap the close button
-  #   Then the newSection is displayed  
+  #   Then the newSection view is displayed  
   #   # Add steps to actually change the order
   #   # Add steps to cancel the order
 
