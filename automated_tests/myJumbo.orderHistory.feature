@@ -37,8 +37,6 @@ Feature: View and amend orders
     And I tap the orderHistory button
     And I tap the addGroceries button
     And I tap the addProduct button
-    Then the addProductsActionSheet view is displayed
-    And I tap the addProduct button
     And I set the value appel on the search field
     And I tap the enter button
     And I tap the skuPlus button
@@ -120,8 +118,6 @@ Feature: View and amend orders
     And I tap the orderHistory button
     And I tap the addGroceries button
     And I tap the addProduct button
-    Then the addProductsActionSheet view is displayed
-    And I tap the addProduct button
     And I set the value appel on the search field
     And I tap the enter button
 	And I tap the skuPlus button
@@ -202,8 +198,6 @@ Feature: View and amend orders
   #   And I tap the back button
   #   And I tap the orderHistory button
   #   And I tap the addGroceries button
-  #   And I tap the addProduct button
-  #   Then the addProductsActionSheet view is displayed
   #   And I tap the addProduct button
   #   And I set the value appel on the search field
   #   And I tap the enter button
