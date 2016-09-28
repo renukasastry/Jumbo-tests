@@ -5,13 +5,7 @@ Feature: Shopping List Search
 
   @smoke_test
   Scenario: I want to search and add a vague term to the SL
-    And I tap the next button
-    And I set the value Amsterdam on the homeStore field
-    And I tap the enter button
-    And I tap the selectStoreCell view
-    And I tap the next button
-    And I tap the tooltip view
-    And I tap the tooltip view
+    Given I am on the myJumbo screen
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the addProduct button
@@ -24,13 +18,7 @@ Feature: Shopping List Search
 
   @smoke_test
   Scenario: I want to search and add a SKU to the SL
-    And I tap the next button
-    And I set the value Amsterdam on the homeStore field
-    And I tap the enter button
-    And I tap the selectStoreCell view
-    And I tap the next button
-    And I tap the tooltip view
-    And I tap the tooltip view
+    Given I am on the myJumbo screen
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the addProduct button
@@ -43,13 +31,7 @@ Feature: Shopping List Search
 
   @smoke_test
   Scenario: I want to search and add multiple items to my shopping list
-    And I tap the next button
-    And I set the value Amsterdam on the homeStore field
-    And I tap the enter button
-    And I tap the selectStoreCell view
-    And I tap the next button
-    And I tap the tooltip view
-    And I tap the tooltip view
+    Given I am on the myJumbo screen
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the addProduct button
