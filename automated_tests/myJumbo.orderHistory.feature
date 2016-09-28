@@ -14,6 +14,7 @@ Feature: View and amend orders
     And I tap the next button
     And I tap the tooltip view
     And I tap the tooltip view
+    And I tap the tooltip view
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the addProduct button
@@ -52,6 +53,7 @@ Feature: View and amend orders
     And I tap the login button
     And I tap the decline button
     And I tap the next button
+    And I tap the tooltip view
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the shoppingList button
@@ -98,6 +100,7 @@ Feature: View and amend orders
     And I tap the next button
     And I tap the tooltip view
     And I tap the tooltip view
+    And I tap the tooltip view
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the addProduct button
@@ -137,6 +140,7 @@ Feature: View and amend orders
     And I tap the login button
     And I tap the decline button
     And I tap the next button
+    And I tap the tooltip view
     And I tap the tooltip view
     And I tap the tooltip view
     And I tap the shoppingList button
@@ -182,6 +186,7 @@ Feature: View and amend orders
   #  	And I tap the next button    
   #  	And I tap the tooltip view
   #   And I tap the tooltip view
+  #   And I tap the tooltip view
   #   And I tap the shoppingList button
   #   And I tap the tooltip view
   #   And I tap the addProduct button
@@ -219,6 +224,7 @@ Feature: View and amend orders
   #  	And I tap the login button
   #  	And I tap the decline button
   #  	And I tap the next button
+  #   And I tap the tooltip view
   #   And I tap the tooltip view
   #   And I tap the tooltip view
   #   And I tap the shoppingList button
