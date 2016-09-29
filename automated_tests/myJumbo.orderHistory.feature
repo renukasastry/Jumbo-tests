@@ -78,7 +78,7 @@ Feature: View and amend orders
     And I tap the orderHistory button
     And I tap the orderDetail button
     And I tap the editOrder button
-    Then the editOrderActionSheet view is displayed
+    # TODO Align:    Then the editOrderActionSheet view is displayed
     And I tap the addProduct button
     And I tap the addProduct button
     And I set the value appel on the search field
@@ -165,7 +165,7 @@ Feature: View and amend orders
     And I tap the orderHistory button
     And I tap the orderDetail button
     And I tap the editOrder button
-    Then the editOrderActionSheet view is displayed
+    #TODO Align: Then the editOrderActionSheet view is displayed
     And I tap the addProduct button
     And I tap the addProduct button
     And I set the value appel on the search field
