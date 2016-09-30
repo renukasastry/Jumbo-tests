@@ -16,21 +16,21 @@ Feature: Barcode scanner
     And I tap the tooltip view
     And I tap the addProduct button
     And the barcodeScanner button is displayed
-    And I tap the barcodeScanner button 
+    And I tap the barcodeScanner button
     And I tap the allow button
-    Then the emptyState view is displayed 
-    And the camera view is displayed 
+    Then the emptyState view is displayed
+    And the camera view is displayed
 
-  @smoke_test  
+  @smoke_test
   Scenario: I want to access the barcode scanner from the Products screen and check if the barcode elements are displayed correctly
     Given I am on the myJumbo screen
     When I tap the products button
     And I tap the search button
     And the barcodeScanner button is displayed
-    And I tap the barcodeScanner button 
+    And I tap the barcodeScanner button
     And I tap the allow button
-    Then the emptyState view is displayed 
-    And the camera view is displayed 
+    Then the emptyState view is displayed
+    And the camera view is displayed
 
   @smoke_test
   Scenario: I want to access the barcode scanner from the Recipes Screen and check if the barcode elements are displayed correctly
@@ -38,23 +38,15 @@ Feature: Barcode scanner
     And I tap the recipes button
     And I tap the search button
     And the barcodeScanner button is displayed
-    And I tap the barcodeScanner button 
+    And I tap the barcodeScanner button
     And I tap the allow button
-    Then the emptyState view is displayed 
-    And the camera view is displayed 
+    Then the emptyState view is displayed
+    And the camera view is displayed
 
   @smoke_test
   Scenario: I want to access the barcode scanner from the Edit order Screen from order history and check if the barcode elements are displayed correctly
     Given I have a new registered B2C user
-    When I tap the login button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
-    And I tap the next button
-    And I tap the tooltip view
-    And I tap the tooltip view
-    And I tap the tooltip view
+    Given I am on the myJumbo screen
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the addProduct button
@@ -78,23 +70,15 @@ Feature: Barcode scanner
     And I tap the addGroceries button
     And I tap the addProduct button
     And the barcodeScanner button is displayed
-    And I tap the barcodeScanner button 
+    And I tap the barcodeScanner button
     And I tap the allow button
-    Then the emptyState view is displayed 
-    And the camera view is displayed 
+    Then the emptyState view is displayed
+    And the camera view is displayed
 
   @smoke_test
   Scenario: I want to access the barcode scanner from the Edit order Screen from order detail and check if the barcode elements are displayed correctly
     Given I have a new registered B2C user
-    When I tap the login button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
-    And I tap the next button
-    And I tap the tooltip view
-    And I tap the tooltip view
-    And I tap the tooltip view
+    Given I am on the myJumbo screen
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the addProduct button
@@ -120,10 +104,10 @@ Feature: Barcode scanner
     And I tap the addProduct button
     And I tap the addProduct button
     And the barcodeScanner button is displayed
-    And I tap the barcodeScanner button 
+    And I tap the barcodeScanner button
     And I tap the allow button
-    Then the emptyState view is displayed 
-    And the camera view is displayed 
+    Then the emptyState view is displayed
+    And the camera view is displayed
 
   @smoke_test
   Scenario: I want to deny access to use the camera and check if a message instructing how to enable it is displayed when I access the barcode scanner screen
@@ -132,10 +116,10 @@ Feature: Barcode scanner
     And I tap the tooltip view
     And I tap the addProduct button
     And the barcodeScanner button is displayed
-    And I tap the barcodeScanner button 
+    And I tap the barcodeScanner button
     And I tap the decline button
     Then the instructionMessage view is displayed
-    Then the camera view is not displayed 
+    Then the camera view is not displayed
 
 #	On iOS it is impossible to check two dialog's behind each other.
 #	Therefore the last scenario will always fail on iOS. 
