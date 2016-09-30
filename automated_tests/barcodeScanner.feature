@@ -46,7 +46,14 @@ Feature: Barcode scanner
   @smoke_test
   Scenario: I want to access the barcode scanner from the Edit order Screen from order history and check if the barcode elements are displayed correctly
     Given I have a new registered B2C user
-    Given I am on the myJumbo screen
+    When I tap the login button
+    And I set the property username on the emailAddress field
+    And I set the property password on the password field
+    And I tap the login button
+    And I tap the decline button
+    And I tap the next button
+    And I tap the tooltip view
+    And I tap the tooltip view
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the addProduct button
@@ -78,7 +85,14 @@ Feature: Barcode scanner
   @smoke_test
   Scenario: I want to access the barcode scanner from the Edit order Screen from order detail and check if the barcode elements are displayed correctly
     Given I have a new registered B2C user
-    Given I am on the myJumbo screen
+    When I tap the login button
+    And I set the property username on the emailAddress field
+    And I set the property password on the password field
+    And I tap the login button
+    And I tap the decline button
+    And I tap the next button
+    And I tap the tooltip view
+    And I tap the tooltip view
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the addProduct button
