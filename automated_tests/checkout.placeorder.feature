@@ -8,15 +8,10 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
 
   @smoke_test
   Scenario: I want to place an order with a product on my SL
-    And I tap the next button
-    And I tap the useLocation button
-    And I tap the allow button
-    And I tap the selectStoreCell view 
-    And I tap the next button
-    And I tap the tooltip view 
-    And I tap the tooltip view 
-    And I tap the login button
-    And I set the property emailAddress on the emailAddress field
+    Given I have a new registered B2C user
+    And I am on the myJumbo screen
+    When I tap the login button
+    And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline button
@@ -43,15 +38,10 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
 
   @smoke_test
   Scenario: I want to place an order with a vague term on my SL
-    And I tap the next button
-    And I tap the useLocation button
-    And I tap the allow button
-    And I tap the selectStoreCell view
-    And I tap the next button
-    And I tap the tooltip view 
-    And I tap the tooltip view 
-    And I tap the login button
-    And I set the property emailAddress on the emailAddress field
+    Given I have a new registered B2C user
+    And I am on the myJumbo screen
+    When I tap the login button
+    And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline button
@@ -81,15 +71,10 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
 
   @smoke_test_wip
   Scenario: I want to place an order with a recipe on my SL
-    And I tap the next button
-    And I tap the useLocation button
-    And I tap the allow button
-    And I tap the selectStoreCell view
-    And I tap the next button
-    And I tap the tooltip view 
-    And I tap the tooltip view
-    And I tap the login button
-    And I set the property emailAddress on the emailAddress field
+    Given I have a new registered B2C user
+    And I am on the myJumbo screen
+    When I tap the login button
+    And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline button
