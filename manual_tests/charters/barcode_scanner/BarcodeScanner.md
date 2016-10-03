@@ -21,7 +21,7 @@
 
 ##Test Ideas
 
-The following ideas are applicable to the barcode screen available in the Shopping List, Categories browsing, My Jumbo and Update order, when testing, keep in mind to check all these places:
+The following ideas are applicable to the barcode screen available in the Shopping List, Products section, Recipes section My Jumbo and Update order flow, when testing, keep in mind to check all these places:
 
 - Click to open the Barcode scanner screen for the very first time and the permission to use the camera should be requested (android >= 6, iOS > 7)
 - All barcodes scanner screens should have an empty state image
