@@ -72,13 +72,12 @@ Feature: Products Search
   @smoke_test
   Scenario: I want to search and add a vague term to the SL from the products section search 
     Given I have a new registered B2C user
+    And I am on the myJumbo screen
     When I tap the login button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline button
-    And I tap the tooltip view
-    And I tap the tooltip view
     And I tap the products button
     And I tap the addProduct button
     And I set the value appel on the search field
@@ -93,13 +92,12 @@ Feature: Products Search
   @smoke_test
   Scenario: I want to search and add a SKU to the SL from the products section search
     Given I have a new registered B2C user
+    And I am on the myJumbo screen
     When I tap the login button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline button
-    And I tap the tooltip view
-    And I tap the tooltip view
     And I tap the products button
     And I tap the addProduct button
     And I set the value appel on the search field
@@ -113,13 +111,12 @@ Feature: Products Search
   @smoke_test
   Scenario: I want to search and add multiple items to the SL from the products section search
     Given I have a new registered B2C user
+    And I am on the myJumbo screen
     When I tap the login button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline button
-    And I tap the tooltip view
-    And I tap the tooltip view
     And I tap the products button
     And I tap the addProduct button
     And I set the value appel on the search field
