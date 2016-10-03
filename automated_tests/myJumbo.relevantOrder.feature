@@ -8,33 +8,24 @@ Feture: Relavant Order Cell
 	
 	@smoke_test
 	Scenario: A new user should see the first order cell
-		When I tap the next button
-		And I tap the location button
-		And I tap the allow button
-		And I tap the select button
-		And I tap the next button
-		And I tap the tooltip view
-		And I tap the tooltip view
-		And I tap the login button
+		Given I have a new registered B2C user
+		And I am on the myJumbo screen
+		When I tap the login button
 		And I set the property username on the emailAddress field
 		And I set the property password on the password field
 		And I tap the login button
 		And I tap the decline button
-		Then the firstOrderCell view is displayed 
+		Then loggedIn button is displayed
+		And the firstOrderCell view is displayed 
 	
 	@smoke_test 	
 	Scenario: A user with completed orders should not see the first order cell
-		And I tap the next button
-		And I tap the location button
-		And I tap the allow button
-		And I tap the select button
-		And I tap the next button
-		And I tap the tooltip view
-		And I tap the tooltip view
-		And I tap the login button
+		And I am on the myJumbo screen
+		When I tap the login button
 		And I set the value pricebreakdown@mailinator.com on the emailAddress field
 		And I set the value qwerty on the password field
-		And I tap the login logged in button is displayed 
-	    And I am I am at the loginScreen
-	    Then the firstOrderCell view is not displayed
+		And I tap the login button
+		And I tap the decline button
+		Then loggedIn button is displayed
+		And the firstOrderCell view is displayed 
 	    
