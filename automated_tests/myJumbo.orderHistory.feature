@@ -6,15 +6,12 @@ Feature: View and amend orders
   @smoke_test
   Scenario: I want to amend my order from the order history as a B2C user
     Given I have a new registered B2C user
+    And I am on the myJumbo screen
     When I tap the login button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline button
-    And I tap the next button
-    And I tap the tooltip view
-    And I tap the tooltip view
-    And I tap the tooltip view
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the addProduct button
@@ -47,15 +44,12 @@ Feature: View and amend orders
   @smoke_test
   Scenario: I want to amend my order from the order detail page as a B2C user
     Given I have a new registered B2C user
+    And I am on the myJumbo screen
     When I tap the login button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline button
-    And I tap the next button
-    And I tap the tooltip view
-    And I tap the tooltip view
-    And I tap the tooltip view
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the addProduct button
@@ -91,15 +85,12 @@ Feature: View and amend orders
   @smoke_test
   Scenario: I want to amend my order from the order history as a B2B user
     Given I have a new registered B2B user
+    And I am on the myJumbo screen
     When I tap the login button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline button
-    And I tap the next button
-    And I tap the tooltip view
-    And I tap the tooltip view
-    And I tap the tooltip view
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the addProduct button
@@ -133,15 +124,12 @@ Feature: View and amend orders
   @smoke_test
   Scenario: I want to amend my order from the order detail page as a B2B user
     Given I have a new registered B2B user
+    And I am on the myJumbo screen
     When I tap the login button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline button
-    And I tap the next button
-    And I tap the tooltip view
-    And I tap the tooltip view
-    And I tap the tooltip view
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the addProduct button
