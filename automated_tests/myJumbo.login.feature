@@ -6,14 +6,9 @@ Feature: User login
  @smoke_test
  Scenario: I want to log in via my Jumbo
    Given I have a new registered B2C user
-   And I tap the next button
-   And I tap the useLocation button
-   And I tap the allow button
-   And I tap the selectStoreCell view
-   And I tap the next button
-   And I tap the tooltip view
-   And I tap the tooltip view
-   When I tap the login button
+   And I am on the myJumbo screen
+   When I tap the registerOrLogin button
+   And I tap the login button
    And I set the property username on the emailAddress field
    And I set the property password on the password field
    And I tap the login button
@@ -22,35 +17,44 @@ Feature: User login
 
  @smoke_test
  Scenario: I want to log in a B2C user via on-boarding
-   Given I have a new registered B2C user
-   When I tap the login button
-   And I set the property username on the emailAddress field
-   And I set the property password on the password field
-   And I tap the login button
-   And I tap the decline button
-   And I tap the next button
-   Then loggedIn button is displayed
+    Given I have a new registered B2C user
+    When I tap the login button
+    And I set the property username on the emailAddress field
+    And I set the property password on the password field
+    And I tap the login button
+    And I tap the decline button
+    And I tap the next button
+    And I tap the tooltip view
+    And I tap the tooltip view
+    And I tap the tooltip view
+    Then loggedIn button is displayed
 
  @smoke_test
  Scenario: I want to log in a B2B regular user via on-boarding
-   Given I have a new registered B2B user
-   When I tap the login button
-   And I set the property username on the emailAddress field
-   And I set the property password on the password field
-   And I tap the login button
-   And I tap the decline button
-   And I tap the next button
-   Then loggedIn button is displayed
+    Given I have a new registered B2B user
+    When I tap the login button
+    And I set the property username on the emailAddress field
+    And I set the property password on the password field
+    And I tap the login button
+    And I tap the decline button
+    And I tap the next button
+    And I tap the tooltip view
+    And I tap the tooltip view
+    And I tap the tooltip view
+    Then loggedIn button is displayed
 
  @smoke_test
  Scenario: I want to log in a B2B sub user via on-boarding
-   When I tap the login button
-   And I set the value Condigne+1@gmail.com on the emailAddress field
-   And I set the value cTsKYxMpZ1sAAAFTK6U3sHRp on the password field
-   And I tap the login button
-   And I tap the decline button
-   And I tap the next button
-   Then loggedIn button is displayed
+    When I tap the login button
+    And I set the value Condigne+1@gmail.com on the emailAddress field
+    And I set the value cTsKYxMpZ1sAAAFTK6U3sHRp on the password field
+    And I tap the login button
+    And I tap the decline button
+    And I tap the next button
+    And I tap the tooltip view
+    And I tap the tooltip view
+    And I tap the tooltip view
+    Then loggedIn button is displayed
 
  @smoke_test @skip-ios
  Scenario: I want to get an error response by logging in with a B2B master user via on-boarding
@@ -62,20 +66,21 @@ Feature: User login
 
  @smoke_test
  Scenario: I want to log out
-   Given I have a new registered B2C user
-   When I tap the login button
-   And I set the property username on the emailAddress field
-   And I set the property password on the password field
-   And I tap the login button
-   And I tap the decline button
-   And I tap the next button
-   And I tap the tooltip view
-   And I tap the tooltip view
-   And I tap the loggedIn button
-   And I tap the logout button
-   And I tap the ok button
-   Then I wait for app to restart
-   And the login button is displayed
+    Given I have a new registered B2C user
+    When I tap the login button
+    And I set the property username on the emailAddress field
+    And I set the property password on the password field
+    And I tap the login button
+    And I tap the decline button
+    And I tap the next button
+    And I tap the tooltip view
+    And I tap the tooltip view
+    And I tap the tooltip view
+    And I tap the loggedIn button
+    And I tap the logout button
+    And I tap the ok button
+    Then I wait for app to restart
+    And the login button is displayed
 
  @smoke_test @skip-ios
  Scenario: I want to get an error response by logging in with a user that has not been registered yet
