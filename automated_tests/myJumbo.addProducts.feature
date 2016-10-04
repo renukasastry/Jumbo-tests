@@ -5,8 +5,9 @@ Feature: MyJumbo Add Products
 
  Scenario: I want access the search functionality as a logged in user
    Given I have a new registered B2C user
-   Given I am on the myJumbo screen
-   When I tap the login button
+   And I am on the myJumbo screen
+   When I tap the registerOrLogin button
+   And I tap the login button
    And I set the property username on the emailAddress field
    And I set the property password on the password field
    And I tap the login button
