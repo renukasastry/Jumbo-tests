@@ -10,7 +10,8 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
   Scenario: I want to place an order with a product on my SL
     Given I have a new registered B2C user
     And I am on the myJumbo screen
-    When I tap the login button
+    When I tap the registerOrLogin button
+    And I tap the login button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
@@ -43,6 +44,7 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
   @oneclick
   Scenario: I to see if the express checkout is available
     Given I am on the myJumbo screen
+    When I tap the registerOrLogin button
     And I tap the login button
     And I set the value pricebreakdown@mailinator.com on the emailAddress field
     And I set the value qwerty on the password field
