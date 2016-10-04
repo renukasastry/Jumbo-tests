@@ -1,4 +1,4 @@
-Feture: Relavant Order Cell
+Feature: Relavant Order Cell
 	As a I have a new user
 	I want to be able to see the first order cell when I login
 	So I can be guided to place my first order
