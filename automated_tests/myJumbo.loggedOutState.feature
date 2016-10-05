@@ -8,8 +8,8 @@ Feature: myJumbo logged out state
   Scenario: I want to see the features on the logged out state of My Jumbo
     Given I am on the myJumbo screen 
     Then the firstOrderCell view is displayed
-    And the registerOrLogin button is dislayed 
-    And the myStore button is displayed 
+    And the registerOrLogin button is displayed
+    And the myStore button is displayed
     And the floater button is displayed
 
   @smoke_test
