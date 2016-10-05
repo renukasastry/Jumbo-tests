@@ -8,7 +8,7 @@ Feature: myJumbo logged out state
   Scenario: I want to search and add a vague term to the SL
     Given I am on the myJumbo screen
     Then the firstOrderCell view is displayed
-    And I tap the registerOrLogin button
+    And the registerOrLogin button is displayed
     And the myStore button is displayed
     And the floater button is displayed
 
