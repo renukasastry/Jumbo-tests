@@ -6,7 +6,7 @@ Feature: Home store selection
   @smoke_test
   Scenario: List of stores should be ordered by proximity to GPS location 
     When I tap the next button
-    And I tap the location button
+    And I tap the useLocation button
     And I tap the allow button
     Then the selectStoreCell view is displayed
 
