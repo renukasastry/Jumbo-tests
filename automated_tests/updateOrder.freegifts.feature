@@ -42,5 +42,7 @@ Feature: Free gifts should not be displayed on order update screen
     And I tap the orderDetail button
     And I tap the editOrder button
     And I tap the addProduct button
-    Then the value 7UP 0,5 Liter is not displayed on the updateOrderProductsList view 
+    Then the value Campina Halfvolle Melk Voordeelpak 2,4 Liter is displayed on the updateOrderProductsList view  
+    And the value Nutrilon Pepti met Pronutra 2 vanaf 6 Maanden 800g is displayed on the updateOrderProductsList view
+    And the value 7UP 0,5 Liter is not displayed on the updateOrderProductsList view 
     And the value Knorr Visbouillon 6 Tabletten 60g is not displayed on the updateOrderProductsList view 
