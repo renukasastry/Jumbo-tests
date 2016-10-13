@@ -15,8 +15,8 @@ Feature: Samples should not be available to be reordered
     And the orderHistory button is displayed
     And I tap the orderHistory button
     And I tap the orderDetail view
-    And the freeGift view is displayed 
-    And the sample view is displayed  
+    And the value 7UP 0,5 Liter is displayed on the orderProductsList view 
+    And the value Knorr Visbouillon 6 Tabletten 60g is displayed on the orderProductsList view
     And I tap the reorderProducts button
-    Then the freeGift view is displayed 
-    And the sample view is not displayed
+    Then the value 7UP 0,5 Liter is displayed on the reorderProductsList view
+    And the value Knorr Visbouillon 6 Tabletten 60g is not displayed on the reorderProductsList view
