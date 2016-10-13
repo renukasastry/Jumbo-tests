@@ -21,10 +21,10 @@ Feature: Free gifts should not be displayed on order update screen
     And I tap the addProduct button
     And I set the value 74004PAK on the search field
     And I tap the enter button
-    And I tap the skuPlus button
+    And I tap the skuPlusNormal1 button
     And I set the value 74412PAK on the search field
     And I tap the enter button
-    And I tap the skuPlusNo button
+    And I tap the skuPlusNormal2 button
     And I tap the close button    
     And I tap the checkout button
     And I tap the choosePup button
