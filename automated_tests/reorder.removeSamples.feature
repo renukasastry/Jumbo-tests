@@ -4,7 +4,7 @@ Feature: Samples should not be available to be reordered
   so I don't have the impression that I can add samples to my shopping list
 
   @smoke_test
-  Scenario: Samples received from previous orders should not be able to be added to shopping list
+  Scenario: Samples received from previous orders should not be available to be added to the shopping list
     Given I am on the myJumbo screen
     When I tap the registerOrLogin button
     And I tap the login button
