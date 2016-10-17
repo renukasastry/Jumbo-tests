@@ -11,6 +11,7 @@ Feature: Samples should not be available to be reordered
     And I set the value 4350@mail.com on the emailAddress field
     And I set the value qwerty on the password field
     And I tap the login button
+    And I tap the iosDecline button
     And the orderHistory button is displayed
     And I tap the orderHistory button
     And I tap the orderDetail button
