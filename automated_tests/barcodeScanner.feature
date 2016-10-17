@@ -14,7 +14,7 @@ Feature: Barcode scanner
     Given I am on the myJumbo screen
     When I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the myJumboFloater button
     And the barcodeScanner button is displayed
     And I tap the barcodeScanner button
     And I tap the allow button
@@ -25,7 +25,7 @@ Feature: Barcode scanner
   Scenario: I want to access the barcode scanner from the Products screen and check if the barcode elements are displayed correctly
     Given I am on the myJumbo screen
     When I tap the products button
-    And I tap the addProduct button
+    And I tap the myProductFloater button
     And the barcodeScanner button is displayed
     And I tap the barcodeScanner button
     And I tap the allow button
@@ -36,7 +36,7 @@ Feature: Barcode scanner
   Scenario: I want to access the barcode scanner from the Recipes Screen and check if the barcode elements are displayed correctly
     Given I am on the myJumbo screen
     And I tap the recipes button
-    And I tap the search button
+    And I tap the myRecipeFloater button
     And the barcodeScanner button is displayed
     And I tap the barcodeScanner button
     And I tap the allow button
@@ -55,7 +55,7 @@ Feature: Barcode scanner
     And I tap the decline button
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value bier on the search field
     And I tap the enter button
     And I tap the skuPlus button
@@ -81,7 +81,7 @@ Feature: Barcode scanner
     Then the emptyState view is displayed
     And the camera view is displayed
 
-  @smoke_test @thomas
+  @smoke_test
   Scenario: I want to access the barcode scanner from the Edit order Screen from order detail and check if the barcode elements are displayed correctly
     Given I have a new registered B2C user
     And I am on the myJumbo screen
@@ -93,7 +93,7 @@ Feature: Barcode scanner
     And I tap the decline button
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value bier on the search field
     And I tap the enter button
     And I tap the skuPlus button

@@ -10,12 +10,12 @@ Feature: myJumbo logged out state
     Then the firstOrderCell view is displayed
     And the registerOrLogin button is displayed
     And the myStore button is displayed
-    And the floater button is displayed
+    And the myJumboFloater button is displayed
 
   @smoke_test
   Scenario: I want to see the loging and registration options on the logged out state of My Jumbo
     Given I am on the myJumbo screen 
-    When I tap registerOrLogin button is dislayed 
+    When I tap the registerOrLogin button
     Then the login button is displayed 
     And the registerB2C button is displayed 
     And the registerB2B button is displayed 
