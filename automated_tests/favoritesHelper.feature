@@ -12,7 +12,7 @@ Feature: Favorite Helper
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
-    And I tap the decline button
+    And I tap the iosDecline button
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the addProduct button
@@ -33,4 +33,6 @@ Feature: Favorite Helper
     And I tap the firstAvailableTimeSlot button
     And I tap the payAtPickUp button
     And I tap the ok button
-    Then 3 productImages are displayed on favoritesHelper view
+    Then the value Campina Halfvolle Melk Voordeelpak 2,4 Liter is displayed on the favoritesHelper view
+    And the value 7UP 0,5 Liter is displayed on the favoritesHelper view 
+    And the value Knorr Visbouillon 6 Tabletten 60g is not displayed on the favoritesHelper view 
