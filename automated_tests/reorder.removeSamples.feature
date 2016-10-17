@@ -3,7 +3,7 @@ Feature: Samples should not be available to be reordered
   I should not see the samples when I update my order
   so I don't have the impression that I can add samples to my shopping list
 
-  @smoke_test @thomas
+  @smoke_test
   Scenario: Samples received from previous orders should not be available to be added to the shopping list
     Given I am on the myJumbo screen
     When I tap the registerOrLogin button
