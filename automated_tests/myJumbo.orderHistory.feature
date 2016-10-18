@@ -17,7 +17,7 @@ Feature: View and amend orders
     And the orderHistory button is not displayed
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the myJumboFloater button
     And I set the value bier on the search field
     And I tap the enter button
     And I tap the skuPlus button
@@ -36,7 +36,7 @@ Feature: View and amend orders
     And I tap the back button
     And I tap the orderHistory button
     And I tap the addGroceries button
-    And I tap the addProduct button
+    And I tap the changeOrderFloater button
     And I set the value appel on the search field
     And I tap the enter button
     And I tap the skuPlus button
@@ -44,7 +44,7 @@ Feature: View and amend orders
     Then the value Nieuw in je bestelling is displayed on the newSection view
     # Add steps to actually change the order
 
-  @smoke_test
+  @smoke_test @nuri
   Scenario: I want to amend my order from the order detail page as a B2C user
     Given I have a new registered B2C user
     And I am on the myJumbo screen
@@ -58,7 +58,7 @@ Feature: View and amend orders
     And the orderHistory button is not displayed
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value bier on the search field
     And I tap the enter button
     And I tap the skuPlus button
@@ -79,7 +79,7 @@ Feature: View and amend orders
     And I tap the orderDetail button
     And I tap the editOrder button
     And I tap the addProduct button
-    And I tap the addProduct button
+    And I tap the changeOrderFloater button
     And I set the value appel on the search field
     And I tap the enter button
     And I tap the skuPlus button
@@ -102,7 +102,7 @@ Feature: View and amend orders
     And the orderHistory button is not displayed
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value bier on the search field
     And I tap the enter button
     And I tap the skuPlus button
@@ -121,7 +121,7 @@ Feature: View and amend orders
     And I tap the back button
     And I tap the orderHistory button
     And I tap the addGroceries button
-    And I tap the addProduct button
+    And I tap the changeOrderFloater button
     And I set the value appel on the search field
     And I tap the enter button
     And I tap the skuPlus button
@@ -144,7 +144,7 @@ Feature: View and amend orders
     And the orderHistory button is not displayed
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value bier on the search field
     And I tap the enter button
     And I tap the skuPlus button
@@ -165,7 +165,7 @@ Feature: View and amend orders
     And I tap the orderDetail button
     And I tap the editOrder button
     And I tap the addProduct button
-    And I tap the addProduct button
+    And I tap the changeOrderFloater button
     And I set the value appel on the search field
     And I tap the enter button
     And I tap the skuPlus button
@@ -275,7 +275,7 @@ Feature: View and amend orders
     And the orderHistory button is not displayed
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value bier on the search field
     And I tap the enter button
     And I tap the skuPlus button
