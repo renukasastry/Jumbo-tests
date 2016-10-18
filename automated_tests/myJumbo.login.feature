@@ -15,7 +15,7 @@ Feature: User login
    And I tap the decline button
    Then loggedIn button is displayed
 
- @smoke_test @not_working_tooltip_issue @thomas
+ @smoke_test 
  Scenario: I want to log in a B2C user via on-boarding
     Given I have a new registered B2C user
     When I tap the login button
