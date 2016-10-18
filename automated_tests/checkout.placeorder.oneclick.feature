@@ -18,13 +18,14 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the decline button
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value bier on the search field
     And I tap the enter button
     And I tap the skuPlus button
     And I tap the close button    
     And I tap the checkout button
     And I tap the choosePup button
+    And I tap the allow button
     And I tap the searchPup button
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
@@ -33,7 +34,7 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the payAtPickUp button
     And I tap the ok button
     And I tap the next button
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value bier on the search field
     And I tap the enter button
     And I tap the skuPlus button
@@ -42,11 +43,11 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And the newOrder button is displayed
 
   @oneclick
-  Scenario: I to see if the express checkout is available
+  Scenario: I want to see if the express checkout is available
     Given I am on the myJumbo screen
     When I tap the registerOrLogin button
     And I tap the login button
-    And I set the value pricebreakdown@mailinator.com on the emailAddress field
+    And I set the value oneclickslot+1@mail.com on the emailAddress field
     And I set the value qwerty on the password field
     And I tap the login button
     And I tap the shoppingList button

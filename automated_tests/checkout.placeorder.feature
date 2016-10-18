@@ -18,13 +18,14 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the decline button
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value bier on the search field
     And I tap the enter button
     And I tap the skuPlus button
     And I tap the close button    
     And I tap the checkout button
     And I tap the choosePup button
+    And I tap the allow button
     And I tap the searchPup button
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
@@ -49,7 +50,7 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the decline button
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value bier on the search field
     And I tap the enter button
     And I tap the vagueTermPlus button
@@ -57,8 +58,9 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the checkout button
     And I tap the magnifyingGlass button
     And I tap the replace button
-    And I tap the confirm sku button
+    And I tap the confirmSku button
     And I tap the choosePup button
+    And I tap the allow button
     And I tap the searchPup button 
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
@@ -82,6 +84,9 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the login button
     And I tap the decline button
     And I tap the recipes tab
+    And I tap the myRecipeFloater button
+    And I set the value kaas on the searchItemName field
+    And I tap the enter button
     And I tap the recipe button
     And I tap the addToShoppingList button
     And I tap the addIngredients button
@@ -90,8 +95,9 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the checkout button
     And I tap the magnifyingGlass button
     And I tap the replace button
-    And I tap the confirm sku button
+    And I tap the confirmSku button
     And I tap the choosePup button
+    And I tap the allow button
     And I tap the searchPup button
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
@@ -101,5 +107,6 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the ok button
     And I tap the next button
     And I tap the back button
+    And I tap the myJumbo tab
     And I tap the orderHistory button
     Then orderDetail button is displayed
