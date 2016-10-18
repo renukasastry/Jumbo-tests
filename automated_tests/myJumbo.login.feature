@@ -3,7 +3,7 @@ Feature: User login
   I want to be able to log in
   so that I can place orders
 
- @smoke_test @thomas
+ @smoke_test
  Scenario: I want to log in via my Jumbo
    Given I have a new registered B2C user
    And I am on the myJumbo screen
@@ -15,7 +15,7 @@ Feature: User login
    And I tap the decline button
    Then loggedIn button is displayed
 
- @smoke_test @thomas
+ @smoke_test
  Scenario: I want to log in a B2C user via on-boarding
     Given I have a new registered B2C user
     When I tap the login button
@@ -29,7 +29,7 @@ Feature: User login
     And I tap the tooltip view
     Then loggedIn button is displayed
 
- @smoke_test @thomas
+ @smoke_test
  Scenario: I want to log in a B2B regular user via on-boarding
     Given I have a new registered B2B user
     When I tap the login button
@@ -43,7 +43,7 @@ Feature: User login
     And I tap the tooltip view
     Then loggedIn button is displayed
 
- @smoke_test @thomas
+ @smoke_test
  Scenario: I want to log in a B2B sub user via on-boarding
     When I tap the login button
     And I set the value Condigne+1@gmail.com on the emailAddress field
@@ -56,7 +56,7 @@ Feature: User login
     And I tap the tooltip view
     Then loggedIn button is displayed
 
- @smoke_test @skip-ios @thomas
+ @smoke_test @skip-ios
  Scenario: I want to get an error response by logging in with a B2B master user via on-boarding
     When I tap the login button
     And I set the value icemaster3@icemobile.com on the emailAddress field
@@ -64,7 +64,7 @@ Feature: User login
     And I tap the login button
     Then the loginNotAllowed label is displayed
 
- @smoke_test @thomas
+ @smoke_test
  Scenario: I want to log out
     Given I have a new registered B2C user
     When I tap the login button
@@ -82,7 +82,7 @@ Feature: User login
     Then I wait for app to restart
     And the login button is displayed
 
- @smoke_test @skip-ios @thomas
+ @smoke_test @skip-ios
  Scenario: I want to get an error response by logging in with a user that has not been registered yet
    When I tap the login button
    And I set the value not_registered_user@icemobile.com on the emailAddress field
@@ -90,7 +90,7 @@ Feature: User login
    And I tap the login button
    Then the invalidUsernameOrPassword label is displayed
 
- @smoke_test @skip-ios @thomas
+ @smoke_test @skip-ios
  Scenario: I want to get an error response by logging in with a user that has an incorrect password
    Given I have a new registered B2C user
    When I tap the login button
