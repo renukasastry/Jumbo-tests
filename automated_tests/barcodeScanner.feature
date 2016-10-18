@@ -25,7 +25,7 @@ Feature: Barcode scanner
   Scenario: I want to access the barcode scanner from the Products screen and check if the barcode elements are displayed correctly
     Given I am on the myJumbo screen
     When I tap the products button
-    And I tap the myProductFloater button
+    And I tap the productFloater button
     And the barcodeScanner button is displayed
     And I tap the barcodeScanner button
     And I tap the allow button
@@ -36,7 +36,7 @@ Feature: Barcode scanner
   Scenario: I want to access the barcode scanner from the Recipes Screen and check if the barcode elements are displayed correctly
     Given I am on the myJumbo screen
     And I tap the recipes button
-    And I tap the myRecipeFloater button
+    And I tap the recipeFloater button
     And the barcodeScanner button is displayed
     And I tap the barcodeScanner button
     And I tap the allow button
