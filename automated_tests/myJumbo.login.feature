@@ -29,7 +29,7 @@ Feature: User login
     And I tap the tooltip view
     Then loggedIn button is displayed
 
- @smoke_test @not_working_tooltip_issue
+ @smoke_test
  Scenario: I want to log in a B2B regular user via on-boarding
     Given I have a new registered B2B user
     When I tap the login button
