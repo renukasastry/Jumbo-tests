@@ -44,7 +44,7 @@ Feature: View and amend orders
     Then the value Nieuw in je bestelling is displayed on the newSection view
     # Add steps to actually change the order
 
-  @smoke_test @nuri
+  @smoke_test
   Scenario: I want to amend my order from the order detail page as a B2C user
     Given I have a new registered B2C user
     And I am on the myJumbo screen
