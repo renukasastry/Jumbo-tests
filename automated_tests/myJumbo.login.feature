@@ -93,7 +93,7 @@ Feature: User login
  @smoke_test @skip-ios @thomas
  Scenario: I want to get an error response by logging in with a user that has an incorrect password
    Given I have a new registered B2C user
-   When I tap the login buttongit pu
+   When I tap the login button
    And I set the property username on the emailAddress field
    And I set the value qqqqqq on the password field
    And I tap the login button
