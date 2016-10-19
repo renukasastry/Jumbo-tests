@@ -15,7 +15,7 @@ Feature: Favorite Helper
     And I tap the decline button
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value 74004PAK on the search field
     And I tap the enter button
     And I tap the skuPlusNormal1 button
