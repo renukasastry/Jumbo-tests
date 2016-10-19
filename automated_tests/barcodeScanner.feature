@@ -9,7 +9,7 @@ Feature: Barcode scanner
 #	These settings can be reset under Settings -> General  -> Reset -> Reset Location & Privacy
 
 
-  @smoke_test
+  @smoke_test 
   Scenario: I want to access the barcode screen from the Shopping List screen and check if all the elements are displayed correctly
     Given I am on the myJumbo screen
     When I tap the shoppingList button
@@ -113,8 +113,9 @@ Feature: Barcode scanner
     And I tap the orderHistory button
     And I tap the orderDetail button
     And I tap the editOrder button
-    And I tap the addProduct button
-    And I tap the addProduct button
+    And I tap the actionsheetAddProduct button
+    And the changeOrderFloater button is displayed
+    And I tap the changeOrderFloater button
     And the barcodeScanner button is displayed
     And I tap the barcodeScanner button
     And I tap the allow button

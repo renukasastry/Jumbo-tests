@@ -84,7 +84,7 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the login button
     And I tap the decline button
     And I tap the recipes tab
-    And I tap the myRecipeFloater button
+    And I tap the recipeFloater button
     And I set the value kaas on the searchItemName field
     And I tap the enter button
     And I tap the recipe button
