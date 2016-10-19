@@ -74,7 +74,7 @@ Feature: Barcode scanner
     And I tap the back button
     And I tap the orderHistory button
     And I tap the addGroceries button
-    And I tap the addProduct button
+    And I tap the changeOrderFloater button
     And the barcodeScanner button is displayed
     And I tap the barcodeScanner button
     And I tap the allow button
