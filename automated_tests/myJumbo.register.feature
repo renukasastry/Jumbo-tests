@@ -3,7 +3,7 @@ Feature: User registration
   I want to be able to go through the register and onboarding flow
   so I can use the Jumbo app
 
-  @smoke_test @nuri
+  @smoke_test
   Scenario: I want to register a new B2C user
     Given I have a new user email address
     When I tap the registerb2c button
