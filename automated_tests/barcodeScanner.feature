@@ -9,7 +9,7 @@ Feature: Barcode scanner
 #	These settings can be reset under Settings -> General  -> Reset -> Reset Location & Privacy
 
 
-  @smoke_test 
+  @smoke_test
   Scenario: I want to access the barcode screen from the Shopping List screen and check if all the elements are displayed correctly
     Given I am on the myJumbo screen
     When I tap the shoppingList button
@@ -24,7 +24,7 @@ Feature: Barcode scanner
   @smoke_test
   Scenario: I want to access the barcode scanner from the Products screen and check if the barcode elements are displayed correctly
     Given I am on the myJumbo screen
-    When I tap the products button
+    When I tap the products tab
     And I tap the productFloater button
     And the barcodeScanner button is displayed
     And I tap the barcodeScanner button
@@ -35,7 +35,7 @@ Feature: Barcode scanner
   @smoke_test
   Scenario: I want to access the barcode scanner from the Recipes Screen and check if the barcode elements are displayed correctly
     Given I am on the myJumbo screen
-    And I tap the recipes button
+    And I tap the recipes tab
     And I tap the recipeFloater button
     And the barcodeScanner button is displayed
     And I tap the barcodeScanner button
@@ -48,7 +48,7 @@ Feature: Barcode scanner
     Given I have a new registered B2C user
     And I am on the myJumbo screen
     When I tap the registerOrLogin button
-    And I tap the login button
+    And I tap the actionsheetLogin button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
@@ -86,7 +86,7 @@ Feature: Barcode scanner
     Given I have a new registered B2C user
     And I am on the myJumbo screen
     When I tap the registerOrLogin button
-    And I tap the login button    
+    And I tap the actionsheetLogin button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button

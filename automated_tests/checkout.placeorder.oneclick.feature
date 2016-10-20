@@ -11,7 +11,7 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     Given I have a new registered B2C user
     And I am on the myJumbo screen
     When I tap the registerOrLogin button
-    And I tap the login button
+    And I tap the actionsheetLogin button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
@@ -46,7 +46,7 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
   Scenario: I want to see if the express checkout is available
     Given I am on the myJumbo screen
     When I tap the registerOrLogin button
-    And I tap the login button
+    And I tap the actionsheetLogin button
     And I set the value oneclickslot+1@mail.com on the emailAddress field
     And I set the value qwerty on the password field
     And I tap the login button
