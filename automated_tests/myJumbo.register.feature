@@ -26,11 +26,11 @@ Feature: User registration
     And I tap the enter button
     And I tap the selectStoreCell view
     And I tap the next button
-    Then the shoppingListTooltip is displayed
+#    Then the shoppingListTooltip is displayed
     And I tap the tooltip view
-    Then the menuTooltip is displayed
+#    Then the menuTooltip is displayed
     And I tap the tooltip view
-    Then the productsTooltip is displayed
+#    Then the productsTooltip is displayed
     And I tap the tooltip view
     Then loggedIn button is displayed
 
@@ -41,7 +41,7 @@ Feature: User registration
     And I tap the ok button
     And I set the property newUsername on the emailAddress field
     And I set the value qwerty on the password field
-    And I tap the register button
+    And I tap the registerCredentials button
     And I set the value 34359257 on the kvk field
     And I tap the registerKvkLookUp button
     And I tap the registerKvk button
@@ -50,19 +50,19 @@ Feature: User registration
     And I set the value Cubie on the surname field
     And I set the value 6123456789 on the phoneNumber field
     And I tap the registerName button
-    And I tap the next button
+    And I tap the saveInvoiceAddress button
     And I tap the termsAndConditions checkbox
-    And I tap the next button
-    And I tap the paymentInfo button
+    And I tap the registerDelivery button
+    And I tap the paymentInfoOk button
     And I tap the decline button
-  	And I the value Amsterdam on the homeStore field
+  	And I set the value Amsterdam on the homeStore field
     And I tap the enter button
     And I tap the selectStoreCell view
     And I tap the next button
-    Then the shoppingListTooltip is displayed
+#    Then the shoppingListTooltip is displayed
     And I tap the tooltip view
-    Then the menuTooltip is displayed
+#    Then the menuTooltip is displayed
     And I tap the tooltip view
-    Then the productsTooltip is displayed
+#    Then the productsTooltip is displayed
     And I tap the tooltip view
     Then loggedIn button is displayed
