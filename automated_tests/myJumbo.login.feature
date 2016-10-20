@@ -16,7 +16,7 @@ Feature: User login
    Then loggedIn button is displayed
 
 
- @smoke_test 
+ @smoke_test
  Scenario: I want to log in a B2C user via on-boarding
     Given I have a new registered B2C user
     When I tap the login button
@@ -50,7 +50,7 @@ Feature: User login
     And I set the value Condigne+1@gmail.com on the emailAddress field
     And I set the value cTsKYxMpZ1sAAAFTK6U3sHRp on the password field
     And I tap the login button
-    And I tap the iosdecline button
+    And I tap the iosDecline button
 #    And I tap the next button
     And I tap the tooltip view
     And I tap the tooltip view
