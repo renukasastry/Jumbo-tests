@@ -8,20 +8,20 @@ Feature: Shopping List Search
     Given I am on the myJumbo screen
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value appel on the search field
     And I tap the enter button
     And the value appel is displayed on the vagueTermTitle field
     And I tap the vagueTermPlus button
     And I tap the close button
-    Then the value appel is displayed on the shoppingListItem view
+    Then the value appel is displayed on the vagueTermTitle field
 
   @smoke_test
   Scenario: I want to search and add a SKU to the SL
     Given I am on the myJumbo screen
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value appel on the search field
     And I tap the enter button
     And the value appel is displayed on the vagueTermTitle field
@@ -34,7 +34,7 @@ Feature: Shopping List Search
     Given I am on the myJumbo screen
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value appel on the search field
     And I tap the enter button
     And the value appel is displayed on the vagueTermTitle field
@@ -43,7 +43,7 @@ Feature: Shopping List Search
     And I tap the enter button
     And I tap the skuPlus button
     And I tap the close button
-    Then the value appel is displayed on the shoppingListItem view
+    Then the value appel is displayed on the vagueTermTitle field
     And the skuCell view is displayed
 
 # Logged in scenarios
@@ -52,40 +52,39 @@ Feature: Shopping List Search
     Given I have a new registered B2C user
     And I am on the myJumbo screen
     When I tap the registerOrLogin button
-    And I tap the login button
+    And I tap the actionsheetLogin button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline button
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value appel on the search field
     And I tap the enter button
     And the value appel is displayed on the vagueTermTitle field
     And I tap the vagueTermPlus button
     And I tap the close button
-    Then the value appel is displayed on the shoppingListItem view
+    Then the value appel is displayed on the vagueTermTitle field
 
   @smoke_test
   Scenario: I want to search and add a SKU to the SL
     Given I have a new registered B2C user
     And I am on the myJumbo screen
     When I tap the registerOrLogin button
-    And I tap the login button
+    And I tap the actionsheetLogin button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline button
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value appel on the search field
     And I tap the enter button
     And the value appel is displayed on the vagueTermTitle field
     And I tap the skuPlus button
     And I tap the close button
-    Then the value appel is displayed on the shoppingListItem view
     Then the skuCell view is displayed
 
   @smoke_test
@@ -93,20 +92,21 @@ Feature: Shopping List Search
     Given I have a new registered B2C user
     And I am on the myJumbo screen
     When I tap the registerOrLogin button
-    And I tap the login button
+    And I tap the actionsheetLogin button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
     And I tap the decline button
     And I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the addProduct button
+    And I tap the shoppingListAddProduct button
     And I set the value appel on the search field
     And I tap the enter button
     And the value appel is displayed on the vagueTermTitle field
-    And I tap the skuPlus button
+    And I tap the vagueTermPlus button
     And I set the value bier on the search field
     And I tap the enter button
     And I tap the skuPlus button
     And I tap the close button
+    Then the value appel is displayed on the vagueTermTitle field
     And the skuCell view is displayed

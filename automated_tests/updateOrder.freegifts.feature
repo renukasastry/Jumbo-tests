@@ -6,11 +6,11 @@ Feature: Free gifts should not be displayed on order update screen
   Background:
     Given I have a new registered B2C user
 
-  @smoke_test
+  @smoke_test @nuri
   Scenario: I want to updated an order and not see the free gifts and samples on order update screen
     And I am on the myJumbo screen
     When I tap the registerOrLogin button
-    And I tap the login button
+    And I tap the actionsheetLogin button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
@@ -40,7 +40,7 @@ Feature: Free gifts should not be displayed on order update screen
     And I tap the orderHistory button
     And I tap the orderDetail button
     And I tap the editOrder button
-    And I tap the addProduct button
+    And I tap the actionsheetAddProduct button
     Then the value Campina Halfvolle Melk Voordeelpak 2,4 Liter is displayed on the updateOrderProductsList view
     And the value Nutrilon Pepti met Pronutra 2 vanaf 6 Maanden 800g is displayed on the updateOrderProductsList view
     And the value 7UP 0,5 Liter is not displayed on the updateOrderProductsList view 
