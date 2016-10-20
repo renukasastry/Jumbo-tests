@@ -9,29 +9,29 @@ Feature: New onboarding screen
 		And the registerOrLogin button is displayed
 		And the skip button is displayed
 		When I swipeLeft
-		Then the onboarding2 screen screen is displayed
+		Then the onboarding2 screen is displayed
 		And the registerOrLogin button is displayed
 		And the skip button is displayed
 		When I swipeLeft
-		Then the onboarding3 screen screen is displayed
+		Then the onboarding3 screen is displayed
 		And the registerOrLogin button is displayed
 		And the skip button is displayed
 		When I swipeLeft
-		Then the onboarding4 screen screen is displayed
+		Then the onboarding4 screen is displayed
 		And the registerOrLogin button is displayed
 		And the skip button is displayed
 		When I swipeLeft
-		Then the onboarding5 screen screen is displayed
+		Then the onboarding5 screen is displayed
 		And the registerOrLogin button is displayed
 		And the skip button is displayed
 		When I swipeLeft
 		Then the onboarding5 screen is displayed
 		When I swipe right
-		Then the onboarding4 screen screen is displayed
+		Then the onboarding4 screen is displayed
 		When I swipe right
-		Then the onboarding3 screen screen is displayed
+		Then the onboarding3 screen is displayed
 		When I swipe right
-		Then the onboarding2 screen screen is displayed
+		Then the onboarding2 screen is displayed
 		When I swipe right
 		Then the onboarding1 screen is displayed
 		When I swipe right
@@ -42,16 +42,32 @@ Feature: New onboarding screen
 		And the registerOrLogin button is displayed
 		When I tap the registerOrLogin button
 		And the actionSheet view is displayed
-		And I tap the login button
+		And I tap the actionsheetLogin button
 		Then the emailAddress field is displayed
     	And the password field is displayed
 		And I tap the close button
 		Then the onboarding1 screen is displayed 
 		And I tap the registerOrLogin button
-		And I tap the registerb2c button
+		And I tap the actionsheetRegisterB2C button
 		And I tap the ok button
 		Then the emailAddress field is displayed
     	And the password field is displayed
     	And I tap the close button
     	And I tap the yes button #button to confirm closing the registration view
     	Then the onboarding1 screen is displayed  
+    	And I tap the registerOrLogin button
+		And I tap the actionsheetRegisterB2B button
+		And I tap the ok button
+		Then the emailAddress field is displayed
+    	And the password field is displayed
+    	And I tap the close button
+    	And I tap the yes button #button to confirm 
+    	Then the onboarding1 screen is displayed  
+
+
+
+
+
+
+
+
