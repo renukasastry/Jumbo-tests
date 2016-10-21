@@ -43,7 +43,7 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And the newOrder button is displayed
 
   @oneclick @nuri
-  Scenario: I want to see if the express checkout is available when the product bier is already in shopping basket
+  Scenario: I want to see if the express checkout is available when I have something in my shopping list
     Given I am on the myJumbo screen
     When I tap the registerOrLogin button
     And I tap the actionsheetLogin button
