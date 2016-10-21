@@ -7,7 +7,7 @@ Feature: Samples should not be available to be reordered
   Scenario: Samples received from previous orders should not be available to be added to the shopping list
     Given I am on the myJumbo screen
     When I tap the registerOrLogin button
-    And I tap the login button
+    And I tap the actionsheetLogin button
     And I set the value 4350@mail.com on the emailAddress field
     And I set the value qwerty on the password field
     And I tap the login button

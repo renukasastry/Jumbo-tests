@@ -10,7 +10,7 @@ Feature: Free gifts should not be displayed on order update screen
   Scenario: I want to updated an order and not see the free gifts and samples on order update screen
     And I am on the myJumbo screen
     When I tap the registerOrLogin button
-    And I tap the login button
+    And I tap the actionsheetLogin button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button

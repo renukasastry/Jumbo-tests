@@ -10,7 +10,7 @@ Feature: Relavant Order Cell
 	Scenario: A new user should see the first order cell
 		Given I have a new registered B2C user
 		And I am on the myJumbo screen
-		When I tap the login button
+		When I tap the actionsheetLogin button
 		And I set the property username on the emailAddress field
 		And I set the property password on the password field
 		And I tap the login button
