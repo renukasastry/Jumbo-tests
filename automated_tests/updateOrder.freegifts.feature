@@ -6,7 +6,7 @@ Feature: Free gifts should not be displayed on order update screen
   Background:
     Given I have a new registered B2C user
 
-  @smoke_test @nuri
+  @smoke_test
   Scenario: I want to updated an order and not see the free gifts and samples on order update screen
     And I am on the myJumbo screen
     When I tap the registerOrLogin button

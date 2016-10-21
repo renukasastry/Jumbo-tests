@@ -16,7 +16,7 @@ Feature: Shopping List Search
     And I tap the close button
     Then the value appel is displayed on the vagueTermTitle field
 
-  @smoke_test
+  @smoke_test 
   Scenario: I want to search and add a SKU to the SL
     Given I am on the myJumbo screen
     And I tap the shoppingList button
@@ -47,7 +47,7 @@ Feature: Shopping List Search
     And the skuCell view is displayed
 
 # Logged in scenarios
-  @smoke_test
+  @smoke_test 
   Scenario: I want to search and add a vague term to the SL
     Given I have a new registered B2C user
     And I am on the myJumbo screen
@@ -87,7 +87,7 @@ Feature: Shopping List Search
     And I tap the close button
     Then the skuCell view is displayed
 
-  @smoke_test
+  @smoke_test 
   Scenario: I want to search and add multiple items to my shopping list
     Given I have a new registered B2C user
     And I am on the myJumbo screen
