@@ -6,7 +6,7 @@ Feature: Home store selection
   @smoke_test
   Scenario: List of stores should be ordered by proximity to GPS location 
     When I tap the next button
-    And I tap the location button
+    And I tap the useLocation button
     And I tap the allow button
     Then the selectStoreCell view is displayed
 
@@ -20,9 +20,9 @@ Feature: Home store selection
   @smoke_test
   Scenario: Empty state screen should be displayed when the searched address returns no matches
     When I tap the next button
-    And I set the value Austria on the homeStore field
+    And I set the value gdyihjf on the homeStore field
     And I tap the enter button
-    Then the emptyState view is displayed
+    Then the emptyStateView view is displayed
 
   @smoke_test
   Scenario: Welcome screen should be displayed after selecting a home store
@@ -42,4 +42,5 @@ Feature: Home store selection
     And I tap the next button
     And I tap the tooltip view
     And I tap the tooltip view
-    Then the login button is displayed
+    And I tap the tooltip view
+    Then the registerOrLogin button is displayed
