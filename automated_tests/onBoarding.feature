@@ -37,7 +37,6 @@ Feature: New onboarding screen
 		When I swipe right the onBoarding view
 		Then the value Welkomn is displayed on the onboardingTitle view
 
-
 	Scenario: Buttons on the onboarding screen should trigger the expected actions
 		Given I am on the onboardingWelcome view
 		And the registerOrLogin button is displayed
