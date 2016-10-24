@@ -42,7 +42,7 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the checkout button
     And the newOrder button is displayed
 
-  @oneclick @nuri
+  @oneclick @go
   Scenario: I want to see if the express checkout is available when the product bier is already in shopping basket
     Given I am on the myJumbo screen
     When I tap the registerOrLogin button
@@ -52,13 +52,13 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the login button
     And I tap the shoppingList button
     And I tap the tooltip view
-#    Bier order is already available in this account, thats why you can click checkout
-#    And I tap the shoppingListAddProduct button
+#   Sometimes Bier order is already available in this account, sometimes its not
+    And I tap the shoppingListAddProduct button
 #    And I tap the shoppingListFloater button
-#    And I set the value bier on the search field
-#    And I tap the enter button
-#    And I tap the skuPlus button
-#    And I tap the close button
+    And I set the value bier on the search field
+    And I tap the enter button
+    And I tap the skuPlus button
+    And I tap the close button
     And I tap the checkout button
     And the expressCheckout button is displayed
 
