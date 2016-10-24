@@ -8,33 +8,33 @@ Feature: New onboarding screen
 		Given I am on the onboardingWelcome view
 		And the registerOrLogin button is displayed
 		And the skip button is displayed
-		When I swipeLeft
+		When I swipe left
 		Then the onboardingOnlineShopping view is displayed
 		And the registerOrLogin button is displayed
 		And the skip button is displayed
-		When I swipeLeft
+		When I swipe left
 		Then the onboardingRecipes view is displayed
 		And the registerOrLogin button is displayed
 		And the skip button is displayed
-		When I swipeLeft
+		When I swipe left
 		Then the onboardingStoreFinder view is displayed
 		And the registerOrLogin button is displayed
 		And the skip button is displayed
-		When I swipeLeft
+		When I swipe left
 		Then the onboardingBarcodeScanner view is displayed
 		And the registerOrLogin button is displayed
 		And the skip button is displayed
-		When I swipeLeft
+		When I swipe left
 		Then the onboardingBarcodeScanner view is displayed
-		When I swipeRight
+		When I swipe right
 		Then the onboardingStoreFinder view is displayed
-		When I swipeRight
+		When I swipe right
 		Then the onboardingRecipes view is displayed
-		When I swipeRight
+		When I swipe right
 		Then the onboardingOnlineShopping view is displayed
-		When I swipeRight
+		When I swipe right
 		Then the onboardingWelcome view is displayed
-		When I swipeRight
+		When I swipe right
 		Then the onboardingWelcome view is displayed
 
 	Scenario: Buttons on the onboarding screen should trigger the expected actions
