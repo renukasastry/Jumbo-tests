@@ -7,35 +7,36 @@ Feature: New onboarding screen
 	Scenario: Elements on the onboarding screen should be displayed during the navigation between the new screens
 		Given I am on the onboardingWelcome view
 		And the registerOrLogin button is displayed
-		And the skip button is displayed
-		When I swipeLeft
-		Then the onboardingOnlineShopping view is displayed
+		And the next button is displayed
+		When I swipe left the onBoarding view
+		Then the value Online bestellen is displayed on the onboardingTitle view
 		And the registerOrLogin button is displayed
-		And the skip button is displayed
-		When I swipeLeft
-		Then the onboardingRecipes view is displayed
+		And the next button is displayed
+		When I swipe left the onBoarding view
+		Then the value Heerlijke recepten is displayed on the onboardingTitle view
 		And the registerOrLogin button is displayed
-		And the skip button is displayed
-		When I swipeLeft
-		Then the onboardingStoreFinder view is displayed
+		And the next button is displayed
+		When I swipe left the onBoarding view
+		Then the value Winkelvinder is displayed on the onboardingTitle view
 		And the registerOrLogin button is displayed
-		And the skip button is displayed
-		When I swipeLeft
-		Then the onboardingBarcodeScanner view is displayed
+		And the next button is displayed
+		When I swipe left the onBoarding view
+		Then the value Streepjescode scanner is displayed on the onboardingTitle view
 		And the registerOrLogin button is displayed
-		And the skip button is displayed
-		When I swipeLeft
-		Then the onboardingBarcodeScanner view is displayed
-		When I swipeRight
-		Then the onboardingStoreFinder view is displayed
-		When I swipeRight
-		Then the onboardingRecipes view is displayed
-		When I swipeRight
-		Then the onboardingOnlineShopping view is displayed
-		When I swipeRight
-		Then the onboardingWelcome view is displayed
-		When I swipeRight
-		Then the onboardingWelcome view is displayed
+		And the next button is displayed
+		When I swipe left the onBoarding view
+		Then the value Streepjescode scanner is displayed on the onboardingTitle view
+		When I swipe right the onBoarding view
+		Then the value Winkelvinder is displayed on the onboardingTitle view
+		When I swipe right the onBoarding view
+		Then the value Heerlijke recepten is displayed on the onboardingTitle view
+		When I swipe right the onBoarding view
+		Then the value Online bestellen is displayed on the onboardingTitle view
+		When I swipe right the onBoarding view
+		Then the value Welkomn is displayed on the onboardingTitle view
+		When I swipe right the onBoarding view
+		Then the value Welkomn is displayed on the onboardingTitle view
+
 
 	Scenario: Buttons on the onboarding screen should trigger the expected actions
 		Given I am on the onboardingWelcome view
