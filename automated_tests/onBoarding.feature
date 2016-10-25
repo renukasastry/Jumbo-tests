@@ -37,6 +37,7 @@ Feature: New onboarding screen
 		When I swipe right the onBoarding view
 		Then the value Welkomn is displayed on the onboardingTitle view
 
+	@maja
 	Scenario: Buttons on the onboarding screen should trigger the expected actions
 		Given I am on the onboardingWelcome view
 		And the registerOrLogin button is displayed
@@ -46,23 +47,23 @@ Feature: New onboarding screen
 		Then the emailAddress field is displayed
     	And the password field is displayed
 		And I tap the close button
-		Then the onboardingWelcome view is displayed 
+		Then the value Online bestellen is displayed on the onboardingTitle view
 		And I tap the registerOrLogin button
 		And I tap the actionsheetRegisterB2C button
 		And I tap the ok button
 		Then the emailAddress field is displayed
     	And the password field is displayed
     	And I tap the close button
-    	And I tap the yes button #button to confirm closing the registration view
-    	Then the onboardingWelcome view is displayed  
+    	And I tap the yes button
+		Then the value Online bestellen is displayed on the onboardingTitle view
     	And I tap the registerOrLogin button
 		And I tap the actionsheetRegisterB2B button
 		And I tap the ok button
 		Then the emailAddress field is displayed
     	And the password field is displayed
     	And I tap the close button
-    	And I tap the yes button #button to confirm 
-    	Then the onboardingWelcome view is displayed  
+    	And I tap the yes button
+		Then the value Online bestellen is displayed on the onboardingTitle view
 
 
 
