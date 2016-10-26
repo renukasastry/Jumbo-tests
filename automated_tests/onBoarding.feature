@@ -5,7 +5,9 @@ Feature: New onboarding screen
 
 	@smoke_test
 	Scenario: Elements on the onboarding screen should be displayed during the navigation between the new screens
-		When the registerOrLogin button is displayed
+		Given the onboardingTitle view is displayed
+		And the onboardingText view is displayed
+		And the registerOrLogin button is displayed
 		And the next button is displayed
 		When I swipe left on the onBoarding view
 		Then the value Online bestellen is displayed on the onboardingTitle view
@@ -23,6 +25,10 @@ Feature: New onboarding screen
 		Then the value Zakelijke boodschappen is displayed on the onboardingTitle view
 		And the registerOrLogin button is displayed
 		And the next button is displayed
+		When I swipe left on the onBoarding view
+		Then the value Zakelijke boodschappen is displayed on the onboardingTitle view
+		And the registerOrLogin button is displayed
+		And the next button is displayed
 		When I swipe right on the onBoarding view
 		Then the value Winkelinformatie is displayed on the onboardingTitle view
 		When I swipe right on the onBoarding view
@@ -34,14 +40,16 @@ Feature: New onboarding screen
 
 	@maja
 	Scenario: Buttons on the onboarding screen should trigger the expected actions
-		When the registerOrLogin button is displayed
-		And I tap the registerOrLogin button
+	 	Given the onboardingTitle view is displayed
+		And the onboardingText view is displayed
+		And the registerOrLogin button is displayed
+		When I tap the registerOrLogin button
 		Then the actionSheet view is displayed
 		When I tap the actionsheetLogin button
 		Then the emailAddress field is displayed
     	And the password field is displayed
 		And I tap the close button
-		Then the value Hallo is displayed on the onboardingTitle view
+		Then the onboardingTitle view is displayed
 		And I tap the registerOrLogin button
 		And I tap the actionsheetRegisterB2C button
 		And I tap the ok button
@@ -49,7 +57,7 @@ Feature: New onboarding screen
     	And the password field is displayed
     	And I tap the close button
     	And I tap the yes button
-		Then the value Hallo is displayed on the onboardingTitle view
+		Then the onboardingTitle view is displayed
     	And I tap the registerOrLogin button
 		And I tap the actionsheetRegisterB2B button
 		And I tap the ok button
@@ -57,7 +65,7 @@ Feature: New onboarding screen
     	And the password field is displayed
     	And I tap the close button
     	And I tap the yes button
-		Then the value Hallo bestellen is displayed on the onboardingTitle view
+		Then the onboardingTitle view is displayed
 
 
 
