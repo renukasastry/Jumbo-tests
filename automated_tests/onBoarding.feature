@@ -41,7 +41,6 @@ Feature: New onboarding screen
 	@smoke_test
 	Scenario: Buttons on the onboarding screen should trigger the expected actions
 	 	Given the onboardingTitle view is displayed
-		And the onboardingText view is displayed
 		And the registerOrLogin button is displayed
 		When I tap the registerOrLogin button
 		Then the actionSheet view is displayed
