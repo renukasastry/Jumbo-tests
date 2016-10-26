@@ -38,7 +38,7 @@ Feature: New onboarding screen
 		When I swipe right on the onBoarding view
 		Then the value Hallo is displayed on the onboardingTitle view
 
-	@maja
+	@smoke_test
 	Scenario: Buttons on the onboarding screen should trigger the expected actions
 	 	Given the onboardingTitle view is displayed
 		And the onboardingText view is displayed
