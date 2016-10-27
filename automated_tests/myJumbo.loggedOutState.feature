@@ -33,6 +33,5 @@ Feature: myJumbo logged out state
     And I tap the loggedIn button
     And I tap the logout button
     And I tap the ok button
-    Then the onboardingTitle view is not displayed
-    And the myJumboFloater button is displayed
-    And the login button is displayed
+    Then the myJumboFloater button is displayed
+    And the registerOrLogin button is displayed
