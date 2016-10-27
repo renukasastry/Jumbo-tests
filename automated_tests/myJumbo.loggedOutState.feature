@@ -21,7 +21,7 @@ Feature: myJumbo logged out state
     And the actionsheetRegisterB2B button is displayed
 
   @smoke_test @4388
-  Scenario: I want to see my jumbo screen after log out 
+  Scenario: I want to see my jumbo screen after log out instead of going back to the onboarding screens 
     Given I have a new registered B2C user
     And I am on the myJumbo screen
     When I tap the registerOrLogin button
