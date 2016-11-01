@@ -2,7 +2,7 @@ Feature: categories on products tab
   As a user 
   I want to be able to order products using the categories feature
 
-  @smoke_test @nuri
+  @smoke_test
   Scenario: I want to browse and verify categories
     Given I have a new registered B2B user
     When I tap the login button
