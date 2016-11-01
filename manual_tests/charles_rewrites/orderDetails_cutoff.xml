@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<?charles serialisation-version='2.0' ?>
+<rewriteSet-array>
+  <rewriteSet>
+    <active>true</active>
+    <name>orderdetails cutoff already chosen</name>
+    <hosts>
+      <locationPatterns>
+        <locationMatch>
+          <location>
+            <path>/v2/users/me/orders/*</path>
+          </location>
+          <enabled>true</enabled>
+        </locationMatch>
+      </locationPatterns>
+    </hosts>
+    <rules>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>7</ruleType>
+        <matchValue></matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>false</matchRequest>
+        <matchResponse>true</matchResponse>
+        <newValue>{ 	&quot;order&quot;: { 		&quot;data&quot;: { 			&quot;id&quot;: &quot;1000402683&quot;, 			&quot;earlyOrderConclusion&quot;: { 				&quot;opted&quot;: true, 				&quot;total&quot;: { 					&quot;amount&quot;: 1200, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;discount&quot;: { 					&quot;amount&quot;: 200, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;dateTime&quot;: 1477318500000 			}, 			&quot;created&quot;: 1477308376000, 			&quot;status&quot;: &quot;OPEN&quot;, 			&quot;prices&quot;: { 				&quot;total&quot;: { 					&quot;amount&quot;: 5198, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;totalNet&quot;: { 					&quot;amount&quot;: 4709, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;totalVat21&quot;: { 					&quot;amount&quot;: 489, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;totalVat6&quot;: { 					&quot;amount&quot;: 0, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;itemTotal&quot;: { 					&quot;amount&quot;: 2718, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;pickupPointCost&quot;: { 					&quot;amount&quot;: 100, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;deposits&quot;: { 					&quot;amount&quot;: 780, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;crates&quot;: { 					&quot;amount&quot;: 1600, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;subtotal&quot;: { 					&quot;amount&quot;: 2718, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;totalDiscounts&quot;: { 					&quot;amount&quot;: 0, 					&quot;currency&quot;: &quot;EUR&quot; 				} 			}, 			&quot;leftToPay&quot;: { 				&quot;amount&quot;: 5198, 				&quot;currency&quot;: &quot;EUR&quot; 			}, 			&quot;paymentMethod&quot;: &quot;PIN&quot;, 			&quot;numberOfCrates&quot;: 4, 			&quot;orderCutOffDate&quot;: 1478178000000, 			&quot;type&quot;: &quot;collection&quot;, 			&quot;pickup&quot;: { 				&quot;date&quot;: 1478178000000, 				&quot;time&quot;: &quot;14:00 - 16:00&quot;, 				&quot;price&quot;: { 					&quot;currency&quot;: &quot;EUR&quot;, 					&quot;amount&quot;: 100 				}, 				&quot;location&quot;: { 					&quot;id&quot;: &quot;4822&quot;, 					&quot;complexNumber&quot;: &quot;32006&quot;, 					&quot;name&quot;: &quot;Jumbo Amstelveen Groenhof&quot;, 					&quot;streetAddress&quot;: &quot;Groenhof 165&quot;, 					&quot;cityName&quot;: &quot;Amstelveen&quot;, 					&quot;zipCode&quot;: &quot;1186 EZ&quot;, 					&quot;longitude&quot;: 4.86936, 					&quot;latitude&quot;: 52.28855, 					&quot;type&quot;: &quot;pickupPointAndStore&quot;, 					&quot;newLocation&quot;: false 				} 			}, 			&quot;payments&quot;: [], 			&quot;orderProducts&quot;: [{ 				&quot;quantity&quot;: { 					&quot;unit&quot;: &quot;pieces&quot;, 					&quot;amount&quot;: 2 				}, 				&quot;triggeredByFreeGift&quot;: false, 				&quot;sample&quot;: false, 				&quot;product&quot;: { 					&quot;id&quot;: &quot;87441KRT&quot;, 					&quot;title&quot;: &quot;Heineken Pilsener 24 x 30cl&quot;, 					&quot;quantityOptions&quot;: [{ 						&quot;defaultAmount&quot;: 1, 						&quot;minimumAmount&quot;: 1, 						&quot;amountStep&quot;: 1, 						&quot;unit&quot;: &quot;pieces&quot;, 						&quot;maximumAmount&quot;: 999 					}], 					&quot;prices&quot;: { 						&quot;price&quot;: { 							&quot;amount&quot;: 2718, 							&quot;currency&quot;: &quot;EUR&quot; 						}, 						&quot;unitPrice&quot;: { 							&quot;unit&quot;: &quot;l&quot;, 							&quot;price&quot;: { 								&quot;amount&quot;: 189, 								&quot;currency&quot;: &quot;EUR&quot; 							} 						} 					}, 					&quot;available&quot;: true, 					&quot;quantity&quot;: &quot;24 x 30 cl&quot;, 					&quot;imageInfo&quot;: { 						&quot;primaryView&quot;: [{ 							&quot;url&quot;: &quot;http://static-images.test.jomni.nl/product_images/87441KRT-1_720x720.png&quot;, 							&quot;width&quot;: 720, 							&quot;height&quot;: 720 						}, { 							&quot;url&quot;: &quot;http://static-images.test.jomni.nl/product_images/87441KRT-1_180x180.png&quot;, 							&quot;width&quot;: 180, 							&quot;height&quot;: 180 						}, { 							&quot;url&quot;: &quot;http://static-images.test.jomni.nl/product_images/87441KRT-1_360x360.png&quot;, 							&quot;width&quot;: 360, 							&quot;height&quot;: 360 						}] 					}, 					&quot;triggeredByFreeGift&quot;: false, 					&quot;sample&quot;: false 				} 			}] 		} 	} }</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+    </rules>
+  </rewriteSet>
+  <rewriteSet>
+    <active>true</active>
+    <name>order details cutoff possible</name>
+    <hosts>
+      <locationPatterns>
+        <locationMatch>
+          <location>
+            <path>/v2/users/me/orders/*</path>
+          </location>
+          <enabled>true</enabled>
+        </locationMatch>
+      </locationPatterns>
+    </hosts>
+    <rules>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>7</ruleType>
+        <matchValue></matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>false</matchRequest>
+        <matchResponse>true</matchResponse>
+        <newValue>{ 	&quot;order&quot;: { 		&quot;data&quot;: { 			&quot;id&quot;: &quot;1000402683&quot;, 			&quot;earlyOrderConclusion&quot;: { 				&quot;opted&quot;: false, 				&quot;total&quot;: { 					&quot;amount&quot;: 1200, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;discount&quot;: { 					&quot;amount&quot;: 200, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;dateTime&quot;: 1477318500000 			}, 			&quot;created&quot;: 1477308376000, 			&quot;status&quot;: &quot;OPEN&quot;, 			&quot;prices&quot;: { 				&quot;total&quot;: { 					&quot;amount&quot;: 5198, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;totalNet&quot;: { 					&quot;amount&quot;: 4709, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;totalVat21&quot;: { 					&quot;amount&quot;: 489, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;totalVat6&quot;: { 					&quot;amount&quot;: 0, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;itemTotal&quot;: { 					&quot;amount&quot;: 2718, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;pickupPointCost&quot;: { 					&quot;amount&quot;: 100, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;deposits&quot;: { 					&quot;amount&quot;: 780, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;crates&quot;: { 					&quot;amount&quot;: 1600, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;subtotal&quot;: { 					&quot;amount&quot;: 2718, 					&quot;currency&quot;: &quot;EUR&quot; 				}, 				&quot;totalDiscounts&quot;: { 					&quot;amount&quot;: 0, 					&quot;currency&quot;: &quot;EUR&quot; 				} 			}, 			&quot;leftToPay&quot;: { 				&quot;amount&quot;: 5198, 				&quot;currency&quot;: &quot;EUR&quot; 			}, 			&quot;paymentMethod&quot;: &quot;PIN&quot;, 			&quot;numberOfCrates&quot;: 4, 			&quot;orderCutOffDate&quot;: 1478178000000, 			&quot;type&quot;: &quot;collection&quot;, 			&quot;pickup&quot;: { 				&quot;date&quot;: 1478178000000, 				&quot;time&quot;: &quot;14:00 - 16:00&quot;, 				&quot;price&quot;: { 					&quot;currency&quot;: &quot;EUR&quot;, 					&quot;amount&quot;: 100 				}, 				&quot;location&quot;: { 					&quot;id&quot;: &quot;4822&quot;, 					&quot;complexNumber&quot;: &quot;32006&quot;, 					&quot;name&quot;: &quot;Jumbo Amstelveen Groenhof&quot;, 					&quot;streetAddress&quot;: &quot;Groenhof 165&quot;, 					&quot;cityName&quot;: &quot;Amstelveen&quot;, 					&quot;zipCode&quot;: &quot;1186 EZ&quot;, 					&quot;longitude&quot;: 4.86936, 					&quot;latitude&quot;: 52.28855, 					&quot;type&quot;: &quot;pickupPointAndStore&quot;, 					&quot;newLocation&quot;: false 				} 			}, 			&quot;payments&quot;: [], 			&quot;orderProducts&quot;: [{ 				&quot;quantity&quot;: { 					&quot;unit&quot;: &quot;pieces&quot;, 					&quot;amount&quot;: 2 				}, 				&quot;triggeredByFreeGift&quot;: false, 				&quot;sample&quot;: false, 				&quot;product&quot;: { 					&quot;id&quot;: &quot;87441KRT&quot;, 					&quot;title&quot;: &quot;Heineken Pilsener 24 x 30cl&quot;, 					&quot;quantityOptions&quot;: [{ 						&quot;defaultAmount&quot;: 1, 						&quot;minimumAmount&quot;: 1, 						&quot;amountStep&quot;: 1, 						&quot;unit&quot;: &quot;pieces&quot;, 						&quot;maximumAmount&quot;: 999 					}], 					&quot;prices&quot;: { 						&quot;price&quot;: { 							&quot;amount&quot;: 2718, 							&quot;currency&quot;: &quot;EUR&quot; 						}, 						&quot;unitPrice&quot;: { 							&quot;unit&quot;: &quot;l&quot;, 							&quot;price&quot;: { 								&quot;amount&quot;: 189, 								&quot;currency&quot;: &quot;EUR&quot; 							} 						} 					}, 					&quot;available&quot;: true, 					&quot;quantity&quot;: &quot;24 x 30 cl&quot;, 					&quot;imageInfo&quot;: { 						&quot;primaryView&quot;: [{ 							&quot;url&quot;: &quot;http://static-images.test.jomni.nl/product_images/87441KRT-1_720x720.png&quot;, 							&quot;width&quot;: 720, 							&quot;height&quot;: 720 						}, { 							&quot;url&quot;: &quot;http://static-images.test.jomni.nl/product_images/87441KRT-1_180x180.png&quot;, 							&quot;width&quot;: 180, 							&quot;height&quot;: 180 						}, { 							&quot;url&quot;: &quot;http://static-images.test.jomni.nl/product_images/87441KRT-1_360x360.png&quot;, 							&quot;width&quot;: 360, 							&quot;height&quot;: 360 						}] 					}, 					&quot;triggeredByFreeGift&quot;: false, 					&quot;sample&quot;: false 				} 			}] 		} 	} }</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+    </rules>
+  </rewriteSet>
+</rewriteSet-array>
