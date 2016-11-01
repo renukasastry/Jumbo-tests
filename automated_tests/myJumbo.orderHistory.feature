@@ -8,7 +8,7 @@ Feature: View and amend orders
     Given I have a new registered B2C user
     And I am on the myJumbo screen
     When I tap the registerOrLogin button
-    And I tap the login button
+    And I tap the actionsheetLogin button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
@@ -49,7 +49,7 @@ Feature: View and amend orders
     Given I have a new registered B2C user
     And I am on the myJumbo screen
     When I tap the registerOrLogin button
-    And I tap the login button
+    And I tap the actionsheetLogin button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
@@ -93,7 +93,7 @@ Feature: View and amend orders
     Given I have a new registered B2B user
     And I am on the myJumbo screen
     When I tap the registerOrLogin button
-    And I tap the login button
+    And I tap the actionsheetLogin button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
@@ -130,12 +130,12 @@ Feature: View and amend orders
     # Add steps to actually change the order
 
 
-  @smoke_test
+  @smoke_test @fail
   Scenario: I want to amend my order from the order detail page as a B2B user
     Given I have a new registered B2B user
     And I am on the myJumbo screen
     When I tap the registerOrLogin button
-    And I tap the login button
+    And I tap the actionsheetLogin button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
@@ -164,7 +164,7 @@ Feature: View and amend orders
     And I tap the orderHistory button
     And I tap the orderDetail button
     And I tap the editOrder button
-    And I tap the addProduct button
+    And I tap the actionsheetAddProduct button
     And I tap the changeOrderFloater button
     And I set the value appel on the search field
     And I tap the enter button
@@ -266,7 +266,7 @@ Feature: View and amend orders
     Given I have a new registered B2C user
     And I am on the myJumbo screen
     When I tap the registerOrLogin button
-    And I tap the login button
+    And I tap the actionsheetLogin button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
