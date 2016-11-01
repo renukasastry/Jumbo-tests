@@ -46,24 +46,24 @@ Feature: New onboarding screen
 		Then the actionSheet view is displayed
 		When I tap the actionsheetLogin button
 		Then the emailAddress field is displayed
-    		And the password field is displayed
+    	And the password field is displayed
 		And I tap the close button
 		Then the onboardingTitle view is displayed
 		And I tap the registerOrLogin button
 		And I tap the actionsheetRegisterB2C button
 		And I tap the ok button
 		Then the emailAddress field is displayed
-    		And the password field is displayed
-    		And I tap the close button
-    		And I tap the yes button
+    	And the password field is displayed
+    	And I tap the close button
+    	And I tap the yes button
 		Then the onboardingTitle view is displayed
-    		And I tap the registerOrLogin button
+    	And I tap the registerOrLogin button
 		And I tap the actionsheetRegisterB2B button
 		And I tap the ok button
 		Then the emailAddress field is displayed
-    		And the password field is displayed
-    		And I tap the close button
-    		And I tap the yes button
+    	And the password field is displayed
+    	And I tap the close button
+    	And I tap the yes button
 		Then the onboardingTitle view is displayed
 
 
