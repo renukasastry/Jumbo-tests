@@ -2,10 +2,41 @@ Feature: change quantities of ordered products
   As a user 
   I want to be able to change the quantity of the number of products I ordered when the order is still open
 
-  @smoke_test
+  @smoke_test @nuri
   Scenario: I want to access the barcode screen from the Shopping List screen and check if all the elements are displayed correctly
-    Given I am logged in B2C user and have open order
-    When I tap myOrders button
+    Given I have a new registered B2C user
+    When I tap the login button
+    And I set the property username on the emailAddress field
+    And I set the property password on the password field
+    And I tap the login button
+#    And I tap the decline button
+#    And I tap the next button
+    And I tap the tooltip view
+    And I tap the tooltip view
+    And I tap the tooltip view
+    Then loggedIn button is displayed
+    And the firstOrderCell view is displayed
+    And the orderHistory button is not displayed
+    And I tap the shoppingList button
+    And I tap the tooltip view
+    And I tap the shoppingListAddProduct button
+    And I set the value bier on the search field
+    And I tap the enter button
+    And I tap the skuPlus button
+    And I tap the close button
+    And I tap the checkout button
+    And I tap the choosePup button
+    And I tap the allow button
+    And I tap the searchPup button
+    And I set the value Hapert on the pickUpPointSearch field
+    And I tap the enter button
+    And I tap the pup button
+    And I tap the firstAvailableTimeSlot button
+    And I tap the payAtPickUp button
+    And I tap the ok button
+#    And I tap the next button
+    And I tap the back button
+    And I tap the orderHistory button
     And I tap the openOrder button
     And I tap the changeOrder button
     And I tap the actionsheetAddproduct button
