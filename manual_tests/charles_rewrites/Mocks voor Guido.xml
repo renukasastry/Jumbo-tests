@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<?charles serialisation-version='2.0' ?>
+<rewriteSet-array>
+  <rewriteSet>
+    <active>false</active>
+    <name>orderdetails cutoff already chosen</name>
+    <hosts>
+      <locationPatterns>
+        <locationMatch>
+          <location>
+            <path>/v2/users/me/orders/*</path>
+          </location>
+          <enabled>true</enabled>
+        </locationMatch>
+      </locationPatterns>
+    </hosts>
+    <rules>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>7</ruleType>
+        <matchValue></matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>false</matchRequest>
+        <matchResponse>true</matchResponse>
+        <newValue>{&quot;order&quot;:{&quot;data&quot;:{&quot;id&quot;:&quot;1000411197&quot;,&quot;earlyOrderConclusion&quot;:{&quot;opted&quot;:true,&quot;total&quot;:{&quot;amount&quot;:5350,&quot;currency&quot;:&quot;EUR&quot;},&quot;discount&quot;:{&quot;amount&quot;:100,&quot;currency&quot;:&quot;EUR&quot;},&quot;dateTime&quot;:1478707200000},&quot;created&quot;:1478085439000,&quot;status&quot;:&quot;OPEN&quot;,&quot;prices&quot;:{&quot;total&quot;:{&quot;amount&quot;:5450,&quot;currency&quot;:&quot;EUR&quot;},&quot;totalNet&quot;:{&quot;amount&quot;:9921,&quot;currency&quot;:&quot;EUR&quot;},&quot;totalVat21&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;EUR&quot;},&quot;totalVat6&quot;:{&quot;amount&quot;:259,&quot;currency&quot;:&quot;EUR&quot;},&quot;itemTotal&quot;:{&quot;amount&quot;:4980,&quot;currency&quot;:&quot;EUR&quot;},&quot;pickupPointCost&quot;:{&quot;amount&quot;:100,&quot;currency&quot;:&quot;EUR&quot;},&quot;itemDiscounts&quot;:{&quot;amount&quot;:500,&quot;currency&quot;:&quot;EUR&quot;},&quot;crates&quot;:{&quot;amount&quot;:5600,&quot;currency&quot;:&quot;EUR&quot;},&quot;subtotal&quot;:{&quot;amount&quot;:4480,&quot;currency&quot;:&quot;EUR&quot;},&quot;totalDiscounts&quot;:{&quot;amount&quot;:500,&quot;currency&quot;:&quot;EUR&quot;}},&quot;leftToPay&quot;:{&quot;amount&quot;:10180,&quot;currency&quot;:&quot;EUR&quot;},&quot;paymentMethod&quot;:&quot;PIN&quot;,&quot;numberOfCrates&quot;:14,&quot;orderCutOffDate&quot;:1478732399000,&quot;type&quot;:&quot;collection&quot;,&quot;pickup&quot;:{&quot;date&quot;:1479898800000,&quot;time&quot;:&quot;12:00 - 14:00&quot;,&quot;price&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:100},&quot;location&quot;:{&quot;id&quot;:&quot;4822&quot;,&quot;complexNumber&quot;:&quot;32006&quot;,&quot;name&quot;:&quot;Jumbo Amstelveen Groenhof&quot;,&quot;streetAddress&quot;:&quot;Groenhof 165&quot;,&quot;cityName&quot;:&quot;Amstelveen&quot;,&quot;zipCode&quot;:&quot;1186 EZ&quot;,&quot;longitude&quot;:4.86936,&quot;latitude&quot;:52.28855,&quot;type&quot;:&quot;pickupPointAndStore&quot;,&quot;newLocation&quot;:false}},&quot;productDiscounts&quot;:[{&quot;title&quot;:&quot;Minimum number of items&quot;,&quot;price&quot;:{&quot;amount&quot;:500,&quot;currency&quot;:&quot;EUR&quot;}}],&quot;payments&quot;:[],&quot;orderProducts&quot;:[{&quot;quantity&quot;:{&quot;unit&quot;:&quot;pieces&quot;,&quot;amount&quot;:20},&quot;triggeredByFreeGift&quot;:false,&quot;sample&quot;:false,&quot;product&quot;:{&quot;id&quot;:&quot;94132STK&quot;,&quot;title&quot;:&quot;Jumbo Rubens Handappelen 2000g&quot;,&quot;quantityOptions&quot;:[{&quot;defaultAmount&quot;:1,&quot;minimumAmount&quot;:1,&quot;amountStep&quot;:1,&quot;unit&quot;:&quot;pieces&quot;,&quot;maximumAmount&quot;:999}],&quot;prices&quot;:{&quot;price&quot;:{&quot;amount&quot;:4980,&quot;currency&quot;:&quot;EUR&quot;},&quot;unitPrice&quot;:{&quot;unit&quot;:&quot;kg&quot;,&quot;price&quot;:{&quot;amount&quot;:125,&quot;currency&quot;:&quot;EUR&quot;}}},&quot;available&quot;:true,&quot;quantity&quot;:&quot;2000 g&quot;,&quot;imageInfo&quot;:{&quot;primaryView&quot;:[{&quot;url&quot;:&quot;http://static-images.test.jomni.nl/product_images/94132STK-1_720x720.png&quot;,&quot;width&quot;:720,&quot;height&quot;:720},{&quot;url&quot;:&quot;http://static-images.test.jomni.nl/product_images/94132STK-1_180x180.png&quot;,&quot;width&quot;:180,&quot;height&quot;:180},{&quot;url&quot;:&quot;http://static-images.test.jomni.nl/product_images/94132STK-1_360x360.png&quot;,&quot;width&quot;:360,&quot;height&quot;:360}]},&quot;promotion&quot;:{&quot;id&quot;:&quot;qGcKYxMpPZQAAAFWnax47tcm&quot;,&quot;name&quot;:&quot;Minimum number of items&quot;},&quot;triggeredByFreeGift&quot;:false,&quot;sample&quot;:false}}]}}}</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>11</ruleType>
+        <matchValue></matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>false</matchRequest>
+        <matchResponse>false</matchResponse>
+        <newValue>200 OK</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+    </rules>
+  </rewriteSet>
+  <rewriteSet>
+    <active>true</active>
+    <name>order details cutoff possible</name>
+    <hosts>
+      <locationPatterns>
+        <locationMatch>
+          <location>
+            <path>/v2/users/me/orders/*</path>
+          </location>
+          <enabled>true</enabled>
+        </locationMatch>
+      </locationPatterns>
+    </hosts>
+    <rules>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>7</ruleType>
+        <matchValue></matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>false</matchRequest>
+        <matchResponse>true</matchResponse>
+        <newValue>{&quot;order&quot;:{&quot;data&quot;:{&quot;id&quot;:&quot;1000411197&quot;,&quot;earlyOrderConclusion&quot;:{&quot;opted&quot;:false,&quot;total&quot;:{&quot;amount&quot;:5350,&quot;currency&quot;:&quot;EUR&quot;},&quot;discount&quot;:{&quot;amount&quot;:100,&quot;currency&quot;:&quot;EUR&quot;},&quot;dateTime&quot;:1478707200000},&quot;created&quot;:1478085439000,&quot;status&quot;:&quot;OPEN&quot;,&quot;prices&quot;:{&quot;total&quot;:{&quot;amount&quot;:5450,&quot;currency&quot;:&quot;EUR&quot;},&quot;totalNet&quot;:{&quot;amount&quot;:9921,&quot;currency&quot;:&quot;EUR&quot;},&quot;totalVat21&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;EUR&quot;},&quot;totalVat6&quot;:{&quot;amount&quot;:259,&quot;currency&quot;:&quot;EUR&quot;},&quot;itemTotal&quot;:{&quot;amount&quot;:4980,&quot;currency&quot;:&quot;EUR&quot;},&quot;pickupPointCost&quot;:{&quot;amount&quot;:100,&quot;currency&quot;:&quot;EUR&quot;},&quot;itemDiscounts&quot;:{&quot;amount&quot;:500,&quot;currency&quot;:&quot;EUR&quot;},&quot;crates&quot;:{&quot;amount&quot;:5600,&quot;currency&quot;:&quot;EUR&quot;},&quot;subtotal&quot;:{&quot;amount&quot;:4480,&quot;currency&quot;:&quot;EUR&quot;},&quot;totalDiscounts&quot;:{&quot;amount&quot;:500,&quot;currency&quot;:&quot;EUR&quot;}},&quot;leftToPay&quot;:{&quot;amount&quot;:10180,&quot;currency&quot;:&quot;EUR&quot;},&quot;paymentMethod&quot;:&quot;PIN&quot;,&quot;numberOfCrates&quot;:14,&quot;orderCutOffDate&quot;:1478732399000,&quot;type&quot;:&quot;collection&quot;,&quot;pickup&quot;:{&quot;date&quot;:1479898800000,&quot;time&quot;:&quot;12:00 - 14:00&quot;,&quot;price&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:100},&quot;location&quot;:{&quot;id&quot;:&quot;4822&quot;,&quot;complexNumber&quot;:&quot;32006&quot;,&quot;name&quot;:&quot;Jumbo Amstelveen Groenhof&quot;,&quot;streetAddress&quot;:&quot;Groenhof 165&quot;,&quot;cityName&quot;:&quot;Amstelveen&quot;,&quot;zipCode&quot;:&quot;1186 EZ&quot;,&quot;longitude&quot;:4.86936,&quot;latitude&quot;:52.28855,&quot;type&quot;:&quot;pickupPointAndStore&quot;,&quot;newLocation&quot;:false}},&quot;productDiscounts&quot;:[{&quot;title&quot;:&quot;Minimum number of items&quot;,&quot;price&quot;:{&quot;amount&quot;:500,&quot;currency&quot;:&quot;EUR&quot;}}],&quot;payments&quot;:[],&quot;orderProducts&quot;:[{&quot;quantity&quot;:{&quot;unit&quot;:&quot;pieces&quot;,&quot;amount&quot;:20},&quot;triggeredByFreeGift&quot;:false,&quot;sample&quot;:false,&quot;product&quot;:{&quot;id&quot;:&quot;94132STK&quot;,&quot;title&quot;:&quot;Jumbo Rubens Handappelen 2000g&quot;,&quot;quantityOptions&quot;:[{&quot;defaultAmount&quot;:1,&quot;minimumAmount&quot;:1,&quot;amountStep&quot;:1,&quot;unit&quot;:&quot;pieces&quot;,&quot;maximumAmount&quot;:999}],&quot;prices&quot;:{&quot;price&quot;:{&quot;amount&quot;:4980,&quot;currency&quot;:&quot;EUR&quot;},&quot;unitPrice&quot;:{&quot;unit&quot;:&quot;kg&quot;,&quot;price&quot;:{&quot;amount&quot;:125,&quot;currency&quot;:&quot;EUR&quot;}}},&quot;available&quot;:true,&quot;quantity&quot;:&quot;2000 g&quot;,&quot;imageInfo&quot;:{&quot;primaryView&quot;:[{&quot;url&quot;:&quot;http://static-images.test.jomni.nl/product_images/94132STK-1_720x720.png&quot;,&quot;width&quot;:720,&quot;height&quot;:720},{&quot;url&quot;:&quot;http://static-images.test.jomni.nl/product_images/94132STK-1_180x180.png&quot;,&quot;width&quot;:180,&quot;height&quot;:180},{&quot;url&quot;:&quot;http://static-images.test.jomni.nl/product_images/94132STK-1_360x360.png&quot;,&quot;width&quot;:360,&quot;height&quot;:360}]},&quot;promotion&quot;:{&quot;id&quot;:&quot;qGcKYxMpPZQAAAFWnax47tcm&quot;,&quot;name&quot;:&quot;Minimum number of items&quot;},&quot;triggeredByFreeGift&quot;:false,&quot;sample&quot;:false}}]}}}</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>11</ruleType>
+        <matchValue></matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>false</matchRequest>
+        <matchResponse>false</matchResponse>
+        <newValue>200 OK</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+    </rules>
+  </rewriteSet>
+  <rewriteSet>
+    <active>true</active>
+    <name>Place order cut off mock</name>
+    <hosts>
+      <locationPatterns>
+        <locationMatch>
+          <location>
+            <host>*.jomni.nl</host>
+            <path>/v2/users/me/orders/purchase</path>
+          </location>
+          <enabled>true</enabled>
+        </locationMatch>
+      </locationPatterns>
+    </hosts>
+    <rules>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>7</ruleType>
+        <matchValue></matchValue>
+        <matchHeaderRegex>false</matchHeaderRegex>
+        <matchValueRegex>false</matchValueRegex>
+        <matchRequest>false</matchRequest>
+        <matchResponse>true</matchResponse>
+        <newValue>{&quot;basket&quot;:{&quot;data&quot;:{&quot;uuid&quot;:&quot;NnYKYxMpgNEAAAFYxO95kSTB&quot;,&quot;prices&quot;:{&quot;total&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;EUR&quot;},&quot;totalNet&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;EUR&quot;},&quot;totalVat21&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;EUR&quot;},&quot;totalVat6&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;EUR&quot;},&quot;itemTotal&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;EUR&quot;},&quot;pickupPointCost&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;EUR&quot;},&quot;subtotal&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;EUR&quot;},&quot;totalDiscounts&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;EUR&quot;},&quot;leftToPay&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;EUR&quot;}},&quot;usedPriceLine&quot;:{&quot;pricing&quot;:&quot;J4&quot;,&quot;reason&quot;:&quot;SLOTBOOKING&quot;,&quot;storeId&quot;:&quot;4822&quot;},&quot;items&quot;:[]}},&quot;order&quot;:{&quot;data&quot;:{&quot;id&quot;:&quot;1000411197&quot;,&quot;earlyOrderConclusion&quot;:{&quot;opted&quot;:false,&quot;total&quot;:{&quot;amount&quot;:5350,&quot;currency&quot;:&quot;EUR&quot;},&quot;discount&quot;:{&quot;amount&quot;:100,&quot;currency&quot;:&quot;EUR&quot;},&quot;dateTime&quot;:1478707200000},&quot;created&quot;:1478085439000,&quot;status&quot;:&quot;OPEN&quot;,&quot;prices&quot;:{&quot;total&quot;:{&quot;amount&quot;:5450,&quot;currency&quot;:&quot;EUR&quot;},&quot;totalNet&quot;:{&quot;amount&quot;:9921,&quot;currency&quot;:&quot;EUR&quot;},&quot;totalVat21&quot;:{&quot;amount&quot;:0,&quot;currency&quot;:&quot;EUR&quot;},&quot;totalVat6&quot;:{&quot;amount&quot;:259,&quot;currency&quot;:&quot;EUR&quot;},&quot;itemTotal&quot;:{&quot;amount&quot;:4980,&quot;currency&quot;:&quot;EUR&quot;},&quot;pickupPointCost&quot;:{&quot;amount&quot;:100,&quot;currency&quot;:&quot;EUR&quot;},&quot;itemDiscounts&quot;:{&quot;amount&quot;:500,&quot;currency&quot;:&quot;EUR&quot;},&quot;crates&quot;:{&quot;amount&quot;:5600,&quot;currency&quot;:&quot;EUR&quot;},&quot;subtotal&quot;:{&quot;amount&quot;:4480,&quot;currency&quot;:&quot;EUR&quot;},&quot;totalDiscounts&quot;:{&quot;amount&quot;:500,&quot;currency&quot;:&quot;EUR&quot;}},&quot;leftToPay&quot;:{&quot;amount&quot;:10180,&quot;currency&quot;:&quot;EUR&quot;},&quot;paymentMethod&quot;:&quot;PIN&quot;,&quot;numberOfCrates&quot;:14,&quot;orderCutOffDate&quot;:1478732399000,&quot;type&quot;:&quot;collection&quot;,&quot;pickup&quot;:{&quot;date&quot;:1479898800000,&quot;time&quot;:&quot;12:00 - 14:00&quot;,&quot;price&quot;:{&quot;currency&quot;:&quot;EUR&quot;,&quot;amount&quot;:100},&quot;location&quot;:{&quot;id&quot;:&quot;4822&quot;,&quot;complexNumber&quot;:&quot;32006&quot;,&quot;name&quot;:&quot;Jumbo Amstelveen Groenhof&quot;,&quot;streetAddress&quot;:&quot;Groenhof 165&quot;,&quot;cityName&quot;:&quot;Amstelveen&quot;,&quot;zipCode&quot;:&quot;1186 EZ&quot;,&quot;longitude&quot;:4.86936,&quot;latitude&quot;:52.28855,&quot;type&quot;:&quot;pickupPointAndStore&quot;,&quot;newLocation&quot;:false}},&quot;productDiscounts&quot;:[{&quot;title&quot;:&quot;Minimum number of items&quot;,&quot;price&quot;:{&quot;amount&quot;:500,&quot;currency&quot;:&quot;EUR&quot;}}],&quot;payments&quot;:[],&quot;orderProducts&quot;:[{&quot;quantity&quot;:{&quot;unit&quot;:&quot;pieces&quot;,&quot;amount&quot;:20},&quot;triggeredByFreeGift&quot;:false,&quot;sample&quot;:false,&quot;product&quot;:{&quot;id&quot;:&quot;94132STK&quot;,&quot;title&quot;:&quot;Jumbo Rubens Handappelen 2000g&quot;,&quot;quantityOptions&quot;:[{&quot;defaultAmount&quot;:1,&quot;minimumAmount&quot;:1,&quot;amountStep&quot;:1,&quot;unit&quot;:&quot;pieces&quot;,&quot;maximumAmount&quot;:999}],&quot;prices&quot;:{&quot;price&quot;:{&quot;amount&quot;:4980,&quot;currency&quot;:&quot;EUR&quot;},&quot;unitPrice&quot;:{&quot;unit&quot;:&quot;kg&quot;,&quot;price&quot;:{&quot;amount&quot;:125,&quot;currency&quot;:&quot;EUR&quot;}}},&quot;available&quot;:true,&quot;quantity&quot;:&quot;2000 g&quot;,&quot;imageInfo&quot;:{&quot;primaryView&quot;:[{&quot;url&quot;:&quot;http://static-images.test.jomni.nl/product_images/94132STK-1_720x720.png&quot;,&quot;width&quot;:720,&quot;height&quot;:720},{&quot;url&quot;:&quot;http://static-images.test.jomni.nl/product_images/94132STK-1_180x180.png&quot;,&quot;width&quot;:180,&quot;height&quot;:180},{&quot;url&quot;:&quot;http://static-images.test.jomni.nl/product_images/94132STK-1_360x360.png&quot;,&quot;width&quot;:360,&quot;height&quot;:360}]},&quot;promotion&quot;:{&quot;id&quot;:&quot;qGcKYxMpPZQAAAFWnax47tcm&quot;,&quot;name&quot;:&quot;Minimum number of items&quot;},&quot;triggeredByFreeGift&quot;:false,&quot;sample&quot;:false}}]}}}</newValue>
+        <newHeaderRegex>false</newHeaderRegex>
+        <newValueRegex>false</newValueRegex>
+        <matchWholeValue>false</matchWholeValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+    </rules>
+  </rewriteSet>
+</rewriteSet-array>
