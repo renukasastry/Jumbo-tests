@@ -3,17 +3,19 @@ Feature: change quantities of ordered products
   I want to be able to change the quantity of the number of products I ordered when the order is still open
 
   @smoke_test @nuri
-  Scenario: I want to access the barcode screen from the Shopping List screen and check if all the elements are displayed correctly
+  Scenario: I want to be able to change the quantity of the number of products I ordered when the order is still open
     Given I have a new registered B2C user
-    When I tap the login button
+    And I am on the myJumbo screen
+    When I tap the registerOrLogin button
+    And I tap the actionsheetLogin button
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
-#    And I tap the decline button
+    And I tap the decline button
 #    And I tap the next button
-    And I tap the tooltip view
-    And I tap the tooltip view
-    And I tap the tooltip view
+#    And I tap the tooltip view
+#    And I tap the tooltip view
+#    And I tap the tooltip view
     Then loggedIn button is displayed
     And the firstOrderCell view is displayed
     And the orderHistory button is not displayed
@@ -34,32 +36,29 @@ Feature: change quantities of ordered products
     And I tap the firstAvailableTimeSlot button
     And I tap the payAtPickUp button
     And I tap the ok button
-#    And I tap the next button
+    And I tap the next button
     And I tap the back button
     And I tap the orderHistory button
-    And I tap the openOrder button
-    And I tap the changeOrder button
-    And I tap the actionsheetAddproduct button
+    And I tap the changeGroceries button
     And I tap the firstProductQuantitySelection button
     And I tap the increaseQuantity button
     And I tap the increaseQuantity button
     And I tap the increaseQuantity button
     And I tap the increaseQuantity button
     And I tap the next button
-    Then the value 5 is displayed in the firstProductAmountField
-    And I tap the payAtPickup button
-    Then the value 5 is displayed in the firstProductAmountField
+    Then the value 5 is displayed on the firstProductAmount field
+    And I tap the payAtPickUp button
 
   @smoke_test
-  Scenario: I want to access the barcode scanner from the Products screen and check if the barcode elements are displayed correctly
+  Scenario: I want to see if nieuw in je bestelling is displayed when I order something new
     Given I am logged in B2C user and have an open order
     When I tap myOrders button
     And I tap the openOrder button
     And I tap the changeOrder button
     And I tap the actionsheetAddproduct button
-    Then the value nieuw in je bestelling is not displayed in the NieuwInJeBestelling field
+    Then the value nieuw in je bestelling is not displayed on the NieuwInJeBestelling field
     And I tap the changeOrderFloater button
     And I set the value kaas in the changeOrder field
     And I tap the addSku button
     And I tap the close button
-    Then the value nieuw in je bestelling is displayed in the NieuwInJeBestelling field
+    Then the value nieuw in je bestelling is displayed on the NieuwInJeBestelling field
