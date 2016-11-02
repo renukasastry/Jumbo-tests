@@ -3,10 +3,11 @@ Feature: User registration
   I want to be able to go through the register and onboarding flow
   so I can use the Jumbo app
 
-  @smoke_test
+  @smoke_test @mocks
   Scenario: I want to register a new B2C user
     Given I have a new user email address
-    When I tap the registerb2c button
+    When I tap the registerOrLogin button
+    And I tap the registerB2C button
     And I tap the ok button
     And I set the property newUsername on the emailAddress field
     And I set the value qwerty on the password field
@@ -34,10 +35,11 @@ Feature: User registration
     And I tap the tooltip view
     Then loggedIn button is displayed
 
-  @smoke_test
+  @smoke_test @mocks
   Scenario: I want to register a new B2B user
     Given I have a new user email address
-    When I tap the registerb2b button
+    When I tap the registerOrLogin button
+    And I tap the registerB2B button
     And I tap the ok button
     And I set the property newUsername on the emailAddress field
     And I set the value qwerty on the password field
