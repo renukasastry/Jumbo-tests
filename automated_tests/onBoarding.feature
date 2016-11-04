@@ -3,10 +3,10 @@ Feature: New onboarding screen
 	I want to see the redesign of the onboarding flow
 	So I'm better instructed about the features of the app
 
-	@smoke_test
+	@smoke_test @nuri
 	Scenario: Elements on the onboarding screen should be displayed during the navigation between the new screens
 		Given the onboardingTitle view is displayed
-		And the onboardingText view is displayed
+		And the value Met de Jumbo app heb je altijd toegang tot je eigen Jumbo! Met de service, ruime keuze en laagsteprijsgarantie die je van ons gewend bent. is displayed on the onboardingText1 field
 		And the registerOrLogin button is displayed
 		And the next button is displayed
 		When I swipe left on the onBoarding view
