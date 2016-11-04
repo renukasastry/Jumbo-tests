@@ -31,7 +31,7 @@ Feature: View and amend orders
     And I tap the pup button
     And I tap the firstAvailableTimeSlot button
     And I tap the payAtPickUp button
-    And I tap the ok button
+    And I dismiss the thank you page
     And I tap the next button
     And I tap the back button
     And I tap the orderHistory button
@@ -72,7 +72,7 @@ Feature: View and amend orders
     And I tap the pup button
     And I tap the firstAvailableTimeSlot button
     And I tap the payAtPickUp button
-    And I tap the ok button
+    And I dismiss the thank you page
     And I tap the next button
     And I tap the back button
     And I tap the orderHistory button
@@ -116,7 +116,7 @@ Feature: View and amend orders
     And I tap the pup button
     And I tap the firstAvailableTimeSlot button
     And I tap the payAtPickUp button
-    And I tap the ok button
+    And I dismiss the thank you page
     And I tap the next button
     And I tap the back button
     And I tap the orderHistory button
@@ -158,7 +158,7 @@ Feature: View and amend orders
     And I tap the pup button
     And I tap the firstAvailableTimeSlot button
     And I tap the payAtPickUp button
-    And I tap the ok button
+    And I dismiss the thank you page
     And I tap the next button
     And I tap the back button
     And I tap the orderHistory button

@@ -6,6 +6,7 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
   Background:
     Given I have a new registered B2C user
 
+# Why is this scenario here? It has nothing to do with one click checkout.
   @oneclick
   Scenario: I want to place an order with a product on my SL
     Given I have a new registered B2C user
@@ -32,7 +33,7 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I tap the pup button
     And I tap the firstAvailableTimeSlot button
     And I tap the payAtPickUp button
-    And I tap the ok button
+    And I dismiss the thank you page
     And I tap the next button
     And I tap the shoppingListAddProduct button
     And I set the value bier on the search field

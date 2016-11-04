@@ -30,13 +30,13 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
-    And I tap the ok button
+    And I dismiss the thank you page
     And I tap the next button
     And I tap the back button
     And I tap the orderHistory button
-    Then orderDetail button is displayed
+    Then the orderDetail button is displayed
 
   @smoke_test
   Scenario: I want to place an order with a vague term on my SL
@@ -65,13 +65,13 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button 
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
-    And I tap the ok button
+    And I dismiss the thank you page
     And I tap the next button
     And I tap the back button
     And I tap the orderHistory button
-    Then orderDetail button is displayed
+    Then the orderDetail button is displayed
 
   @smoke_test_wip
   Scenario: I want to place an order with a recipe on my SL
@@ -102,11 +102,85 @@ Feature: Place an order with a vague term, products and a recipe on my shopping 
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
-    And I tap the ok button
+    And I dismiss the thank you page
     And I tap the next button
     And I tap the back button
     And I tap the myJumbo tab
     And I tap the orderHistory button
-    Then orderDetail button is displayed
+    Then the orderDetail button is displayed
+
+  @smoke_test
+  Scenario: I want to apply early cut off to my order
+    Given I have a new registered B2C user
+    And I am on the myJumbo screen
+    When I tap the registerOrLogin button
+    And I tap the actionsheetLogin button
+    And I set the property username on the emailAddress field
+    And I set the property password on the password field
+    And I tap the login button
+    And I tap the decline button
+    And I tap the shoppingList button
+    And I tap the tooltip view
+    And I tap the shoppingListAddProduct button
+    And I set the value bier on the search field
+    And I tap the enter button
+    And I tap the skuPlus button
+    And I tap the close button    
+    And I tap the checkout button
+    And I tap the choosePup button
+    And I tap the allow button
+    And I tap the searchPup button
+    And I set the value Hapert on the pickUpPointSearch field
+    And I tap the enter button
+    And I tap the pup button
+    And I select a slot that triggers the early cut off screen
+# Atleast 2 days in the future and after 16:00
+    And I tap the payAtPickUp button
+    And I the ok button
+    Then the earlyCutOffTitle view is displayed
+    And the currentCutOff button is displayed
+    And I tap the earlyCutOff button
+    And I tap the next button
+    And I tap the next button
+    And I tap the back button
+    And I tap the orderHistory button
+    And I tap the orderDetail button
+    Then the earlyCutOffApplied view is displayed
+
+      @smoke_test
+  Scenario: I do not want to apply early cut off to my order
+    Given I have a new registered B2C user
+    And I am on the myJumbo screen
+    When I tap the registerOrLogin button
+    And I tap the actionsheetLogin button
+    And I set the property username on the emailAddress field
+    And I set the property password on the password field
+    And I tap the login button
+    And I tap the decline button
+    And I tap the shoppingList button
+    And I tap the tooltip view
+    And I tap the shoppingListAddProduct button
+    And I set the value bier on the search field
+    And I tap the enter button
+    And I tap the skuPlus button
+    And I tap the close button    
+    And I tap the checkout button
+    And I tap the choosePup button
+    And I tap the allow button
+    And I tap the searchPup button
+    And I set the value Hapert on the pickUpPointSearch field
+    And I tap the enter button
+    And I tap the pup button
+    And I select a slot that triggers the early cut off screen
+# Atleast 2 days in the future and after 16:00
+    And I tap the payAtPickUp button
+    And I the ok button
+    Then the earlyCutOffTitle view is displayed
+    And I tap the next button
+    And I tap the next button
+    And I tap the back button
+    And I tap the orderHistory button
+    And I tap the orderDetail button
+    Then the earlyCutOffNotApplied view is displayed
