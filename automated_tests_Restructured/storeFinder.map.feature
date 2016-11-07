@@ -1,1 +1,1 @@
-storeFinder.map.feature
+Feature: storeFinder.map.feature

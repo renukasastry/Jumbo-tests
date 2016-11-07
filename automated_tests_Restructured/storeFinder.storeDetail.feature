@@ -1,1 +1,2 @@
-storeFinder.storeDetail.feature
+Feature: storeFinder.storeDetail.feature
+

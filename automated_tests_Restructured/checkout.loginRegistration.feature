@@ -1,1 +1,1 @@
-checkout.loginRegistration.feature
+Feature: checkout.loginRegistration.feature

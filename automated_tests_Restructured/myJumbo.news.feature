@@ -1,1 +1,1 @@
-myJumbo.news.feature
+Feature: myJumbo.news.feature

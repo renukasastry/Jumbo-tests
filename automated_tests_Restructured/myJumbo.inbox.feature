@@ -1,1 +1,1 @@
-myJumbo.inbox.feature
+Feature: myJumbo.inbox.feature

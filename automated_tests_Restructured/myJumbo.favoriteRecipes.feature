@@ -1,1 +1,1 @@
-myJumbo.favoriteRecipes.feature
+Feature: myJumbo.favoriteRecipes.feature

@@ -1,1 +1,1 @@
-products.lister.feature
+Feature: products.lister.feature

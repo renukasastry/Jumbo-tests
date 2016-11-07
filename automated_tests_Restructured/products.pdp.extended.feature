@@ -1,1 +1,1 @@
-products.pdp.extended.feature
+Feature: products.pdp.extended.feature
