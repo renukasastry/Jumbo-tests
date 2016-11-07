@@ -13,9 +13,6 @@ Feature: change quantities of ordered products
     And I tap the login button
     And I tap the decline button
 #    And I tap the next button
-#    And I tap the tooltip view
-#    And I tap the tooltip view
-#    And I tap the tooltip view
     Then loggedIn button is displayed
     And the firstOrderCell view is displayed
     And the orderHistory button is not displayed
@@ -29,10 +26,10 @@ Feature: change quantities of ordered products
     And I tap the checkout button
     And I tap the choosePup button
     And I tap the allow button
-#    And I tap the searchPup button
-#    And I set the value Hapert on the pickUpPointSearch field
-#    And I tap the enter button
-#    And I tap the pup button
+    And I tap the searchPup button
+    And I set the value Hapert on the pickUpPointSearch field
+    And I tap the enter button
+    And I tap the pup button
     And I tap the firstAvailableTimeSlot button
     And I tap the payAtPickUp button
     And I tap the ok button
@@ -60,9 +57,6 @@ Feature: change quantities of ordered products
     And I tap the login button
     And I tap the decline button
 #    And I tap the next button
-#    And I tap the tooltip view
-#    And I tap the tooltip view
-#    And I tap the tooltip view
     Then loggedIn button is displayed
     And the firstOrderCell view is displayed
     And the orderHistory button is not displayed
@@ -76,10 +70,10 @@ Feature: change quantities of ordered products
     And I tap the checkout button
     And I tap the choosePup button
     And I tap the allow button
-#    And I tap the searchPup button
-#    And I set the value Hapert on the pickUpPointSearch field
-#    And I tap the enter button
-#    And I tap the pup button
+    And I tap the searchPup button
+    And I set the value Hapert on the pickUpPointSearch field
+    And I tap the enter button
+    And I tap the pup button
     And I tap the firstAvailableTimeSlot button
     And I tap the payAtPickUp button
     And I tap the ok button
@@ -87,7 +81,7 @@ Feature: change quantities of ordered products
     And I tap the back button
     And I tap the orderHistory button
     And I tap the changeGroceries button
-#    Then the value nieuw in je bestelling is not displayed on the nieuwInJeBestelling field
+    Then the value nieuw in je bestelling is not displayed on the nieuwInJeBestelling field
     And I tap the changeOrderFloater button
     And I set the value kaas on the search field
     And I tap the skuPlus button
