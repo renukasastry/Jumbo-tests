@@ -13,9 +13,6 @@ Feature: vouchercode
     And I tap the login button
     And I tap the decline button
 #    And I tap the next button
-#    And I tap the tooltip view
-#    And I tap the tooltip view
-#    And I tap the tooltip view
     Then loggedIn button is displayed
     When I tap the shoppingList button
     And I tap the tooltip view
@@ -27,10 +24,10 @@ Feature: vouchercode
     And I tap the checkout button
     And I tap the choosePup button
     And I tap the allow button
-#    And I tap the searchPup button
-#    And I set the value Hapert on the pickUpPointSearch field
-#    And I tap the enter button
-#    And I tap the pup button
+    And I tap the searchPup button
+    And I set the value Hapert on the pickUpPointSearch field
+    And I tap the enter button
+    And I tap the pup button
     And I tap the firstAvailableTimeSlot button
     And I tap the payAtPickUp button
     And I tap the addVoucherCode button
