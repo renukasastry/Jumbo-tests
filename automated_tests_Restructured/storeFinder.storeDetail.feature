@@ -1,0 +1,1 @@
+storeFinder.storeDetail.feature
