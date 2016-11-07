@@ -4,8 +4,10 @@ Feature: Products Search
   so I can order everything I want
 
 # Anonymous scearios category browser
-  @smoke_test
+  @smoke_test @nuri
   Scenario: I want to search and add a vague term to the SL from the products section search
+    Given the onboardingTitle view is displayed
+    And the registerOrLogin button is displayed
     When I tap the next button
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
@@ -25,8 +27,10 @@ Feature: Products Search
     And I tap the tooltip view
     Then the value appel is displayed on the vagueTermTitle field
 
-  @smoke_test
+  @smoke_test @nuri
   Scenario: I want to search and add a SKU to the SL from the products section search
+    Given the onboardingTitle view is displayed
+    And the registerOrLogin button is displayed
     When I tap the next button
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
@@ -47,8 +51,10 @@ Feature: Products Search
     Then the value appel is displayed on the vagueTermTitle field
     Then the skuCell view is displayed
 
-  @smoke_test
+  @smoke_test @nuri
   Scenario: I want to search and add multiple items(vague term and normal sku) to the SL from the products section search
+    Given the onboardingTitle view is displayed
+    And the registerOrLogin button is displayed
     When I tap the next button
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
