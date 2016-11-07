@@ -13,15 +13,12 @@ Feature: categories on products tab
     And I tap the login button
     And I tap the decline button
 #    And I tap the next button
-#    And I tap the tooltip view
-#    And I tap the tooltip view
-#    And I tap the tooltip view
     Then loggedIn button is displayed
     When I tap the products tab
     And I tap the broodCerealsBelegCategory button
-#    Then the value Bekijk alles is displayed on the category_title field
-#    Then the value Brood is displayed in the category_title field
-#    Then the value salads is displayed in the category_title field
+    Then I tap the bekijkAllesCategory view
+    Then the skuPlus button is displayed
+    And I tap the back button
     And I tap the broodCategory button
     And I tap the broodjesCategory button
     Then the skuPlus button is displayed

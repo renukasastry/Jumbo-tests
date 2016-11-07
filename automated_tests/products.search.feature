@@ -6,6 +6,8 @@ Feature: Products Search
 # Anonymous scearios category browser
   @smoke_test
   Scenario: I want to search and add a vague term to the SL from the products section search
+    Given the onboardingTitle view is displayed
+    And the registerOrLogin button is displayed
     When I tap the next button
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
@@ -27,6 +29,8 @@ Feature: Products Search
 
   @smoke_test
   Scenario: I want to search and add a SKU to the SL from the products section search
+    Given the onboardingTitle view is displayed
+    And the registerOrLogin button is displayed
     When I tap the next button
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button
@@ -49,6 +53,8 @@ Feature: Products Search
 
   @smoke_test
   Scenario: I want to search and add multiple items(vague term and normal sku) to the SL from the products section search
+    Given the onboardingTitle view is displayed
+    And the registerOrLogin button is displayed
     When I tap the next button
     And I set the value Amsterdam on the homeStore field
     And I tap the enter button

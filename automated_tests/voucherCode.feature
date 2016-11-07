@@ -4,8 +4,17 @@ Feature: vouchercode
 
   @smoke_test
   Scenario: I want to place an order add a vouchercode en get discount
-    Given I am logged in B2C user
-    When And I tap the shoppingList button
+    Given I have a new registered B2C user
+    And I am on the myJumbo screen
+    When I tap the registerOrLogin button
+    And I tap the actionsheetLogin button
+    And I set the property username on the emailAddress field
+    And I set the property password on the password field
+    And I tap the login button
+    And I tap the decline button
+#    And I tap the next button
+    Then loggedIn button is displayed
+    When I tap the shoppingList button
     And I tap the tooltip view
     And I tap the shoppingListAddProduct button
     And I set the value bier on the search field
@@ -24,8 +33,8 @@ Feature: vouchercode
     And I tap the addVoucherCode button
     And I set the value ICE2 on the voucherCode field
     And I tap the addVoucherCode button
-    And I verify the value 1 euro korting is displayed in the order_detail_discount_title_field
-    And I verify the value Servicecode: ICE2 is displayed in the order_detail_discount_voucher_code
-    And I verify the value -1,00 is displayed in the order_detail_discount_price
+    And the value 1 euro korting is displayed on the order_detail_discount_title_field field
+    And the value Servicecode: ICE2 is displayed on the order_detail_discount_voucher_code field
+    And the value -1,00 is displayed on the order_detail_discount_price field
     And I tap the payAtPickUp button
-    Then the payment_confirmation_order_parent(thankyouPage) is displayed
+    Then the payment_confirmation_order_parent(thankyouPage) view is displayed

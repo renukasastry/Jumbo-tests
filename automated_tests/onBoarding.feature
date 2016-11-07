@@ -6,27 +6,33 @@ Feature: New onboarding screen
 	@smoke_test
 	Scenario: Elements on the onboarding screen should be displayed during the navigation between the new screens
 		Given the onboardingTitle view is displayed
-		And the onboardingText view is displayed
+		And the value Hallo is displayed on the onboardingTitle view
+		And the onboardingText field is displayed
 		And the registerOrLogin button is displayed
 		And the next button is displayed
 		When I swipe left on the onBoarding view
 		Then the value Online bestellen is displayed on the onboardingTitle view
+		And the onboardingText field is displayed
 		And the registerOrLogin button is displayed
 		And the next button is displayed
 		When I swipe left on the onBoarding view
 		Then the value Heerlijke recepten is displayed on the onboardingTitle view
+		And the onboardingText field is displayed
 		And the registerOrLogin button is displayed
 		And the next button is displayed
 		When I swipe left on the onBoarding view
 		Then the value Winkelinformatie is displayed on the onboardingTitle view
+		And the onboardingText field is displayed
 		And the registerOrLogin button is displayed
 		And the next button is displayed
 		When I swipe left on the onBoarding view
 		Then the value Zakelijke boodschappen is displayed on the onboardingTitle view
+		And the onboardingText field is displayed
 		And the registerOrLogin button is displayed
 		And the next button is displayed
 		When I swipe left on the onBoarding view
 		Then the value Zakelijke boodschappen is displayed on the onboardingTitle view
+		And the onboardingText field is displayed
 		And the registerOrLogin button is displayed
 		And the next button is displayed
 		When I swipe right on the onBoarding view

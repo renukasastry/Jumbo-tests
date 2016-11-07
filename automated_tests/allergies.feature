@@ -11,11 +11,8 @@ Feature: allergy info in detailed product info
     And I set the property username on the emailAddress field
     And I set the property password on the password field
     And I tap the login button
-#    And I tap the decline button
+    And I tap the decline button
 #    And I tap the next button
-#    And I tap the tooltip view
-#    And I tap the tooltip view
-#    And I tap the tooltip view
     Then loggedIn button is displayed
     When I tap the myJumboFloater button
     And I set the value mars mini on the search field
