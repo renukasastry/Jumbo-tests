@@ -31,6 +31,7 @@ Feature: promotional items
     And I tap the login button
     And I tap the decline button
     When I tap the promotions tab
-#    And I tap the firstPromotion view
+    And I tap the firstPromotion view
+# Previous step always fails because there are no promotions available on SIT
     Then the skuPlus button is displayed
 
