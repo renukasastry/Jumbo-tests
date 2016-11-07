@@ -1,11 +1,8 @@
-Feature: Relavant Order Cell
-	As a I have a new user
-	I want to be able to see the first order cell when I login
+Feature: myJumbo.relevantOrder.feature
+	As a user I want to be able to see the first order cell when I login
 	So I can be guided to place my first order
 
-	Background:
-    	Given I have a new registered B2C user
-	
+
 	@smoke_test
 	Scenario: A new user should see the first order cell
 		Given I have a new registered B2C user
@@ -21,6 +18,7 @@ Feature: Relavant Order Cell
 	
 	@smoke_test
 	Scenario: A user with completed orders should not see the first order cell
+    	Given I have a new registered B2C user
 		And I am on the myJumbo screen
 		When I tap the registerOrLogin button
 		And I tap the actionsheetLogin button

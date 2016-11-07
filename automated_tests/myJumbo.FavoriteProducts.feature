@@ -1,6 +1,5 @@
-Feature: MyJumbo favorite products
- As a user
- I want to be able to add products to my favorite list and view them there
+Feature: myJumbo.favoriteProducts.feature
+ As a user I want to be able to add products to my favorite list and view them there
  so I can reorder the products I like quickly  
 
 Scenario: I want favorite products to be sorted in categories
