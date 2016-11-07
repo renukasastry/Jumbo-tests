@@ -29,7 +29,7 @@ Feature: checkout.placeOrder.favoriteHelper.feature
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I tap the ok button
     Then the value Campina Halfvolle Melk Voordeelpak 2,4 Liter is displayed on the favoritesHelper view

@@ -30,7 +30,7 @@ so I can order exactly what I want if I change my mind
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
     And I tap the next button
@@ -71,7 +71,7 @@ so I can order exactly what I want if I change my mind
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
     And I tap the next button
@@ -115,7 +115,7 @@ so I can order exactly what I want if I change my mind
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
     And I tap the next button
@@ -157,7 +157,7 @@ so I can order exactly what I want if I change my mind
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
     And I tap the next button
@@ -199,7 +199,7 @@ so I can order exactly what I want if I change my mind
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
     And I tap the next button
@@ -238,7 +238,7 @@ so I can order exactly what I want if I change my mind
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I tap the ok button
     And I tap the next button
@@ -282,7 +282,7 @@ so I can order exactly what I want if I change my mind
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I tap the ok button
     And I tap the next button
@@ -320,7 +320,7 @@ so I can order exactly what I want if I change my mind
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I tap the ok button
     And I tap the next button
@@ -361,7 +361,7 @@ so I can order exactly what I want if I change my mind
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
     And I tap the next button
@@ -400,7 +400,7 @@ so I can order exactly what I want if I change my mind
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I tap the ok button
     And I tap the next button
