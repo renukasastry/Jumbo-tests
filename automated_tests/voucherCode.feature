@@ -19,7 +19,7 @@ Feature: vouchercode
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I tap the addVoucherCode button
     And I set the value ICE2 on the voucherCode field

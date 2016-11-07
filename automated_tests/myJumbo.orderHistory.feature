@@ -29,7 +29,7 @@ Feature: View and amend orders
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
     And I tap the next button
@@ -70,7 +70,7 @@ Feature: View and amend orders
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
     And I tap the next button
@@ -87,7 +87,7 @@ Feature: View and amend orders
     Then the value Nieuw in je bestelling is displayed on the newSection view
     # Add steps to actually change the order
 
-  Scenario: I want to see promotion disclaimer before editing timeslot of an open order as a B2C user
+    Scenario: I want to see promotion disclaimer before editing timeslot of an open order as a B2C user
     Given I have a new registered B2C user
     And I am on the myJumbo screen
     When I tap the registerOrLogin button
@@ -112,8 +112,7 @@ Feature: View and amend orders
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
-    And I tap the payAtPickUp button
+    And I pick the firstAvailableTimeSlot
     And I dismiss the thank you page
     And I tap the next button
     And I tap the back button
@@ -149,7 +148,7 @@ Feature: View and amend orders
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
     And I tap the next button
@@ -191,7 +190,7 @@ Feature: View and amend orders
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
     And I tap the next button
@@ -237,7 +236,7 @@ Feature: View and amend orders
   #   And I set the value Hapert on the pickUpPointSearch field
   #   And I tap the enter button
   #   And I tap the pup button
-  #   And I tap the firstAvailableTimeSlot button
+  #   And I pick the firstAvailableTimeSlot
   #   And I tap the payAtPickUp button
   #   And I tap the ok button
   #   And I tap the next button
@@ -277,7 +276,7 @@ Feature: View and amend orders
   #   And I set the value Hapert on the pickUpPointSearch field
   #   And I tap the enter button
   #   And I tap the pup button
-  #   And I tap the firstAvailableTimeSlot button
+  #   And I pick the firstAvailableTimeSlot
   #   And I tap the payAtPickUp button
   #   And I tap the ok button
   #   And I tap the next button
@@ -322,7 +321,7 @@ Feature: View and amend orders
     And I set the value Hapert on the pickUpPointSearch field
     And I tap the enter button
     And I tap the pup button
-    And I tap the firstAvailableTimeSlot button
+    And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I tap the ok button
     And I tap the next button
