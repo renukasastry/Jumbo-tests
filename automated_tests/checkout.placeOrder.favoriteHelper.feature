@@ -23,12 +23,7 @@ Feature: checkout.placeOrder.favoriteHelper.feature
     And I tap the skuPlusNormal2 button
     And I tap the close button    
     And I tap the checkout button
-    And I tap the choosePup button
-    And I tap the allow button
-    And I tap the searchPup button
-    And I set the value Hapert on the pickUpPointSearch field
-    And I tap the enter button
-    And I tap the pup button
+    And I tap the selectPup button
     And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I tap the ok button

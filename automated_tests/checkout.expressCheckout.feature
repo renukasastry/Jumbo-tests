@@ -6,7 +6,7 @@ Feature: checkout.expressCheckout.feature
     Given I have a new registered B2C user
 
 
-  @oneclick @hello
+  @oneclick
   Scenario: I want to see if the express checkout is available when the product bier is already in shopping basket
     Given I am on the myJumbo screen
     When I tap the registerOrLogin button
