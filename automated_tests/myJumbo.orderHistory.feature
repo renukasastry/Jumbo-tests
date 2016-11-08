@@ -120,7 +120,7 @@ Feature: View and amend orders
     And I tap the orderDetail button
     And I tap the editOrder button
     And I tap the actionsheetEditTimeSlot button
-    Then the promotionDisclaimer view is displayed
+    Then I tap the ok button
 
   @smoke_test
   Scenario: I want to amend my order from the order history as a B2B user
