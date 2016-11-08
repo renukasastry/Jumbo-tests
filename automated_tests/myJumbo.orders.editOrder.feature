@@ -208,7 +208,7 @@ so I can order exactly what I want if I change my mind
     And I tap the orderDetail button
     And I tap the editOrder button
     And I tap the actionsheetEditTimeSlot button
-    Then the ok view is displayed
+    Then I tap the ok button
 
   @smoke_test
   Scenario: I want to be able to change the quantity of the number of products I ordered when the order is still open
