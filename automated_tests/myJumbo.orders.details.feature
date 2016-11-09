@@ -3,8 +3,6 @@ As a user I want to be able to view the details of an order after I placed it
 so I can make sure I order exactly what I want
 
 
-
-
   @smoke_test
   Scenario: I want to cancel an order as a B2C user
     Given I have a new registered B2C user

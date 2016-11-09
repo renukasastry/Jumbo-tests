@@ -2,7 +2,8 @@ Feature: products.pdp.feature
 	As a user I want to be able to see all the details of a products
 	So I can make an informed decision on what to order
 
-
+# Add scenario's for checkingt the elements/content on the PDP for regular products
+# Add scenario's for checkingt the elements/content on the PDP for multipack products
 	
   @smoke_test
   Scenario: I want to see the allergy warning in the detailedProductInfo

@@ -2,6 +2,7 @@ Feature: myJumbo.loginRegistration.feature
 As a user I want to be able to login or register from the My Jumbo screen
 so I can use all the wonderfull features accessible for logged in users
 
+# Add scenario's for registration for all user types
 
  @smoke_test @mocks
  Scenario: I want to log in via my Jumbo

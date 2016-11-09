@@ -4,7 +4,6 @@ so I can use all the wonderfull features accessible for logged in users
 
 
 
-
  @smoke_test @mocks
  Scenario: I want to log in a B2C user via on-boarding
     Given I have a new registered B2C user

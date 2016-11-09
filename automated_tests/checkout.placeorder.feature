@@ -2,6 +2,11 @@ Feature: checkout.placeOrder.feature
   As a user I want to be able to place an order with various items on my shopping list
   so that I have an open order
 
+
+# Add scenario's for all user types
+# Add scenario's for both HD and PUP
+
+
   Background:
     Given I have a new registered B2C user
 
