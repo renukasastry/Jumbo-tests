@@ -131,7 +131,7 @@ so I can order exactly what I want if I change my mind
     # Add steps to actually change the order
 
 
-  @smoke_test @fail
+  @smoke_test 
   Scenario: I want to amend my order from the order detail page as a B2B user
     Given I have a new registered B2B user
     And I am on the myJumbo screen
@@ -276,12 +276,7 @@ so I can order exactly what I want if I change my mind
     And I tap the skuPlus button
     And I tap the close button
     And I tap the checkout button
-    And I tap the choosePup button
-    And I tap the allow button
-    And I tap the searchPup button
-    And I set the value Hapert on the pickUpPointSearch field
-    And I tap the enter button
-    And I tap the pup button
+    And I tap the selectPup button
     And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I tap the ok button
@@ -292,9 +287,10 @@ so I can order exactly what I want if I change my mind
     Then the value nieuw in je bestelling is not displayed on the nieuwInJeBestelling field
     And I tap the changeOrderFloater button
     And I set the value kaas on the search field
+    And I tap the enter button
     And I tap the skuPlus button
     And I tap the close button
-    Then the value nieuw in je bestelling is displayed on the nieuwInJeBestelling field
+    Then the value Nieuw in je bestelling is displayed on the nieuwInJeBestelling field
 
   @smoke_test
   Scenario: I want to access the barcode scanner from the Edit order Screen from order history and check if the barcode elements are displayed correctly
@@ -314,12 +310,7 @@ so I can order exactly what I want if I change my mind
     And I tap the skuPlus button
     And I tap the close button
     And I tap the checkout button
-    And I tap the choosePup button
-    And I tap the allow button
-    And I tap the searchPup button
-    And I set the value Hapert on the pickUpPointSearch field
-    And I tap the enter button
-    And I tap the pup button
+    And I tap the selectPup button
     And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I tap the ok button
@@ -355,12 +346,7 @@ so I can order exactly what I want if I change my mind
     And I tap the skuPlusNormal2 button
     And I tap the close button    
     And I tap the checkout button
-    And I tap the choosePup button
-    And I tap the allow button
-    And I tap the searchPup button
-    And I set the value Hapert on the pickUpPointSearch field
-    And I tap the enter button
-    And I tap the pup button
+    And I tap the selectPup button
     And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
@@ -394,12 +380,7 @@ so I can order exactly what I want if I change my mind
     And I tap the skuPlus button
     And I tap the close button
     And I tap the checkout button
-    And I tap the choosePup button
-    And I tap the allow button
-    And I tap the searchPup button
-    And I set the value Hapert on the pickUpPointSearch field
-    And I tap the enter button
-    And I tap the pup button
+    And I tap the selectPup button
     And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I tap the ok button
