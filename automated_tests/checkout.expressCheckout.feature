@@ -2,6 +2,7 @@ Feature: checkout.expressCheckout.feature
   As a user I want to be able to place an order with various items on my shopping list
   so that I have an open order
 
+
   Background:
     Given I have a new registered B2C user
 
@@ -25,3 +26,5 @@ Feature: checkout.expressCheckout.feature
     And I tap the close button
     And I tap the checkout button
     And the expressCheckout button is displayed
+
+

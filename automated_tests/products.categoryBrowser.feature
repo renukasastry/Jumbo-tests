@@ -3,6 +3,8 @@ Feature: products.categoryBrowser.feature
   so I can find the products that I'm looking for
 
 
+# Add scenario for custom assortment
+
   @smoke_test
   Scenario: I want to browse and verify categories
     Given I have a new registered B2B user

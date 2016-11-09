@@ -2,6 +2,7 @@ Feature: myJumbo.relevantOrder.feature
 	As a user I want to be able to see the first order cell when I login
 	So I can be guided to place my first order
 
+# Add scenario's to check the other states of the relevant order cell
 
 	@smoke_test
 	Scenario: A new user should see the first order cell

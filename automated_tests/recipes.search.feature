@@ -3,7 +3,7 @@ As a user I want to be able to search on the recipe section
 so I can find the products and ingredients I want to order
 
 
-
+# Add scenario's for searching for recipes 
 
   Scenario: I want to search and filter my searches on the recipes tab
     Given I am logged in B2E user

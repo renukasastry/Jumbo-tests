@@ -3,7 +3,7 @@ Feature: myJumbo.favoriteProducts.feature
  so I can reorder the products I like quickly  
 
 
-Scenario: I want favorite products to be sorted in categories
+Scenario: I want favorite products to be displayed and sorted in categories
     Given I have a new registered B2C user
     And I am on the myJumbo screen
     When I tap the registerOrLogin button
