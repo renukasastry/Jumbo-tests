@@ -131,7 +131,7 @@ so I can order exactly what I want if I change my mind
     # Add steps to actually change the order
 
 
-  @smoke_test @fail
+  @smoke_test 
   Scenario: I want to amend my order from the order detail page as a B2B user
     Given I have a new registered B2B user
     And I am on the myJumbo screen
@@ -254,7 +254,7 @@ so I can order exactly what I want if I change my mind
     Then the value 5 is displayed on the firstProductAmount field
     And I tap the payAtPickUp button
 
-  @smoke_test @nuri
+  @smoke_test
   Scenario: I want to see if nieuw in je bestelling is displayed when I order something new
     Given I have a new registered B2C user
     And I am on the myJumbo screen
