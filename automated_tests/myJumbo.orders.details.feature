@@ -23,12 +23,7 @@ so I can make sure I order exactly what I want
     And I tap the skuPlus button
     And I tap the close button
     And I tap the checkout button
-    And I tap the choosePup button
-    And I tap the allow button
-    And I tap the searchPup button
-    And I set the value Hapert on the pickUpPointSearch field
-    And I tap the enter button
-    And I tap the pup button
+    And I tap the selectPup button
     And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I tap the ok button
@@ -82,12 +77,7 @@ so I can make sure I order exactly what I want
     And I tap the skuPlus button
     And I tap the close button
     And I tap the checkout button
-    And I tap the choosePup button
-    And I tap the allow button
-    And I tap the searchPup button
-    And I set the value Hapert on the pickUpPointSearch field
-    And I tap the enter button
-    And I tap the pup button
+    And I tap the selectPup button
     And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I tap the ok button
@@ -95,8 +85,8 @@ so I can make sure I order exactly what I want
     And I tap the back button
     And I tap the orderHistory button
     When I tap the orderDetail button
-    Then the value ophaalinformatie is displayed on the pickup_title field
-    And the value Bestelde producten is displayed on the order_details_product_list_title field
-    And the value Totaal is displayed on the order_detail_total_amount_field field
-    And the pickup_time field is displayed
+    Then the pickup_time field is displayed
     And the pickup_location field is displayed
+    And the value Ophaalinformatie is displayed on the pickupInfo field
+    And the value Bestelde producten is displayed on the orderedProductInfo field
+    And the value Totaal is displayed on the totalAmount field

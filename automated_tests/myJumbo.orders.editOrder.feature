@@ -24,12 +24,7 @@ so I can order exactly what I want if I change my mind
     And I tap the skuPlus button
     And I tap the close button
     And I tap the checkout button
-    And I tap the choosePup button
-    And I tap the allow button
-    And I tap the searchPup button
-    And I set the value Hapert on the pickUpPointSearch field
-    And I tap the enter button
-    And I tap the pup button
+    And I tap the selectPup button
     And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
@@ -65,12 +60,7 @@ so I can order exactly what I want if I change my mind
     And I tap the skuPlus button
     And I tap the close button
     And I tap the checkout button
-    And I tap the choosePup button
-    And I tap the allow button
-    And I tap the searchPup button
-    And I set the value Hapert on the pickUpPointSearch field
-    And I tap the enter button
-    And I tap the pup button
+    And I tap the selectPup button
     And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
@@ -109,12 +99,7 @@ so I can order exactly what I want if I change my mind
     And I tap the skuPlus button
     And I tap the close button
     And I tap the checkout button
-    And I tap the choosePup button
-    And I tap the allow button
-    And I tap the searchPup button
-    And I set the value Hapert on the pickUpPointSearch field
-    And I tap the enter button
-    And I tap the pup button
+    And I tap the selectPup button
     And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
@@ -131,7 +116,7 @@ so I can order exactly what I want if I change my mind
     # Add steps to actually change the order
 
 
-  @smoke_test 
+  @smoke_test
   Scenario: I want to amend my order from the order detail page as a B2B user
     Given I have a new registered B2B user
     And I am on the myJumbo screen
@@ -151,12 +136,7 @@ so I can order exactly what I want if I change my mind
     And I tap the skuPlus button
     And I tap the close button
     And I tap the checkout button
-    And I tap the choosePup button
-    And I tap the allow button
-    And I tap the searchPup button
-    And I set the value Hapert on the pickUpPointSearch field
-    And I tap the enter button
-    And I tap the pup button
+    And I tap the selectPup button
     And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
@@ -174,6 +154,7 @@ so I can order exactly what I want if I change my mind
     Then the value Nieuw in je bestelling is displayed on the newSection view
     # Add steps to actually change the order
 
+    
   Scenario: I want to see promotion disclaimer before editing timeslot of an open order as a B2C user
     Given I have a new registered B2C user
     And I am on the myJumbo screen
@@ -193,12 +174,7 @@ so I can order exactly what I want if I change my mind
     And I tap the skuPlus button
     And I tap the close button
     And I tap the checkout button
-    And I tap the choosePup button
-    And I tap the allow button
-    And I tap the searchPup button
-    And I set the value Hapert on the pickUpPointSearch field
-    And I tap the enter button
-    And I tap the pup button
+    And I tap the selectPup button
     And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
@@ -210,7 +186,7 @@ so I can order exactly what I want if I change my mind
     And I tap the actionsheetEditTimeSlot button
     Then I tap the ok button
 
-  @smoke_test
+  @smoke_test 
   Scenario: I want to be able to change the quantity of the number of products I ordered when the order is still open
     Given I have a new registered B2C user
     And I am on the myJumbo screen
@@ -232,12 +208,7 @@ so I can order exactly what I want if I change my mind
     And I tap the skuPlus button
     And I tap the close button
     And I tap the checkout button
-    And I tap the choosePup button
-    And I tap the allow button
-    And I tap the searchPup button
-    And I set the value Hapert on the pickUpPointSearch field
-    And I tap the enter button
-    And I tap the pup button
+    And I tap the selectPup button
     And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I tap the ok button
@@ -325,7 +296,7 @@ so I can order exactly what I want if I change my mind
     Then the emptyState view is displayed
     And the camera view is displayed
 
-  @smoke_test
+  @smoke_test 
   Scenario: I want to updated an order and not see the free gifts and samples on order update screen
     Given I have a new registered B2C user
     And I am on the myJumbo screen
