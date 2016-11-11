@@ -186,7 +186,7 @@ so I can order exactly what I want if I change my mind
     And I tap the actionsheetEditTimeSlot button
     Then I tap the ok button
 
-  @smoke_test @nuri
+  @smoke_test
   Scenario: I want to be able to change the quantity of the number of products I ordered when the order is still open
     Given I have a new registered B2C user
     And I am on the myJumbo screen
@@ -296,7 +296,7 @@ so I can order exactly what I want if I change my mind
     Then the emptyState view is displayed
     And the camera view is displayed
 
-  @smoke_test @nuri
+  @smoke_test
   Scenario: I want to updated an order and not see the free gifts and samples on order update screen
     Given I have a new registered B2C user
     And I am on the myJumbo screen
