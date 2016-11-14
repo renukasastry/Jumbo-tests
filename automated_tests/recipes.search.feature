@@ -2,10 +2,27 @@ Feature: recipes.search.feature
 As a user I want to be able to search on the recipe section
 so I can find the products and ingredients I want to order
 
+# Add scenario's for searching for recipes
 
-# Add scenario's for searching for recipes 
+  Scenario: I want to search for a recipe
+    Given I am on the jumbo screen
+    When I tap the recipes tab
+    And I tap the recipesFloater button
+    And I set the value kaas in the search field
+    And I tap the enter button
+    And I tap the firstImage view
+    Then the productHeader is displayed
 
-  Scenario: I want to search and filter my searches on the recipes tab
+  Scenario: I want to search for a recipe and get an emptystate view if its not there
+    Given I am on the jumbo screen
+    When I tap the recipes tab
+    And I tap the recipesFloater button
+    And I set the value hop in the search field
+    And I tap the enter button
+    Then the emptyState view is displayed
+
+
+  Scenario: I want to filter my searches on the recipes tab
     Given I am on the myJumbo screen
     When I tap the recipes tab
     And I tap the recipeFloater button
@@ -30,6 +47,7 @@ so I can find the products and ingredients I want to order
     And I tap the allow button
     Then the emptyState view is displayed
     And the camera view is displayed
+
 
 
 #  @smoke_test

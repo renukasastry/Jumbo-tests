@@ -10,7 +10,6 @@ so I can order everything I want
 # # # Add scenarios to test the menu options (share and delete all)
 
 
-  @nuri
   Scenario: I want to share my shoppinglist with one button
     Given I am on the myJumbo screen
     When I tap the shoppingList button
@@ -25,7 +24,7 @@ so I can order everything I want
     And I tap the shoppingListMenu button
     And the shareList button is displayed
 
-  @nuri
+
   Scenario: I want to delete my shoppinglist with one button
     Given I am on the myJumbo screen
     When I tap the shoppingList button
@@ -41,7 +40,7 @@ so I can order everything I want
     And I tap the deleteAll button
     Then the shoppingListAddProduct button is displayed
 
-  @nuri
+
   Scenario: I want to have information banners on my shoppinglist to inform me of my current choices
     Given I am on the myJumbo screen
     When I tap the shoppingList button
