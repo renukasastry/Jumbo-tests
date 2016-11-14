@@ -1,7 +1,5 @@
 Feature: checkout.loginRegistration.feature
 
-# go through the login and registration flows via checkout
-
   Scenario: go to checkout as anonymous user and then register as B2C and continue checkout
     Given I have a new user email address
     And I am on the myJumbo screen
