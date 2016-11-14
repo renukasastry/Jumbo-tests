@@ -1,4 +1,5 @@
 Feature: checkout.loginRegistration.feature
+  As a user I want to go trough the register or login flow flow starting from the checkout page
 
   Scenario: go to checkout as anonymous user and then register as B2C and continue checkout
     Given I have a new user email address
