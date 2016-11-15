@@ -8,7 +8,7 @@ Feature: checkout.expressCheckout.feature
 
 
   @oneclick
-  Scenario: I want to see if the express checkout is available when the product bier is already in shopping basket
+  Scenario: I want to see if the EXPRESS CHECKOUT is available when the product bier is already in shopping basket
     Given I am on the myJumbo screen
     When I tap the registerOrLogin button
     And I tap the actionsheetLogin button

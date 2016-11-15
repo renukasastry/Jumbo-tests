@@ -4,26 +4,19 @@ so I can find the products and ingredients I want to order
 
 
 
- Scenario: I want access the search functionality as a logged in user
-   Given I have a new registered B2C user
-   And I am on the myJumbo screen
-   When I tap the registerOrLogin button
-   And I tap the actionsheetLogin button
-   And I set the property username on the emailAddress field
-   And I set the property password on the password field
-   And I tap the login button
-   And I tap the decline button
+ Scenario: I want access the SEARCH functionality as a logged in user
+   Given I am a logged in B2C user
    Then loggedIn button is displayed
    When I tap the myJumboFloater button
    Then the search field is displayed
 
 
   @smoke_test
-  Scenario: I want to search and filter my searches on the myJumbo tab
+  Scenario: I want to FILTER my searches on the myJumbo tab
     Given I am logged in B2E user
     When I tap the myJumboFloater button
     And I set the value kip on the search field
-    Then the value kip is displayed on the firstAutosuggestElement button is there
+    Then the value kip is displayed on the firstAutosuggestElement button
     And I tap the firstAutosuggestElement button
     Then the filter button is displayed
     Then the value producten is displayed on the queryResultText field
@@ -32,13 +25,13 @@ so I can find the products and ingredients I want to order
     Then the login view is displayed
 
 
- Scenario: I want access the search functionality as a logged out user
+ Scenario: I want access the SEARCH functionality as a logged out user
    Given I am on the myJumbo screen
    When I tap the myJumboFloater button
    Then the search field is displayed
 
   @smoke_test
-  Scenario: I want to access the barcode scanner from the My Jumbo and check if the barcode elements are displayed correctly
+  Scenario: I want to access the BARCODE SCANNER from the My Jumbo and check if the barcode elements are displayed correctly
     Given I am on the myJumbo screen
    	When I tap the myJumboFloater button
     And the barcodeScanner button is displayed

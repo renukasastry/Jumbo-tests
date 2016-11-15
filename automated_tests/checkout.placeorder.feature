@@ -11,15 +11,8 @@ Feature: checkout.placeOrder.feature
     Given I have a new registered B2C user
 
   @smoke_test
-  Scenario: I want to place an order with a product on my SL
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+  Scenario: I want to place an order with a SKU on my SL
+    Given I am a logged in B2C user
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the shoppingListAddProduct button
@@ -38,15 +31,8 @@ Feature: checkout.placeOrder.feature
     Then the orderDetail button is displayed
 
   @smoke_test
-  Scenario: I want to place an order with a vague term on my SL
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+  Scenario: I want to place an order with a VAGUE TERM on my SL
+    Given I am a logged in B2C user
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the shoppingListAddProduct button
@@ -68,18 +54,11 @@ Feature: checkout.placeOrder.feature
     Then the orderDetail button is displayed
 
   @smoke_test_wip
-  Scenario: I want to place an order with an ingredient on my SL
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+  Scenario: I want to place an order with an INGREDIENT on my SL
+    Given I am a logged in B2C user
     And I tap the recipes tab
     And I tap the recipeFloater button
-    And I set the value kaas on the searchItemName field
+    And I set the value kaas on the search field
     And I tap the enter button
     And I tap the recipe button
     And I tap the addToShoppingList button
@@ -101,15 +80,8 @@ Feature: checkout.placeOrder.feature
     Then the orderDetail button is displayed
 
   @smoke_test
-  Scenario: I want to apply early cut off to my order
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+  Scenario: I want to apply early CUT OFF to my order
+    Given I am a logged in B2C user
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the shoppingListAddProduct button
@@ -139,15 +111,8 @@ Feature: checkout.placeOrder.feature
     Then the earlyCutOffApplied view is displayed
 
       @smoke_test
-  Scenario: I do not want to apply early cut off to my order
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+  Scenario: I do NOT want to apply early CUT OFF to my order
+    Given I am a logged in B2C user
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the shoppingListAddProduct button
@@ -175,15 +140,8 @@ Feature: checkout.placeOrder.feature
     Then the earlyCutOffNotApplied view is displayed
 
   @smoke_test
-  Scenario: I want to place an order add a vouchercode en get discount
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+  Scenario: I want to place an order ADD a VOUCHERCODE en get discount
+    Given I am a logged in B2C user
 #    And I tap the next button
     Then loggedIn button is displayed
     When I tap the shoppingList button
