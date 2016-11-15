@@ -13,7 +13,7 @@ so I can find the products and ingredients I want to order
 
   @smoke_test
   Scenario: I want to FILTER my searches on the myJumbo tab
-    Given I am logged in B2E user
+    Given I am logged in B2C user
     When I tap the myJumboFloater button
     And I set the value kip on the search field
     Then the value kip is displayed on the firstAutosuggestElement button
