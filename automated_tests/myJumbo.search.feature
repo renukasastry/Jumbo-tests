@@ -10,7 +10,6 @@ so I can find the products and ingredients I want to order
    When I tap the myJumboFloater button
    Then the search field is displayed
 
-
   @smoke_test
   Scenario: I want to FILTER my searches on the myJumbo tab
     Given I am logged in B2C user
@@ -23,7 +22,6 @@ so I can find the products and ingredients I want to order
     Then the addSku button is displayed
     And I tap the close button
     Then the login view is displayed
-
 
  Scenario: I want access the SEARCH functionality as a logged out user
    Given I am on the myJumbo screen

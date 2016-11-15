@@ -38,7 +38,6 @@ so I can order exactly what I want if I change my mind
     Then the value Nieuw in je bestelling is displayed on the newSection view
     # Add steps to actually change the order
 
-
   @smoke_test
   Scenario: I want to AMEND my order from the order history as a B2B user
     Given I have a new registered B2B user
@@ -61,7 +60,6 @@ so I can order exactly what I want if I change my mind
     And I tap the close button
     Then the value Nieuw in je bestelling is displayed on the newSection view
     # Add steps to actually change the order
-
 
   @smoke_test
   Scenario: I want to AMEND my order from the order detail page as a B2B user
@@ -88,7 +86,6 @@ so I can order exactly what I want if I change my mind
     Then the value Nieuw in je bestelling is displayed on the newSection view
     # Add steps to actually change the order
 
-    
   Scenario: I want to see PROMOTION DISCLAIMER before editing timeslot of an open order as a B2C user
     Given I am a logged in B2C user
     And the firstOrderCell view is displayed
@@ -181,8 +178,7 @@ so I can order exactly what I want if I change my mind
     And the value 7UP 0,5 Liter is not displayed on the updateOrderProductsList view 
     And the value Knorr Visbouillon 6 Tabletten 60g is not displayed on the updateOrderProductsList view 
 
-
-      @smoke_test
+  @smoke_test
   Scenario: I want to access the BARCODE SCANNER from the Edit order Screen from order detail and check if the barcode elements are displayed correctly
     Given I am a logged in B2C user
     And I have placed a beer order
@@ -197,7 +193,6 @@ so I can order exactly what I want if I change my mind
     And I tap the allow button
     Then the emptyState view is displayed
     And the camera view is displayed
-
 
 #  @smoke_test
 #  Scenario: I want to deny access to use the camera and check if a message instructing how to enable it is displayed when I access the barcode scanner screen

@@ -8,20 +8,7 @@ so I can make sure I order exactly what I want
     Given I am a logged in B2C user
     And the firstOrderCell view is displayed
     And the orderHistory button is not displayed
-    And I tap the shoppingList button
-    And I tap the tooltip view
-    And I tap the shoppingListAddProduct button
-    And I set the value bier on the search field
-    And I tap the enter button
-    And I tap the skuPlus button
-    And I tap the close button
-    And I tap the checkout button
-    And I tap the selectPup button
-    And I pick the firstAvailableTimeSlot
-    And I tap the payAtPickUp button
-    And I tap the ok button
-    And I tap the next button
-    And I tap the back button
+    And I have placed a beer order
     And I tap the orderHistory button
     And I tap the orderDetail button
     And I tap the cancelOrder button
@@ -48,7 +35,7 @@ so I can make sure I order exactly what I want
     Then the value 7UP 0,5 Liter is displayed on the reorderProductsList view
     And the value Knorr Visbouillon 6 Tabletten 60g is not displayed on the reorderProductsList view
 
-      @smoke_test
+  @smoke_test
   Scenario: I want to verify the CONTENT is correct on a open order
     Given I am a logged in B2C user
 #    And I tap the next button

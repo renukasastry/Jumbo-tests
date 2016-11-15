@@ -2,13 +2,8 @@ Feature: checkout.placeOrder.feature
   As a user I want to be able to place an order with various items on my shopping list
   so that I have an open order
 
-
 # Add scenario's for all user types
 # Add scenario's for both HD and PUP
-
-
-  Background:
-    Given I have a new registered B2C user
 
   @smoke_test
   Scenario: I want to place an order with a SKU on my SL
@@ -110,7 +105,7 @@ Feature: checkout.placeOrder.feature
     And I tap the orderDetail button
     Then the earlyCutOffApplied view is displayed
 
-      @smoke_test
+  @smoke_test
   Scenario: I do NOT want to apply early CUT OFF to my order
     Given I am a logged in B2C user
     And I tap the shoppingList button

@@ -91,7 +91,6 @@ so I can find the products and ingredients I want to order
     Then the value appel is displayed on the vagueTermTitle field
     And the skuCell view is displayed
 
-
   @smoke_test
   Scenario: I want to access the BARCODE SCREEN from the Shopping List screen and check if all the elements are displayed correctly
     Given I am on the myJumbo screen

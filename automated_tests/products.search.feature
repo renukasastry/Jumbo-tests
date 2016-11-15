@@ -3,8 +3,7 @@ As a user I want to be able to search on the products section
 so I can find the products and ingredients I want to order
 
 
-
-# Anonymous scearios
+# Anonymous scenarios
   @smoke_test
   Scenario: I want to search and add a VAGUE TERM to the SL from the products section search
     Given I am on the myJumbo screen
