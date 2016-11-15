@@ -99,7 +99,7 @@ so I can order exactly what I want if I change my mind
     And I tap the editOrder button
     And I tap the actionsheetEditTimeSlot button
     Then I tap the ok button
-
+    
   @smoke_test
   Scenario: I want to be able to CHANGE THE QUANTITY of the number of products I ordered when the order is still open
     Given I am a logged in B2C user
