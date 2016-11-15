@@ -6,13 +6,7 @@ so I can use all the wonderfull features accessible for logged in users
 
  @smoke_test @mocks
  Scenario: I want to log in a B2C user via on-boarding
-    Given I have a new registered B2C user
-   When I tap the registerOrLogin button
-    And I tap the login button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+    Given I am a logged in B2C user
 #    And I tap the next button
     And I tap the tooltip view
     And I tap the tooltip view
@@ -49,7 +43,7 @@ so I can use all the wonderfull features accessible for logged in users
     Then loggedIn button is displayed
 
  @smoke_test @skip-ios @mocks
- Scenario: I want to get an error response by logging in with a B2B master user via on-boarding
+ Scenario: I want to get an ERROR RESPONSE by logging in with a B2B master user via on-boarding
    When I tap the registerOrLogin button
     And I tap the login button
     And I set the value icemaster3@icemobile.com on the emailAddress field

@@ -3,20 +3,10 @@ As a user I want to be able to search on the products section
 so I can find the products and ingredients I want to order
 
 
-
-# Anonymous scearios
+# Anonymous scenarios
   @smoke_test
-  Scenario: I want to search and add a vague term to the SL from the products section search
-    Given the onboardingTitle view is displayed
-    And the registerOrLogin button is displayed
-    When I tap the next button
-    And I set the value Amsterdam on the homeStore field
-    And I tap the enter button
-    And I tap the selectStoreCell view 
-    And I tap the next button
-    And I tap the tooltip view
-    And I tap the tooltip view
-    And I tap the tooltip view
+  Scenario: I want to search and add a VAGUE TERM to the SL from the products section search
+    Given I am on the myJumbo screen
     And I tap the products tab
     And I tap the productFloater button
     And I set the value appel on the search field
@@ -30,16 +20,7 @@ so I can find the products and ingredients I want to order
 
   @smoke_test
   Scenario: I want to search and add a SKU to the SL from the products section search
-    Given the onboardingTitle view is displayed
-    And the registerOrLogin button is displayed
-    When I tap the next button
-    And I set the value Amsterdam on the homeStore field
-    And I tap the enter button
-    And I tap the selectStoreCell view 
-    And I tap the next button
-    And I tap the tooltip view
-    And I tap the tooltip view
-    And I tap the tooltip view
+    Given I am on the myJumbo screen
     And I tap the products tab
     And I tap the productFloater button
     And I set the value appel on the search field
@@ -53,17 +34,8 @@ so I can find the products and ingredients I want to order
     Then the skuCell view is displayed
 
   @smoke_test
-  Scenario: I want to search and add multiple items(vague term and normal sku) to the SL from the products section search
-    Given the onboardingTitle view is displayed
-    And the registerOrLogin button is displayed
-    When I tap the next button
-    And I set the value Amsterdam on the homeStore field
-    And I tap the enter button
-    And I tap the selectStoreCell view 
-    And I tap the next button
-    And I tap the tooltip view
-    And I tap the tooltip view
-    And I tap the tooltip view
+  Scenario: I want to search and add VAGUE TERM AND SKU to the SL from the products section search
+    Given I am on the myJumbo screen
     And I tap the products tab
     And I tap the productFloater button
     And I set the value appel on the search field
@@ -83,15 +55,8 @@ so I can find the products and ingredients I want to order
 
 # Logged in scenarios
   @smoke_test 
-  Scenario: I want to search and add a vague term to the SL from the products section search 
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+  Scenario: I want to login and search and add a VAGUE TERM to the SL from the products section search
+    Given I am a logged in B2C user
     And I tap the products tab
     And I tap the productFloater button
     And I set the value appel on the search field
@@ -105,15 +70,8 @@ so I can find the products and ingredients I want to order
 
 
   @smoke_test
-  Scenario: I want to search and add a SKU to the SL from the products section search
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+  Scenario: I want to login and search and add a SKU to the SL from the products section search
+    Given I am a logged in B2C user
     And I tap the products tab
     And I tap the productFloater button
     And I set the value appel on the search field
@@ -127,15 +85,8 @@ so I can find the products and ingredients I want to order
     Then the skuCell view is displayed
 
   @smoke_test
-  Scenario: I want to search and add multiple items to the SL from the products section search
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+  Scenario: I want login and search and add VAGUE TERM AND SKU to the SL from the products section search
+    Given I am a logged in B2C user
     And I tap the products tab
     And I tap the productFloater button
     And I set the value appel on the search field
@@ -154,7 +105,7 @@ so I can find the products and ingredients I want to order
     And the skuCell view is displayed
 
 
-  Scenario: I want to search and filter my searches on the recipes tab
+  Scenario: I want to search and FILTER my searches on the recipes tab
     Given I am logged in B2E user
     When I tap the recipes tab
     And I tap the recipesFloater button
@@ -171,7 +122,7 @@ so I can find the products and ingredients I want to order
 
 
   @smoke_test
-  Scenario: I want to access the barcode scanner from the Products screen and check if the barcode elements are displayed correctly
+  Scenario: I want to access the BARCODE SCANNER from the Products screen and check if the barcode elements are displayed correctly
     Given I am on the myJumbo screen
     When I tap the products tab
     And I tap the productFloater button

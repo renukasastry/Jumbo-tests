@@ -4,8 +4,8 @@ so I can find the products and ingredients I want to order
 
 # Add scenario's for searching for recipes
 
-  Scenario: I want to search for a recipe
-    Given I am on the jumbo screen
+  Scenario: I want to SEARCH for a recipe
+    Given I am on the myJumbo screen
     When I tap the recipes tab
     And I tap the recipesFloater button
     And I set the value kaas in the search field
@@ -13,8 +13,9 @@ so I can find the products and ingredients I want to order
     And I tap the firstImage view
     Then the productHeader is displayed
 
-  Scenario: I want to search for a recipe and get an emptystate view if its not there
-    Given I am on the jumbo screen
+
+  Scenario: I want to SEARCH for a recipe and get an EMPTYSTATE view if its not there
+    Given I am on the myJumbo screen
     When I tap the recipes tab
     And I tap the recipesFloater button
     And I set the value hop in the search field
@@ -22,12 +23,13 @@ so I can find the products and ingredients I want to order
     Then the emptyState view is displayed
 
 
-  Scenario: I want to filter my searches on the recipes tab
+  Scenario: I want to FILTER my searches on the recipes tab
     Given I am on the myJumbo screen
     When I tap the recipes tab
     And I tap the recipeFloater button
     And I set the value kip on the search field
-    And I tap the enter button
+    Then the value kip is displayed on the firstAutosuggestElement button
+    And I tap the firstAutosuggestElement button
     Then the filter button is displayed
     And I tap the filter button
     And I tap the jumboFilter button
@@ -38,7 +40,7 @@ so I can find the products and ingredients I want to order
 
 
   @smoke_test
-  Scenario: I want to access the barcode scanner from the Recipes Screen and check if the barcode elements are displayed correctly
+  Scenario: I want to access the BARCODE SCANNER from the Recipes Screen and check if the barcode elements are displayed correctly
     Given I am on the myJumbo screen
     And I tap the recipes tab
     And I tap the recipeFloater button

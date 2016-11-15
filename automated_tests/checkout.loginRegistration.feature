@@ -34,7 +34,6 @@ Feature: checkout.loginRegistration.feature
     And I tap the payAtPickUp button
     And I dismiss the thank you page
 
-
   Scenario: go to checkout as anonymous user and then register as B2B and continue checkout
     Given I am on the myJumbo screen
     And I have a new user email address
@@ -69,7 +68,6 @@ Feature: checkout.loginRegistration.feature
     And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
-
 
   Scenario: go trough checkout as anonymous user and login as existing user
     Given I have a new registered B2C user

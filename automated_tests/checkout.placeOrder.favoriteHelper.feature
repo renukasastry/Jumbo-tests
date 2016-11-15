@@ -2,20 +2,12 @@ Feature: checkout.placeOrder.favoriteHelper.feature
   As a user I want to see the favorite helper after placing an order 
   So that I can include products in my favorites list
 
-# Add scenario to check if the favorite helper is displayed when it shoult
+# Add scenario to check if the favorite helper is displayed when it should
 # Add a scenario to check that the favorite helper is not displayed when it shouldn't
 
-
   @smoke_test
-  Scenario: Samples should not be displayed on favorites helper, only products and free gifts
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+  Scenario: SAMPLES should not be displayed on favorites helper, only products and free gifts
+    Given I am a logged in B2C user
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the shoppingListAddProduct button

@@ -3,12 +3,9 @@ Feature: checkout.expressCheckout.feature
   so that I have an open order
 
 
-  Background:
-    Given I have a new registered B2C user
-
-
   @oneclick
-  Scenario: I want to see if the express checkout is available when the product bier is already in shopping basket
+  Scenario: I want to see if the EXPRESS CHECKOUT is available when the product bier is already in shopping basket
+    Given I have a new registered B2C user
     Given I am on the myJumbo screen
     When I tap the registerOrLogin button
     And I tap the actionsheetLogin button

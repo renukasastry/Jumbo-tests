@@ -4,15 +4,8 @@ so I get a clear overview of what is and will be on promotion
 
 
   @smoke_test
-  Scenario: I want to check the promotional items
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+  Scenario: I want to check the PROMOTIONAL items
+    Given I am a logged in B2C user
     Then loggedIn button is displayed
     When I tap the promotions tab
     When the value geen bestelkosten is displayed on the geenBestelkosten field

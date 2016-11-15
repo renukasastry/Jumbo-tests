@@ -14,7 +14,7 @@ so I can enter the app informed and with the right home store
     Then the selectStoreCell view is displayed
 
   @smoke_test
-  Scenario: List of stores should be ordered by proximity to the searched address
+  Scenario: List of stores should be ordered by proximity to the SEARCHED ADDRESS
     Given the onboardingTitle view is displayed
     And the registerOrLogin button is displayed
     When I tap the next button
@@ -23,7 +23,7 @@ so I can enter the app informed and with the right home store
     Then the selectStoreCell view is displayed
 
   @smoke_test
-  Scenario: Empty state screen should be displayed when the searched address returns no matches
+  Scenario: EMPTY STATE screen should be displayed when the searched address returns no matches
     Given the onboardingTitle view is displayed
     And the registerOrLogin button is displayed
     When I tap the next button
@@ -32,7 +32,7 @@ so I can enter the app informed and with the right home store
     Then the emptyState view is displayed
 
   @smoke_test
-  Scenario: Welcome screen should be displayed after selecting a home store
+  Scenario: WELCOME SCREEN should be displayed after selecting a home store
     Given the onboardingTitle view is displayed
     And the registerOrLogin button is displayed
     When I tap the next button
@@ -42,7 +42,7 @@ so I can enter the app informed and with the right home store
     Then the welcomeScreen view is displayed
 
    @smoke_test
-   Scenario: I want to go through the onboarding as an anonymous user
+   Scenario: I want to go through the ONBOARDING as an ANONYMOUS user
      Given the onboardingTitle view is displayed
      And the registerOrLogin button is displayed
      When I tap the next button
@@ -58,7 +58,7 @@ so I can enter the app informed and with the right home store
  
 
 	@smoke_test
-	Scenario: Elements on the onboarding screen should be displayed during the navigation between the new screens
+	Scenario: ELEMENTS on the onboarding screen should be displayed during the navigation between the new screens
 		Given the onboardingTitle view is displayed
 		And the value Hallo is displayed on the onboardingTitle view
 		And the onboardingText field is displayed
@@ -99,7 +99,7 @@ so I can enter the app informed and with the right home store
 		Then the value Hallo is displayed on the onboardingTitle view
 
 	@smoke_test
-	Scenario: Buttons on the onboarding screen should trigger the expected actions
+	Scenario: BUTTONS on the onboarding screen should trigger the expected actions
 	 	Given the onboardingTitle view is displayed
 		And the registerOrLogin button is displayed
 		When I tap the registerOrLogin button

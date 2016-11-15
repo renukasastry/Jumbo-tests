@@ -5,7 +5,7 @@ so I can find the products and ingredients I want to order
 
 # Logged out scenarios
   @smoke_test
-  Scenario: I want to search and add a vague term to the SL
+  Scenario: I want to search and add a VAGUE TERM to the SL
     Given I am on the myJumbo screen
     And I tap the shoppingList button
     And I tap the tooltip view
@@ -31,7 +31,7 @@ so I can find the products and ingredients I want to order
     Then the skuCell view is displayed
 
   @smoke_test
-  Scenario: I want to search and add multiple items to my shopping list
+  Scenario: I want to search and add VAGUE TERM AND SKU to my shopping list
     Given I am on the myJumbo screen
     And I tap the shoppingList button
     And I tap the tooltip view
@@ -49,15 +49,8 @@ so I can find the products and ingredients I want to order
 
 # Logged in scenarios
   @smoke_test 
-  Scenario: I want to search and add a vague term to the SL
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+  Scenario: I want to search and add a VAGUE TERM to the SL
+    Given I am a logged in B2C user
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the shoppingListAddProduct button
@@ -70,14 +63,7 @@ so I can find the products and ingredients I want to order
 
   @smoke_test
   Scenario: I want to search and add a SKU to the SL
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+    Given I am a logged in B2C user
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the shoppingListAddProduct button
@@ -89,15 +75,8 @@ so I can find the products and ingredients I want to order
     Then the skuCell view is displayed
 
   @smoke_test 
-  Scenario: I want to search and add multiple items to my shopping list
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+  Scenario: I want to search and add VAGUE TERM AND SKU to my shopping list
+    Given I am a logged in B2C user
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the shoppingListAddProduct button
@@ -112,9 +91,8 @@ so I can find the products and ingredients I want to order
     Then the value appel is displayed on the vagueTermTitle field
     And the skuCell view is displayed
 
-
   @smoke_test
-  Scenario: I want to access the barcode screen from the Shopping List screen and check if all the elements are displayed correctly
+  Scenario: I want to access the BARCODE SCREEN from the Shopping List screen and check if all the elements are displayed correctly
     Given I am on the myJumbo screen
     When I tap the shoppingList button
     And I tap the tooltip view

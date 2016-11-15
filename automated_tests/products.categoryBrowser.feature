@@ -6,15 +6,8 @@ Feature: products.categoryBrowser.feature
 # Add scenario for custom assortment
 
   @smoke_test
-  Scenario: I want to browse and verify categories
-    Given I have a new registered B2B user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+  Scenario: I want to BROWSE and VERIFY categories
+    Given I am a logged in B2C user
 #    And I tap the next button
     Then loggedIn button is displayed
     When I tap the products tab
