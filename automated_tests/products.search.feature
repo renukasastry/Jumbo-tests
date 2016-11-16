@@ -54,7 +54,7 @@ so I can find the products and ingredients I want to order
     And the skuCell view is displayed
 
 # Logged in scenarios
-  @smoke_test 
+  @smoke_test
   Scenario: I want to login and search and add a VAGUE TERM to the SL from the products section search
     Given I am a logged in B2C user
     And I tap the products tab
@@ -104,21 +104,20 @@ so I can find the products and ingredients I want to order
     Then the value appel is displayed on the vagueTermTitle field
     And the skuCell view is displayed
 
-
+  @nuri
   Scenario: I want to search and FILTER my searches on the recipes tab
-    Given I am logged in B2E user
-    When I tap the recipes tab
-    And I tap the recipesFloater button
+    Given I am a logged in B2C user
+    When I tap the products tab
+    And I tap the productFloater button
     And I set the value kip on the search field
-    Then the value kip is displayed on the firstAutosuggestElement button is there
-    And I tap the firstAutosuggestElement button
-    Then the filter button is displayed
+    And I tap the enter button
+    Then the value Filter is displayed on the filter button
     And I tap the filter button
     And I tap the jumboFilter button
-    Then the value filter(1) is displayed on the filter button
-    And I tap the filter button
-    And I tap the jumboFilter button
-    Then the value filter is displayed on the filter button
+    Then the value Filter(1) is displayed on the filter button
+#    And I tap the filter button
+#    And I tap the jumboFilter button
+#    Then the value filter is displayed on the filter button
 
 
   @smoke_test

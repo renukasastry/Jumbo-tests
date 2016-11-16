@@ -1,6 +1,7 @@
 Feature: checkout.loginRegistration.feature
   As a user I want to go trough the register or login flow flow starting from the checkout page
 
+  @working
   Scenario: go to checkout as anonymous user and then register as B2C and continue checkout
     Given I have a new user email address
     And I am on the myJumbo screen
@@ -34,6 +35,7 @@ Feature: checkout.loginRegistration.feature
     And I tap the payAtPickUp button
     And I dismiss the thank you page
 
+  @working
   Scenario: go to checkout as anonymous user and then register as B2B and continue checkout
     Given I am on the myJumbo screen
     And I have a new user email address
@@ -69,6 +71,7 @@ Feature: checkout.loginRegistration.feature
     And I tap the payAtPickUp button
     And I dismiss the thank you page
 
+  @working
   Scenario: go trough checkout as anonymous user and login as existing user
     Given I have a new registered B2C user
     And I am on the myJumbo screen

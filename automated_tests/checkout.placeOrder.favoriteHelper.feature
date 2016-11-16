@@ -5,7 +5,7 @@ Feature: checkout.placeOrder.favoriteHelper.feature
 # Add scenario to check if the favorite helper is displayed when it should
 # Add a scenario to check that the favorite helper is not displayed when it shouldn't
 
-  @smoke_test
+  @smoke_test @working
   Scenario: SAMPLES should not be displayed on favorites helper, only products and free gifts
     Given I am a logged in B2C user
     And I tap the shoppingList button

@@ -5,7 +5,7 @@ Feature: checkout.placeOrder.feature
 # Add scenario's for all user types
 # Add scenario's for both HD and PUP
 
-  @smoke_test
+  @smoke_test @working
   Scenario: I want to place an order with a SKU on my SL
     Given I am a logged in B2C user
     And I tap the shoppingList button
@@ -25,7 +25,7 @@ Feature: checkout.placeOrder.feature
     And I tap the orderHistory button
     Then the orderDetail button is displayed
 
-  @smoke_test
+  @smoke_test @working
   Scenario: I want to place an order with a VAGUE TERM on my SL
     Given I am a logged in B2C user
     And I tap the shoppingList button
@@ -48,7 +48,7 @@ Feature: checkout.placeOrder.feature
     And I tap the orderHistory button
     Then the orderDetail button is displayed
 
-  @smoke_test_wip
+  @smoke_test_wip @working
   Scenario: I want to place an order with an INGREDIENT on my SL
     Given I am a logged in B2C user
     And I tap the recipes tab
@@ -134,7 +134,7 @@ Feature: checkout.placeOrder.feature
     And I tap the orderDetail button
     Then the earlyCutOffNotApplied view is displayed
 
-  @smoke_test
+  @smoke_test @working
   Scenario: I want to place an order ADD a VOUCHERCODE en get discount
     Given I am a logged in B2C user
 #    And I tap the next button

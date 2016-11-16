@@ -3,7 +3,7 @@ Feature: checkout.expressCheckout.feature
   so that I have an open order
 
 
-  @oneclick
+  @oneclick @working
   Scenario: I want to see if the EXPRESS CHECKOUT is available when the product bier is already in shopping basket
     Given I have a new registered B2C user
     Given I am on the myJumbo screen
