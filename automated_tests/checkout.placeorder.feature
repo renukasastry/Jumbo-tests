@@ -48,7 +48,7 @@ Feature: checkout.placeOrder.feature
     And I tap the orderHistory button
     Then the orderDetail button is displayed
 
-  @smoke_test_wip @working
+  @smoke_test @working
   Scenario: I want to place an order with an INGREDIENT on my SL
     Given I am a logged in B2C user
     And I tap the recipes tab
