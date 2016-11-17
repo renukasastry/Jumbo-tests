@@ -5,7 +5,7 @@ Feature: checkout.placeOrder.feature
 # Add scenario's for all user types (use "Given I am a logged in B2B user")
 # Add scenario's for both HD and PUP
 
-  @smoke_test @working @nuri
+  @smoke_test @working
   Scenario: I want to place an order with a SKU on my SL
     Given I am a logged in B2C user
     And I tap the shoppingList button
@@ -25,7 +25,7 @@ Feature: checkout.placeOrder.feature
     And I tap the orderHistory button
     Then the orderDetail button is displayed
 
-  @smoke_test @working @nuri
+  @smoke_test @working
   Scenario: I want to place an order with a VAGUE TERM on my SL
     Given I am a logged in B2C user
     And I tap the shoppingList button
@@ -48,7 +48,7 @@ Feature: checkout.placeOrder.feature
     And I tap the orderHistory button
     Then the orderDetail button is displayed
 
-  @smoke_test_wip @working @nuri
+  @smoke_test_wip @working
   Scenario: I want to place an order with an INGREDIENT on my SL
     Given I am a logged in B2C user
     And I tap the recipes tab
@@ -134,7 +134,7 @@ Feature: checkout.placeOrder.feature
 #    And I tap the orderDetail button
 #    Then the earlyCutOffNotApplied view is displayed
 
-  @smoke_test @working @nuri
+  @smoke_test @working
   Scenario: I want to place an order ADD a VOUCHERCODE en get discount
     Given I am a logged in B2C user
 #    And I tap the next button
@@ -158,7 +158,8 @@ Feature: checkout.placeOrder.feature
     And I tap the payAtPickUp button
     And I dismiss the thank you page
 
-  Scenario: I want to place an order using the home delivery option
+  @nuri
+  Scenario: I want to place an order using the MANUAL HOME DELIVERY option
     Given I am a logged in B2C user
     And I tap the shoppingList button
     And I tap the tooltip view
@@ -168,7 +169,12 @@ Feature: checkout.placeOrder.feature
     And I tap the skuPlus button
     And I tap the close button
     And I tap the checkout button
-    And I tap the selectPup button
+
+    And I tap the pickHomeDelivery button
+    And I set the value 5233AN on the postalCodeInput field
+    And I set the value 21 on the houseNumberInput field
+    And I tap the searchAddress button
+
     And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
@@ -197,7 +203,7 @@ Feature: checkout.placeOrder.feature
     And I tap the orderHistory button
     Then the orderDetail button is displayed
 
-  @smoke_test @working @nuri
+  @smoke_test @working
   Scenario: as B2B user I want to place an order with a VAGUE TERM on my SL
     Given I am a logged in B2B user
     And I tap the shoppingList button
@@ -220,7 +226,7 @@ Feature: checkout.placeOrder.feature
     And I tap the orderHistory button
     Then the orderDetail button is displayed
 
-  @smoke_test_wip @working @nuri
+  @smoke_test_wip @working
   Scenario: as B2B user I want to place an order with an INGREDIENT on my SL
     Given I am a logged in B2B user
     And I tap the recipes tab
@@ -306,7 +312,7 @@ Feature: checkout.placeOrder.feature
 #    And I tap the orderDetail button
 #    Then the earlyCutOffNotApplied view is displayed
 
-  @smoke_test @working @nuri
+  @smoke_test @working
   Scenario: as B2B user I want to place an order ADD a VOUCHERCODE en get discount
     Given I am a logged in B2C user
 #    And I tap the next button
