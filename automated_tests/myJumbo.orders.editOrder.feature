@@ -38,16 +38,9 @@ so I can order exactly what I want if I change my mind
     Then the value Nieuw in je bestelling is displayed on the newSection view
     # Add steps to actually change the order
 
-  @smoke_test
+  @smoke_test @nuri
   Scenario: I want to AMEND my order from the order history as a B2B user
-    Given I have a new registered B2B user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+    Given I am a logged in B2B user
     And the firstOrderCell view is displayed
     And the orderHistory button is not displayed
     And I have placed a beer order
@@ -63,14 +56,7 @@ so I can order exactly what I want if I change my mind
 
   @smoke_test
   Scenario: I want to AMEND my order from the order detail page as a B2B user
-    Given I have a new registered B2B user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+    Given I am a logged in B2B user
     And the firstOrderCell view is displayed
     And the orderHistory button is not displayed
     And I have placed a beer order
