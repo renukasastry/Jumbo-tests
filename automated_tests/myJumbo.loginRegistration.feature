@@ -9,6 +9,54 @@ so I can use all the wonderfull features accessible for logged in users
    Given I am a logged in B2C user
    Then loggedIn button is displayed
 
+ @smoke_test @nuri
+ Scenario: I want to register as B2C user via My Jumbo
+   Given I have a new user email address
+   And I am on the myJumbo screen
+   When I tap the registerOrLogin button
+   And I tap the actionsheetRegisterB2C button
+   And I tap the ok button
+   And I set the property newUsername on the emailAddress field
+   And I set the value qwerty on the password field
+   And I tap the registerCredentials button
+   And I set the value Cube on the name field
+   And I set the value the on the insertion field
+   And I set the value Cubie on the surname field
+   And I set the value 6123456789 on the phoneNumber field
+   And I tap the registerName button
+   And I set the value 1083HA on the postalCode field
+   And I set the value 2 on the houseNumber field
+   And I tap the validateAddressLookUp button
+   And I tap the termsAndConditions checkbox
+   And I tap the registerDelivery button
+   And I tap the decline button
+   Then loggedIn button is displayed
+
+ @smoke_test @nuri
+ Scenario: I want to register as B2B user via My Jumbo
+   Given I have a new user email address
+   And I am on the myJumbo screen
+   When I tap the registerOrLogin button
+   And I tap the actionsheetRegisterB2B button
+   And I tap the ok button
+   And I set the property newUsername on the emailAddress field
+   And I set the value qwerty on the password field
+   And I tap the registerCredentials button
+   And I set the value 34359257 on the kvk field
+   And I tap the registerKvkLookUp button
+   And I tap the registerKvk button
+   And I set the value Cube on the name field
+   And I set the value the on the insertion field
+   And I set the value Cubie on the surname field
+   And I set the value 6123456789 on the phoneNumber field
+   And I tap the registerName button
+   And I tap the saveInvoiceAddress button
+   And I tap the termsAndConditions checkbox
+   And I tap the registerDelivery button
+   And I tap the paymentInfoOk button
+   And I tap the decline button
+   And loggedIn button is displayed
+
  @smoke_test @skip-ios @mocks
  Scenario: I want to get an ERROR RESPONSE by logging in with a user that has not been registered yet
    When I tap the registerOrLogin button
