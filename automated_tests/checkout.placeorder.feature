@@ -74,7 +74,7 @@ Feature: checkout.placeOrder.feature
     And I tap the orderHistory button
     Then the orderDetail button is displayed
 
-#  @smoke_test @nuri
+#  @smoke_test
 #  Scenario: I want to apply early CUT OFF to my order
 #    Given I am a logged in B2C user
 #    And I tap the shoppingList button
@@ -105,7 +105,7 @@ Feature: checkout.placeOrder.feature
 #    And I tap the orderDetail button
 #    Then the earlyCutOffApplied view is displayed
 
-#  @smoke_test @nuri
+#  @smoke_test
 #  Scenario: I do NOT want to apply early CUT OFF to my order
 #    Given I am a logged in B2C user
 #    And I tap the shoppingList button
@@ -158,7 +158,6 @@ Feature: checkout.placeOrder.feature
     And I tap the payAtPickUp button
     And I dismiss the thank you page
 
-  @nuri
   Scenario: I want to place an order using the MANUAL HOME DELIVERY option
     Given I am a logged in B2C user
     And I tap the shoppingList button
@@ -169,12 +168,10 @@ Feature: checkout.placeOrder.feature
     And I tap the skuPlus button
     And I tap the close button
     And I tap the checkout button
-
     And I tap the pickHomeDelivery button
     And I set the value 5233AN on the postalCodeInput field
     And I set the value 21 on the houseNumberInput field
     And I tap the searchAddress button
-
     And I pick the firstAvailableTimeSlot
     And I tap the payAtPickUp button
     And I dismiss the thank you page
@@ -183,7 +180,7 @@ Feature: checkout.placeOrder.feature
     And I tap the orderHistory button
     Then the orderDetail button is displayed
 
-  @smoke_test @working @nuri
+  @smoke_test @working
   Scenario: as B2B user I want to place an order with a SKU on my SL
     Given I am a logged in B2B user
     And I tap the shoppingList button
@@ -252,7 +249,7 @@ Feature: checkout.placeOrder.feature
     And I tap the orderHistory button
     Then the orderDetail button is displayed
 
-#  @smoke_test @nuri
+#  @smoke_test
 #  Scenario: as B2B user I want to apply early CUT OFF to my order
 #    Given I am a logged in B2B user
 #    And I tap the shoppingList button
@@ -283,7 +280,7 @@ Feature: checkout.placeOrder.feature
 #    And I tap the orderDetail button
 #    Then the earlyCutOffApplied view is displayed
 
-#  @smoke_test @nuri
+#  @smoke_test
 #  Scenario: as B2B user I do NOT want to apply early CUT OFF to my order
 #    Given I am a logged in B2B user
 #    And I tap the shoppingList button
