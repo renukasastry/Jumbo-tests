@@ -1,9 +1,8 @@
-Feature: myJumbo.orders.editOrder.feature
+ Feature: myJumbo.orders.editOrder.feature
 As a user I want to be able to edit my order after I have placed it
 so I can order exactly what I want if I change my mind
 
-# Add scenario's for edit voucher and edit PUP and slot
-  
+
   @smoke_test
   Scenario: I want to AMEND my order from the order history as a B2C user
     Given I am a logged in B2C user
@@ -18,7 +17,9 @@ so I can order exactly what I want if I change my mind
     And I tap the skuPlus button
     And I tap the close button
     Then the value Nieuw in je bestelling is displayed on the newSection view
-    # Add steps to actually change the order
+    And I tap the next button 
+    And I tap the payAtPickUp button
+    Then the value Jumbo Rubens Handappelen 2000g is displayed on the orderProductsList view
 
   @smoke_test
   Scenario: I want to AMEND my order from the order detail page as a B2C user
@@ -36,9 +37,11 @@ so I can order exactly what I want if I change my mind
     And I tap the skuPlus button
     And I tap the close button
     Then the value Nieuw in je bestelling is displayed on the newSection view
-    # Add steps to actually change the order
+    And I tap the next button 
+    And I tap the payAtPickUp button
+    Then the value Jumbo Rubens Handappelen 2000g is displayed on the orderProductsList view 
 
-  @smoke_test @nuri
+  @smoke_test
   Scenario: I want to AMEND my order from the order history as a B2B user
     Given I am a logged in B2B user
     And the firstOrderCell view is displayed
@@ -52,7 +55,9 @@ so I can order exactly what I want if I change my mind
     And I tap the skuPlus button
     And I tap the close button
     Then the value Nieuw in je bestelling is displayed on the newSection view
-    # Add steps to actually change the order
+    And I tap the next button 
+    And I tap the payAtPickUp button
+    Then the value Jumbo Rubens Handappelen 2000g is displayed on the orderProductsList view
 
   @smoke_test
   Scenario: I want to AMEND my order from the order detail page as a B2B user
@@ -70,18 +75,10 @@ so I can order exactly what I want if I change my mind
     And I tap the skuPlus button
     And I tap the close button
     Then the value Nieuw in je bestelling is displayed on the newSection view
-    # Add steps to actually change the order
+    And I tap the next button 
+    And I tap the payAtPickUp button
+    Then the value Jumbo Rubens Handappelen 2000g is displayed on the orderProductsList view
 
-  Scenario: I want to see PROMOTION DISCLAIMER before editing timeslot of an open order as a B2C user
-    Given I am a logged in B2C user
-    And the firstOrderCell view is displayed
-    And the orderHistory button is not displayed
-    And I have placed a beer order
-    And I tap the orderHistory button
-    And I tap the orderDetail button
-    And I tap the editOrder button
-    And I tap the actionsheetEditTimeSlot button
-    Then I tap the ok button
     
   @smoke_test
   Scenario: I want to be able to CHANGE THE QUANTITY of the number of products I ordered when the order is still open
@@ -163,6 +160,45 @@ so I can order exactly what I want if I change my mind
     And the value Nutrilon Pepti met Pronutra 2 vanaf 6 Maanden 800g is displayed on the updateOrderProductsList view
     And the value 7UP 0,5 Liter is not displayed on the updateOrderProductsList view 
     And the value Knorr Visbouillon 6 Tabletten 60g is not displayed on the updateOrderProductsList view 
+
+  @smoke_test
+  Scenario: I want to add a VOUCHER to my order from the order detail as a B2C user
+    Given I am a logged in B2C user
+    And the firstOrderCell view is displayed
+    And the orderHistory button is not displayed
+    And I have placed a beer order
+    And I tap the orderHistory button
+    And I tap the orderDetail button
+    And I tap the editOrder button
+    And I tap the actionsheetAddVoucher button
+    Then the addVoucher button is not displayed
+    And I set the value Centjes on the addCouponInput field
+    And I tap the addCoupon button
+    And the value Voucher code % , Code: Centjes is displayed on the discountTitle field
+    And the value Servicecode: Centjes is displayed on the discountCouponCode field
+    And I tap the payAtPickUp button
+    Then the value Jumbo Rubens Handappelen 2000g is displayed on the orderProductsList view
+    And the value Voucher code % , Code: Centjes is displayed on the discountTitle field
+    And the value Servicecode: Centjes is displayed on the discountCouponCode field
+
+  @smoke_test
+  Scenario: I want to CHANGE my PUP and SLOT from the order detail as a B2C user
+    Given I am a logged in B2C user
+    And the firstOrderCell view is displayed
+    And the orderHistory button is not displayed
+    And I have placed a beer order
+    And I tap the orderHistory button
+    And I tap the orderDetail button
+    And I tap the editOrder button
+    And I tap the actionsheetEditTimeSlot button
+    And I tap the ok button
+    And I tap the selectPup button
+    And I pick the firstAvailableTimeSlot
+    And I tap the payAtPickUp button
+    Then the pickup_time field is displayed
+    And the pickup_location field is displayed
+    And the editOrder button is displayed
+
 
   @smoke_test
   Scenario: I want to access the BARCODE SCANNER from the Edit order Screen from order detail and check if the barcode elements are displayed correctly
