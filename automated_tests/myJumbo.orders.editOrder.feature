@@ -181,7 +181,7 @@ so I can order exactly what I want if I change my mind
     And the value Servicecode: ICE2 is displayed on the discountCouponCode field
     And the value - 1,00 is displayed on the discountPrice field
 
-  @smoke_test @nuri
+  @smoke_test
   Scenario: I want to CHANGE my PUP and SLOT from the order detail as a B2C user
     Given I am a logged in B2C user
     And the firstOrderCell view is displayed
@@ -200,7 +200,7 @@ so I can order exactly what I want if I change my mind
     And the editOrder button is displayed
 
 
-  @smoke_test @nuri
+  @smoke_test
   Scenario: I want to access the BARCODE SCANNER from the Edit order Screen from order detail and check if the barcode elements are displayed correctly
     Given I am a logged in B2C user
     And I have placed a beer order
