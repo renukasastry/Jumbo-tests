@@ -9,7 +9,7 @@ so I can use all the wonderfull features accessible for logged in users
    Given I am a logged in B2C user
    Then loggedIn button is displayed
 
- @smoke_test @nuri
+ @smoke_test
  Scenario: I want to register as B2C user via My Jumbo
    Given I have a new user email address
    And I am on the myJumbo screen
@@ -32,7 +32,7 @@ so I can use all the wonderfull features accessible for logged in users
    And I tap the decline button
    Then loggedIn button is displayed
 
- @smoke_test @nuri
+ @smoke_test
  Scenario: I want to register as B2B user via My Jumbo
    Given I have a new user email address
    And I am on the myJumbo screen
