@@ -49,7 +49,7 @@ so I can use all the wonderfull features accessible for logged in users
     Then loggedIn button is displayed
 
  @smoke_test @skip-ios @mocks
- Scenario: I want to get an error response by logging in with a B2B master user via on-boarding
+ Scenario: I want to get an ERROR RESPONSE by logging in with a B2B master user via on-boarding
    When I tap the registerOrLogin button
     And I tap the login button
     And I set the value icemaster3@icemobile.com on the emailAddress field

@@ -4,31 +4,11 @@ so I can make sure I order exactly what I want
 
 
   @smoke_test
-  Scenario: I want to cancel an order as a B2C user
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+  Scenario: I want to CANCEL an order as a B2C user
+    Given I am a logged in B2C user
     And the firstOrderCell view is displayed
     And the orderHistory button is not displayed
-    And I tap the shoppingList button
-    And I tap the tooltip view
-    And I tap the shoppingListAddProduct button
-    And I set the value bier on the search field
-    And I tap the enter button
-    And I tap the skuPlus button
-    And I tap the close button
-    And I tap the checkout button
-    And I tap the selectPup button
-    And I pick the firstAvailableTimeSlot
-    And I tap the payAtPickUp button
-    And I tap the ok button
-    And I tap the next button
-    And I tap the back button
+    And I have placed a beer order
     And I tap the orderHistory button
     And I tap the orderDetail button
     And I tap the cancelOrder button
@@ -38,7 +18,7 @@ so I can make sure I order exactly what I want
     And the orderHistory button is displayed
 
   @smoke_test
-  Scenario: I want samples received from previous orders to not be available to be added to the shopping list
+  Scenario: I want SAMPLES received from previous orders to not be available to be added to the shopping list
     Given I am on the myJumbo screen
     When I tap the registerOrLogin button
     And I tap the actionsheetLogin button
@@ -55,34 +35,14 @@ so I can make sure I order exactly what I want
     Then the value 7UP 0,5 Liter is displayed on the reorderProductsList view
     And the value Knorr Visbouillon 6 Tabletten 60g is not displayed on the reorderProductsList view
 
-      @smoke_test
-  Scenario: I want to verify the content is correct on a open order
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+  @smoke_test
+  Scenario: I want to verify the CONTENT is correct on a open order
+    Given I am a logged in B2C user
 #    And I tap the next button
     Then loggedIn button is displayed
     And the firstOrderCell view is displayed
     And the orderHistory button is not displayed
-    And I tap the shoppingList button
-    And I tap the tooltip view
-    And I tap the shoppingListAddProduct button
-    And I set the value bier on the search field
-    And I tap the enter button
-    And I tap the skuPlus button
-    And I tap the close button
-    And I tap the checkout button
-    And I tap the selectPup button
-    And I pick the firstAvailableTimeSlot
-    And I tap the payAtPickUp button
-    And I tap the ok button
-    And I tap the next button
-    And I tap the back button
+    And I have placed a beer order
     And I tap the orderHistory button
     When I tap the orderDetail button
     Then the pickup_time field is displayed

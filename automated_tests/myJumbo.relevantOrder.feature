@@ -5,20 +5,13 @@ Feature: myJumbo.relevantOrder.feature
 # Add scenario's to check the other states of the relevant order cell
 
 	@smoke_test
-	Scenario: A new user should see the first order cell
-		Given I have a new registered B2C user
-		And I am on the myJumbo screen
-		When I tap the registerOrLogin button
-		And I tap the actionsheetLogin button
-		And I set the property username on the emailAddress field
-		And I set the property password on the password field
-		And I tap the login button
-		And I tap the decline button
+	Scenario: A new user should see the FIRST ORDER CELL
+		Given I am a logged in B2C user
 		Then loggedIn button is displayed
 		And the firstOrderCell view is displayed 
 	
 	@smoke_test
-	Scenario: A user with completed orders should not see the first order cell
+	Scenario: A user with completed orders should NOT see the FIRST ORDER CELL
     	Given I have a new registered B2C user
 		And I am on the myJumbo screen
 		When I tap the registerOrLogin button

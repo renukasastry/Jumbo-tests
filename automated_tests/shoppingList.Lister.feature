@@ -8,6 +8,7 @@ so I can order everything I want
 # # # Add scenarios to test the menu options (share and delete all)
 
 
+
 @smoke_test
 Scenario: I want to toggle the sorting in the top level categories on the SL
     Given I have a new registered B2C user
@@ -76,5 +77,47 @@ Scenario: I want categories to be hidden when they don't contain product on the 
     And I tap the delete button
     Then the wijnBierSterkeDrankTitle view is displayed
     And the aardappelRijstPastaTitle view is not displayed
+
+  Scenario: I want to share my shoppinglist with one button
+    Given I am on the myJumbo screen
+    When I tap the shoppingList button
+    And I tap the tooltip view
+    And I tap the shoppingListAddProduct button
+    And I set the value appel on the search field
+    And I tap the enter button
+    And the value appel is displayed on the vagueTermTitle field
+    And I tap the vagueTermPlus button
+    And I tap the close button
+    Then the value appel is displayed on the vagueTermTitle field
+    And I tap the shoppingListMenu button
+    And the shareList button is displayed
+
+  Scenario: I want to delete my shoppinglist with one button
+    Given I am on the myJumbo screen
+    When I tap the shoppingList button
+    And I tap the tooltip view
+    And I tap the shoppingListAddProduct button
+    And I set the value appel on the search field
+    And I tap the enter button
+    And the value appel is displayed on the vagueTermTitle field
+    And I tap the vagueTermPlus button
+    And I tap the close button
+    Then the value appel is displayed on the vagueTermTitle field
+    And I tap the shoppingListMenu button
+    And I tap the deleteAll button
+    Then the shoppingListAddProduct button is displayed
+
+  Scenario: I want to have information banners on my shoppinglist to inform me of my current choices
+    Given I am on the myJumbo screen
+    When I tap the shoppingList button
+    And I tap the tooltip view
+    And I tap the checkout button
+    And I tap the selectPup button
+    And I pick the firstAvailableTimeSlot
+    Then the banner view is displayed
+    Then the bannerTimeslotDate view is displayed
+    Then the bannerReservedTimeslotDate view is displayed
+    Then the bannerChange view is displayed
+
 
 
