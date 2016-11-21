@@ -2,14 +2,6 @@ Feature: shoppingList.lister.feature
 As a user I want to be able to manipulate my shopping list 
 so I can order everything I want
 
-# #   @smoke_test
-# #   Scenario: Check all types of items on the SL
-
-# # # Add a logged in version of this scenario
-# # # Add scenarios to check the checkout buttons and banners (reserved timeslot, disabled state etc.)
-# # # Add scenarios to test the menu options (share and delete all)
-
-
   Scenario: I want to share my shoppinglist with one button
     Given I am on the myJumbo screen
     When I tap the shoppingList button
@@ -39,16 +31,25 @@ so I can order everything I want
     And I tap the deleteAll button
     Then the shoppingListAddProduct button is displayed
 
-  Scenario: I want to have information banners on my shoppinglist to inform me of my current choices
+  Scenario: I want to see the timeslot reserved banner on my shoppinglist to inform me of my current choices
     Given I am on the myJumbo screen
     When I tap the shoppingList button
     And I tap the tooltip view
-    And I tap the checkout button
+    Then the reserveTimeslot button is displayed
+    And I tap the reserveTimeslot button
     And I tap the selectPup button
     And I pick the firstAvailableTimeSlot
     Then the banner view is displayed
     Then the bannerTimeslotDate view is displayed
     Then the bannerReservedTimeslotDate view is displayed
     Then the bannerChange view is displayed
+
+  Scenario: I want to see the open order banner on my shoppinglist to inform me of my current choices
+    Given I am on the myJumbo screen
+    And I have placed a beer order
+    When I tap the shoppingList button
+    And I tap the tooltip view
+    Then the openOrderbanner view is displayed
+
 
 
