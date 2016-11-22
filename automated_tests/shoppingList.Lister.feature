@@ -35,8 +35,7 @@ so I can order everything I want
     Given I am on the myJumbo screen
     When I tap the shoppingList button
     And I tap the tooltip view
-    Then the reserveTimeslot button is displayed
-    And I tap the reserveTimeslot button
+    And I tap the checkout button
     And I tap the selectPup button
     And I pick the firstAvailableTimeSlot
     Then the banner view is displayed
@@ -44,12 +43,20 @@ so I can order everything I want
     Then the bannerReservedTimeslotDate view is displayed
     Then the bannerChange view is displayed
 
+    @nu
   Scenario: I want to see the open order banner on my shoppinglist to inform me of my current choices
-    Given I am on the myJumbo screen
+    Given I am a logged in B2C user
+    And I have placed a beer order
+
+    @nu
+  Scenario: I want to see the open order banner on my shoppinglist to inform me of my current choices
+    Given I am a logged in B2C user
     And I have placed a beer order
     When I tap the shoppingList button
     And I tap the tooltip view
     Then the openOrderbanner view is displayed
+
+
 
 
 

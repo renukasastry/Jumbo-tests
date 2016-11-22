@@ -14,7 +14,7 @@ so I can order exactly what I want if I change my mind
     And I tap the changeOrderFloater button
     And I set the value appel on the search field
     And I tap the enter button
-    And I tap the skuPlus2 button
+    And I tap the skuPlus button
     And I tap the close button
     Then the value Nieuw in je bestelling is displayed on the newSection view
     And I tap the next button 
@@ -161,7 +161,7 @@ so I can order exactly what I want if I change my mind
     And the value Knorr Visbouillon 6 Tabletten 60g is not displayed on the updateOrderProductsList view 
 
   @smoke_test
-  Scenario: I want to add a VOUCHER to my order from the order detail as a B2C user
+  Scenario: I want to ADD A VOUCHER to my order from the order detail as a B2C user
     Given I am a logged in B2C user
     And the firstOrderCell view is displayed
     And the orderHistory button is not displayed

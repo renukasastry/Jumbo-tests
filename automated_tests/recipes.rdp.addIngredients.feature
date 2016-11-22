@@ -15,4 +15,4 @@ Feature: recipes.rdp.addIngredients.feature
     Then the ingredients view is displayed
     And I tap the addToShoppingList button
     Then the recipes view is displayed
-    And the shoppingListBadge is displayed
+    And the shoppingListBadge view is displayed

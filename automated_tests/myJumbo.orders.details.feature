@@ -49,4 +49,4 @@ so I can make sure I order exactly what I want
     And the pickup_location field is displayed
     And the value Ophaalinformatie is displayed on the pickupInfo field
     And the value Bestelde producten is displayed on the orderedProductInfo field
-    And the value Totaal is displayed on the totalAmount field
+    And the value Totaal* is displayed on the totalAmount field

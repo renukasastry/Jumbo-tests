@@ -3,40 +3,43 @@ As a user I want to be able to search on the recipe section
 so I can find the products and ingredients I want to order
 
 # Add scenario's for searching for recipes
-
   Scenario: I want to SEARCH for a recipe
     Given I am on the myJumbo screen
     When I tap the recipes tab
-    And I tap the recipesFloater button
-    And I set the value kaas in the search field
+    And I tap the recipeFloater button
+    And I set the value kaas on the search field
     And I tap the enter button
+    Then the filter button is displayed
+    And the numberOfRecipes view is displayed
+    And the firstImage view is displayed
+    And the firstCreationTime view is displayed
+    And the firstPortionNumber view is displayed
     And I tap the firstImage view
-    Then the productHeader is displayed
-
+    Then the recipeCard view is displayed
 
   Scenario: I want to SEARCH for a recipe and get an EMPTYSTATE view if its not there
     Given I am on the myJumbo screen
     When I tap the recipes tab
-    And I tap the recipesFloater button
-    And I set the value hop in the search field
+    And I tap the recipeFloater button
+    And I set the value hop on the search field
     And I tap the enter button
     Then the emptyState view is displayed
-
 
   Scenario: I want to FILTER my searches on the recipes tab
     Given I am on the myJumbo screen
     When I tap the recipes tab
     And I tap the recipeFloater button
     And I set the value kip on the search field
-    Then the value kip is displayed on the firstAutosuggestElement button
-    And I tap the firstAutosuggestElement button
+    And I wait 3 seconds
+    Then the firstAutosuggestElement button is displayed
+    And I tap the enter button
     Then the filter button is displayed
     And I tap the filter button
-    And I tap the jumboFilter button
-    Then the value filter(1) is displayed on the filter button
+    And I tap the hoofdGerechtFilter button
+    Then the value Filter is displayed on the checkFilter button
     And I tap the filter button
-    And I tap the jumboFilter button
-    Then the value filter is displayed on the filter button
+    And I tap the hoofdGerechtFilter button
+    Then the value Filter is displayed on the checkFilter button
 
 
   @smoke_test

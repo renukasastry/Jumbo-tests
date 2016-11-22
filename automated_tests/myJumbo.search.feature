@@ -4,24 +4,37 @@ so I can find the products and ingredients I want to order
 
 
 
- Scenario: I want access the SEARCH functionality as a logged in user
+ Scenario: I want access the SEARCH functionality as a B2C user
    Given I am a logged in B2C user
    Then loggedIn button is displayed
    When I tap the myJumboFloater button
    Then the search field is displayed
 
   @smoke_test
-  Scenario: I want to FILTER my searches on the myJumbo tab
-    Given I am logged in B2C user
+  Scenario: I want to FILTER my searches on the myJumbo tab as B2C user
+    Given I am a logged in B2C user
     When I tap the myJumboFloater button
     And I set the value kip on the search field
-    Then the value kip is displayed on the firstAutosuggestElement button
-    And I tap the firstAutosuggestElement button
+#    Then the value kip is displayed on the firstAutosuggestElement button
+#    And I tap the firstAutosuggestElement button
+    And I tap the enter button
     Then the filter button is displayed
-    Then the value producten is displayed on the queryResultText field
-    Then the addSku button is displayed
+    Then the queryResultText view is displayed
     And I tap the close button
-    Then the login view is displayed
+    Then loggedIn button is displayed
+
+  @smoke_test
+  Scenario: I want to FILTER my searches on the myJumbo tab as anonymous user
+    Given I am on the myJumbo screen
+    When I tap the myJumboFloater button
+    And I set the value kip on the search field
+#    Then the value kip is displayed on the firstAutosuggestElement button
+#    And I tap the firstAutosuggestElement button
+    And I tap the enter button
+    Then the filter button is displayed
+    Then the queryResultText view is displayed
+    And I tap the close button
+    Then registerOrLogin button is displayed
 
  Scenario: I want access the SEARCH functionality as a logged out user
    Given I am on the myJumbo screen
