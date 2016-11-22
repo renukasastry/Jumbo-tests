@@ -51,5 +51,17 @@ so I can order everything I want
     And I tap the tooltip view
     Then the openOrderbanner view is displayed
 
-
+Scenario: I want delete a product from my SL
+    Given I am on the myJumbo screen
+    And I tap the shoppingList button
+    And I tap the tooltip view
+    And I tap the shoppingListAddProduct button
+    And I set the value bier on the search field
+    And I tap the enter button
+    And I tap the skuPlus button
+    And I tap the close button
+    And the SKUProduct view is displayed
+    And I swipe left on the firstProduct view
+    And I tap the delete button
+    And the SKUProduct view is not displayed
 
