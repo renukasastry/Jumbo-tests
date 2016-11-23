@@ -45,7 +45,6 @@ Feature: checkout.placeOrder.favoriteHelper.feature
     And I tap the ok button
     Then the next button is displayed
 
-#    @nu
 #  Scenario: I do NOT want to see favourite helper page when a product is part of my favouriteproducts
 #    Given I am a logged in B2C user
 #    And I tap the myJumboFloater button
