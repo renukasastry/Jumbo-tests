@@ -42,13 +42,11 @@ so I can order everything I want
     Then the bannerTimeslotDate view is displayed
     Then the bannerReservedTimeslotDate view is displayed
     Then the bannerChange view is displayed
-
-    @nu
+   
   Scenario: I want to see the open order banner on my shoppinglist to inform me of my current choices
     Given I am a logged in B2C user
     And I have placed a beer order
 
-    @nu
   Scenario: I want to see the open order banner on my shoppinglist to inform me of my current choices
     Given I am a logged in B2C user
     And I have placed a beer order
@@ -69,6 +67,4 @@ Scenario: I want delete a product from my SL
     And I swipe left on the firstProduct view
     And I tap the delete button
     And the SKUProduct view is not displayed
-
-
 
