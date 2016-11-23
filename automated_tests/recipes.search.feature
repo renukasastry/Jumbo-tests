@@ -30,8 +30,6 @@ so I can find the products and ingredients I want to order
     When I tap the recipes tab
     And I tap the recipeFloater button
     And I set the value kip on the search field
-    And I wait 3 seconds
-    Then the firstAutosuggestElement button is displayed
     And I tap the enter button
     Then the filter button is displayed
     And I tap the filter button
