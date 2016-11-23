@@ -3,7 +3,7 @@ As a user I want to be able to see the details of a promotion
 so I can see on which products the promotion applies
 
 
-#  @smoke_test @nu
+#  @smoke_test
 #  Scenario: I want to check an individual PROMOTION is there and clickable
 #    Given I am a logged in B2C user
 #    When I tap the promotions tab
