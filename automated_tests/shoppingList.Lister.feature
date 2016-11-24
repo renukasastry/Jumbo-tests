@@ -42,19 +42,15 @@ so I can order everything I want
     Then the bannerTimeslotDate view is displayed
     Then the bannerReservedTimeslotDate view is displayed
     Then the bannerChange view is displayed
-   
-  Scenario: I want to see the open order banner on my shoppinglist to inform me of my current choices
-    Given I am a logged in B2C user
-    And I have placed a beer order
 
   Scenario: I want to see the open order banner on my shoppinglist to inform me of my current choices
     Given I am a logged in B2C user
     And I have placed a beer order
     When I tap the shoppingList button
-    And I tap the tooltip view
-    Then the openOrderbanner view is displayed
+    Then the openOrderBanner view is displayed
+    And the openOrderText view is displayed
 
-Scenario: I want delete a product from my SL
+  Scenario: I want delete a product from my SL
     Given I am on the myJumbo screen
     And I tap the shoppingList button
     And I tap the tooltip view
