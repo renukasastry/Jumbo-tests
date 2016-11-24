@@ -26,6 +26,7 @@ Feature: recipes.rdp.addIngredients.feature
     And I tap the addToShoppingList button
     Then the ingredients view is displayed
     And the value 6 sneetjes notenbrood is displayed on the firstTextTitle view
+    And I tap the addToShoppingList button
     And I tap the shoppingList button
     And I tap the tooltip view
     And the value 6 sneetjes notenbrood is displayed on the firstRowTextTitle view
@@ -42,6 +43,7 @@ Feature: recipes.rdp.addIngredients.feature
     Then the ingredients view is displayed
     And the value 6 sneetjes notenbrood is displayed on the firstTextTitle view
     And I tap the first ingredientCheckbox
+    And I tap the addToShoppingList button
     And I tap the shoppingList button
     And I tap the tooltip view
     Then the value 6 sneetjes notenbrood is not displayed on the firstRowTextTitle view
