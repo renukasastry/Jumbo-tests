@@ -2,9 +2,6 @@ Feature: checkout.placeOrder.favoriteHelper.feature
   As a user I want to see the favorite helper after placing an order 
   So that I can include products in my favorites list
 
-# Add scenario to check if the favorite helper is displayed when it should
-# Add a scenario to check that the favorite helper is not displayed when it shouldn't
-
   @smoke_test @working
   Scenario: SAMPLES should not be displayed on favorites helper, only products and free gifts
     Given I am a logged in B2C user
