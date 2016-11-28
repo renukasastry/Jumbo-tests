@@ -3,15 +3,16 @@ Feature: recipes.lister.feature
 
 # Add scenario's for checking the elements on the lister page
 
+
   Scenario: I want to see ingredients when I add them to the lister
-    Given I am on the jumbo screen
+    Given I am on the myJumbo screen
     When I tap the recipes tab
-    Then the recipesFloater button is displayed
+    Then the recipeFloater button is displayed
     And the filter button is displayed
     And the numberOfRecipes view is displayed
-    And the imageRecipe is displayed
-    And the creationTime is displayed
-    And the portionNumber is displayed
+    And the imageRecipe view is displayed
+    And the creationTime view is displayed
+    And the portionNumber view is displayed
 
 
 

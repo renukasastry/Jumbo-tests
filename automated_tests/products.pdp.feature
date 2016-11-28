@@ -14,6 +14,6 @@ Feature: products.pdp.feature
     And I set the value mars mini on the search field
     And I tap the enter button
     Then the skuPlus button is displayed
-    And I tap the textPrice field
+    And I tap the textPrice view
     When I tap the moreInfo button
     Then the allergyWarning field is displayed

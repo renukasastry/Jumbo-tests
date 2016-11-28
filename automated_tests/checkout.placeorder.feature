@@ -2,8 +2,6 @@ Feature: checkout.placeOrder.feature
   As a user I want to be able to place an order with various items on my shopping list
   so that I have an open order
 
-# Add scenario's for all user types (use "Given I am a logged in B2B user")
-# Add scenario's for both HD and PUP
 
   @smoke_test @working
   Scenario: I want to place an order with a SKU on my SL

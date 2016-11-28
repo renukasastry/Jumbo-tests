@@ -19,7 +19,8 @@ so I can order exactly what I want if I change my mind
     Then the value Nieuw in je bestelling is displayed on the newSection view
     And I tap the next button 
     And I tap the payAtPickUp button
-    Then the value Jumbo Rubens Handappelen 2000g is displayed on the orderProductsList view
+    And I tap on the orderDetail button
+#    Then the value Jumbo Knapperige Zoetzure Kanzi 1500g is displayed on the orderProductsList view
 
   @smoke_test
   Scenario: I want to AMEND my order from the order detail page as a B2C user
@@ -39,7 +40,7 @@ so I can order exactly what I want if I change my mind
     Then the value Nieuw in je bestelling is displayed on the newSection view
     And I tap the next button 
     And I tap the payAtPickUp button
-    Then the value Jumbo Rubens Handappelen 2000g is displayed on the orderProductsList view 
+#    Then the value Jumbo Knapperige Zoetzure Kanzi 1500g is displayed on the orderProductsList view
 
   @smoke_test
   Scenario: I want to AMEND my order from the order history as a B2B user
@@ -57,7 +58,7 @@ so I can order exactly what I want if I change my mind
     Then the value Nieuw in je bestelling is displayed on the newSection view
     And I tap the next button 
     And I tap the payAtPickUp button
-    Then the value Jumbo Rubens Handappelen 2000g is displayed on the orderProductsList view
+#    Then the value Jumbo Knapperige Zoetzure Kanzi 1500g is displayed on the orderProductsList view
 
   @smoke_test
   Scenario: I want to AMEND my order from the order detail page as a B2B user
@@ -77,7 +78,7 @@ so I can order exactly what I want if I change my mind
     Then the value Nieuw in je bestelling is displayed on the newSection view
     And I tap the next button 
     And I tap the payAtPickUp button
-    Then the value Jumbo Rubens Handappelen 2000g is displayed on the orderProductsList view
+#    Then the value Jumbo Knapperige Zoetzure Kanzi 1500g is displayed on the orderProductsList view
 
     
   @smoke_test
@@ -87,8 +88,6 @@ so I can order exactly what I want if I change my mind
     Then loggedIn button is displayed
     And the firstOrderCell view is displayed
     And the orderHistory button is not displayed
-    And I tap the shoppingList button
-    And I tap the tooltip view
     And I have placed a beer order
     And I tap the orderHistory button
     And I tap the changeGroceries button
@@ -162,7 +161,7 @@ so I can order exactly what I want if I change my mind
     And the value Knorr Visbouillon 6 Tabletten 60g is not displayed on the updateOrderProductsList view 
 
   @smoke_test
-  Scenario: I want to add a VOUCHER to my order from the order detail as a B2C user
+  Scenario: I want to ADD A VOUCHER to my order from the order detail as a B2C user
     Given I am a logged in B2C user
     And the firstOrderCell view is displayed
     And the orderHistory button is not displayed
@@ -171,15 +170,16 @@ so I can order exactly what I want if I change my mind
     And I tap the orderDetail button
     And I tap the editOrder button
     And I tap the actionsheetAddVoucher button
-    Then the addVoucher button is not displayed
-    And I set the value Centjes on the addCouponInput field
+    And I set the value ICE2 on the addCouponInput field
     And I tap the addCoupon button
-    And the value Voucher code % , Code: Centjes is displayed on the discountTitle field
-    And the value Servicecode: Centjes is displayed on the discountCouponCode field
+    And the value 1 euro korting is displayed on the discountTitle field
+    And the value Servicecode: ICE2 is displayed on the discountCouponCode field
+    And the value - 1,00 is displayed on the discountPrice field
     And I tap the payAtPickUp button
-    Then the value Jumbo Rubens Handappelen 2000g is displayed on the orderProductsList view
-    And the value Voucher code % , Code: Centjes is displayed on the discountTitle field
-    And the value Servicecode: Centjes is displayed on the discountCouponCode field
+    Then the value Heineken Pilsener 24 x 30cl is displayed on the orderProductsList view
+    And the value 1 euro korting is displayed on the discountTitle field
+    And the value Servicecode: ICE2 is displayed on the discountCouponCode field
+    And the value - 1,00 is displayed on the discountPrice field
 
   @smoke_test
   Scenario: I want to CHANGE my PUP and SLOT from the order detail as a B2C user

@@ -7,8 +7,6 @@ so I can order everything I want
 # # # Add scenarios to check the checkout buttons and banners (reserved timeslot, disabled state etc.)
 # # # Add scenarios to test the menu options (share and delete all)
 
-
-
 @smoke_test
 Scenario: I want to toggle the sorting in the top level categories on the SL
     Given I have a new registered B2C user
@@ -107,7 +105,7 @@ Scenario: I want categories to be hidden when they don't contain product on the 
     And I tap the deleteAll button
     Then the shoppingListAddProduct button is displayed
 
-  Scenario: I want to have information banners on my shoppinglist to inform me of my current choices
+  Scenario: I want to see the timeslot reserved banner on my shoppinglist to inform me of my current choices
     Given I am on the myJumbo screen
     When I tap the shoppingList button
     And I tap the tooltip view
@@ -119,5 +117,25 @@ Scenario: I want categories to be hidden when they don't contain product on the 
     Then the bannerReservedTimeslotDate view is displayed
     Then the bannerChange view is displayed
 
+  Scenario: I want to see the open order banner on my shoppinglist to inform me of my current choices
+    Given I am a logged in B2C user
+    And I have placed a beer order
+    When I tap the shoppingList button
+    Then the openOrderBanner view is displayed
+    And the openOrderText view is displayed
+
+  Scenario: I want delete a product from my SL
+    Given I am on the myJumbo screen
+    And I tap the shoppingList button
+    And I tap the tooltip view
+    And I tap the shoppingListAddProduct button
+    And I set the value bier on the search field
+    And I tap the enter button
+    And I tap the skuPlus button
+    And I tap the close button
+    And the SKUProduct view is displayed
+    And I swipe left on the firstProduct view
+    And I tap the delete button
+    And the SKUProduct view is not displayed
 
 
