@@ -28,11 +28,11 @@ so I can make sure I order exactly what I want
     And I tap the iosDecline button
     And the orderHistory button is displayed
     And I tap the orderHistory button
-    And I tap the okt11Date button
-    And the value Campina Halfvolle Melk Voordeelpak 2,4 Liter is displayed on the orderProductsList view
+    And I tap the 29novDate button
+    And the value 7 Up is displayed on the orderProductsList view
     And the value Knorr Visbouillon 6 Tabletten 60g is displayed on the orderProductsList view
     And I tap the reorderProducts button
-    Then the value Campina Halfvolle Melk Voordeelpak 2,4 Liter is displayed on the reorderProductsList view
+    Then the value 7 Up is displayed on the reorderProductsList view
     And the value Knorr Visbouillon 6 Tabletten 60g is not displayed on the reorderProductsList view
 
   @smoke_test
