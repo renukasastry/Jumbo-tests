@@ -28,8 +28,8 @@ so I can make sure I order exactly what I want
     And I tap the iosDecline button
     And the orderHistory button is displayed
     And I tap the orderHistory button
-    And I tap the orderDetail button
-    And the value 7UP 0,5 Liter is displayed on the orderProductsList view 
+    And I tap the 29novDate button
+    And the value 7UP 0,5 Liter is displayed on the orderProductsList view
     And the value Knorr Visbouillon 6 Tabletten 60g is displayed on the orderProductsList view
     And I tap the reorderProducts button
     Then the value 7UP 0,5 Liter is displayed on the reorderProductsList view
