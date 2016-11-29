@@ -104,17 +104,16 @@ so I can find the products and ingredients I want to order
     Then the value appel is displayed on the vagueTermTitle field
     And the skuCell view is displayed
 
-  @nuri
   Scenario: I want to search and FILTER my searches on the recipes tab
     Given I am a logged in B2C user
     When I tap the products tab
     And I tap the productFloater button
     And I set the value kip on the search field
     And I tap the enter button
-    Then the value Filter is displayed on the filter button
+    Then the value Filter is displayed on the checkFilter button
     And I tap the filter button
-    And I tap the jumboFilter button
-    Then the value Filter(1) is displayed on the filter button
+    And I tap the jumboFilter view
+    Then the value Filter(1) is displayed on the checkFilter button
 #    And I tap the filter button
 #    And I tap the jumboFilter button
 #    Then the value filter is displayed on the filter button

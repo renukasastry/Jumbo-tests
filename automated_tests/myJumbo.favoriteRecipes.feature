@@ -1,7 +1,6 @@
 Feature: myJumbo.favoriteRecipes.feature
   As a user I want to add, see and remove my favourites recipes
 
-# Add scenario's for adding and removing favorite recipes
   Scenario: I want ADD a recipe to my favourites
     Given I am a logged in B2C user
     When I tap the recipes tab
