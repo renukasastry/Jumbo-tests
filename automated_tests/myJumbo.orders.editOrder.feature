@@ -158,13 +158,11 @@ so I can order exactly what I want if I change my mind
     Then the value Campina Halfvolle Melk Voordeelpak 2,4 Liter is displayed on the updateOrderProductsList view
     And the value Nutrilon Pepti met Pronutra 2 vanaf 6 Maanden 800g is displayed on the updateOrderProductsList view
     And the value 7UP 0,5 Liter is not displayed on the updateOrderProductsList view 
-    And the value Knorr Visbouillon 6 Tabletten 60g is not displayed on the updateOrderProductsList view 
+    And the value Knorr Visbouillon 6 Tabletten 60g is not displayed on the updateOrderProductsList view
 
   @smoke_test
   Scenario: I want to ADD A VOUCHER to my order from the order detail as a B2C user
     Given I am a logged in B2C user
-    And the firstOrderCell view is displayed
-    And the orderHistory button is not displayed
     And I have placed a beer order
     And I tap the orderHistory button
     And I tap the orderDetail button
@@ -198,7 +196,6 @@ so I can order exactly what I want if I change my mind
     Then the pickup_time field is displayed
     And the pickup_location field is displayed
     And the editOrder button is displayed
-
 
   @smoke_test
   Scenario: I want to access the BARCODE SCANNER from the Edit order Screen from order detail and check if the barcode elements are displayed correctly
