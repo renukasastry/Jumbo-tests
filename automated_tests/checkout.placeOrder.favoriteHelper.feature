@@ -3,7 +3,7 @@ Feature: checkout.placeOrder.favoriteHelper.feature
   So that I can include products in my favorites list
 
 
-  @smoke_test @working
+  @smoke_test
   Scenario: SAMPLES should not be displayed on favorites helper, only products and free gifts
     Given I am a logged in B2C user
     And I tap the shoppingList button

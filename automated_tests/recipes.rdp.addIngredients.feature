@@ -2,7 +2,7 @@ Feature: recipes.rdp.addIngredients.feature
 
 # Add scenario's for convert to SKU and convert
 
-  Scenario: I want to see badge added to the shoppingbasket ingredients when I add them to the lister
+  Scenario: I want to see the SL counter badge increase when I add ingredients to the SL
     Given I am on the myJumbo screen
     And the shoppingListBadge view is not displayed
     When I tap the recipes tab
@@ -16,7 +16,7 @@ Feature: recipes.rdp.addIngredients.feature
     Then the recipes view is displayed
     And the shoppingListBadge view is displayed
 
-  Scenario: I want to see products added to the shoppingbasket when I add them from RECIPEDETAIL screen
+  Scenario: I want to see products added to the SL when I add them from RECIPEDETAIL screen
     Given I am on the myJumbo screen
     When I tap the recipes tab
     And I tap the recipeFloater button
@@ -31,7 +31,7 @@ Feature: recipes.rdp.addIngredients.feature
     And I tap the tooltip view
     And the value 6 sneetjes notenbrood is displayed on the firstRowTextTitle view
 
-  Scenario: I want to remove a product on the recipe detail screen
+  Scenario: I want to exclude a product from being added to the SL
     Given I am on the myJumbo screen
     And the shoppingListBadge view is not displayed
     When I tap the recipes tab

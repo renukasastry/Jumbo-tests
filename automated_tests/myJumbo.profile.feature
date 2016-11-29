@@ -16,7 +16,7 @@ so I can check and make sure my info is correct
     And the registerOrLogin button is displayed
     And the myStore button is displayed
     And the myJumboFloater button is displayed
-    
+
   Scenario: As a B2C user I want to see correct info on my profile page
     Given I am a logged in B2C user
     And I tap the loggedIn button
