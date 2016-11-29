@@ -1,6 +1,5 @@
 Feature: recipes.rdp.addIngredients.feature
 
-# Add scenario's for convert to SKU and convert
 
   Scenario: I want to see the SL counter badge increase when I add ingredients to the SL
     Given I am on the myJumbo screen
@@ -50,3 +49,35 @@ Feature: recipes.rdp.addIngredients.feature
     And I tap the addToShoppingList button
     Then the recipes view is displayed
     And the shoppingListBadge view is displayed
+
+  Scenario: I want to swap an vague term for an SKU before adding it to the SL 
+    Given I am on the myJumbo screen
+    When I tap the recipes tab
+    And I tap the recipeFloater button
+    And I set the value champignons on the search field
+    And I tap the enter button
+    And I tap the firstImage view
+    And I tap the addToShoppingList button
+    And the ingredients view is displayed
+    And the value 3 el olijfolie is displayed on the firstTextTitle view
+    And I tap the magnifyingGlass button
+    Then the value olijfolie is displayed on the search field
+    And the value Voor dit recept heb je nodig: 3 el olijfolie is displayed on the requirement view
+    And I tap the replace button
+    And the value Bertolli Olijfolie Classico 500ml is displayed on the firstRowTextTitle view
+
+  Scenario: I want to swap an SKU term for another SKU before adding it to the SL 
+    Given I am on the myJumbo screen
+    When I tap the recipes tab
+    And I tap the recipeFloater button
+    And I set the value schol on the search field
+    And I tap the enter button
+    And I tap the firstImage view
+    And I tap the addToShoppingList button
+    And the ingredients view is displayed
+    And the value Go-Tan Miehoen Rice-Noodles 250g is displayed on the firstTextTitle view
+    And I tap the replace button
+    Then the value mihoen is displayed on the search field
+    And the value Voor dit recept heb je nodig: 250 g mihoen is displayed on the requirement view
+    And I tap the replace button
+    And the value Jumbo Mihoen Goreng 1000g is displayed on the firstRowTextTitle view
