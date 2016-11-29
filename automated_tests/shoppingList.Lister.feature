@@ -10,27 +10,14 @@ so I can order everything I want
 
   @smoke_test @skip-ios
   Scenario: I want to toggle the sorting in the top level categories on the SL
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+    Given I am a logged in B2C user
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the shoppingListAddProduct button
-    And I set the value bier on the search field
-    And I tap the enter button
-    And I tap the skuPlus button
-    And I set the value Krieltjes on the search field
-    And I tap the enter button
-    And I tap the skuPlus button
     And I set the value Mandarijnen on the search field
     And I tap the enter button
     And I tap the skuPlus button
-    And I set the value Goudfrik on the search field
+    And I set the value Krieltjes on the search field
     And I tap the enter button
     And I tap the skuPlus button
     And I tap the close button
@@ -42,16 +29,9 @@ so I can order everything I want
     And I tap the sortInCategories button
 
 
-@smoke_test
+@smoke_test @skip-android
 Scenario: I want to toggle the sorting in the top level categories on the SL
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+    Given I am a logged in B2C user
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the shoppingListAddProduct button
@@ -84,14 +64,7 @@ Scenario: I want to toggle the sorting in the top level categories on the SL
 
 @smoke_test
 Scenario: I want categories to be hidden when they don't contain product on the SL
-    Given I have a new registered B2C user
-    And I am on the myJumbo screen
-    When I tap the registerOrLogin button
-    And I tap the actionsheetLogin button
-    And I set the property username on the emailAddress field
-    And I set the property password on the password field
-    And I tap the login button
-    And I tap the decline button
+    Given I am a logged in B2C user
     And I tap the shoppingList button
     And I tap the tooltip view
     And I tap the shoppingListAddProduct button
