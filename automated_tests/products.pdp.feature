@@ -8,18 +8,16 @@ Feature: Product Detail Screen
         When I tap the myJumboFloater button
         And I set the value 125705STK on the search field 
         And I tap the enter button 
-        And I tap the firstValue view 
+        And I tap the textPrice view
         Then the value Productomschrijving is displayed on the productDetails view  
         And the value Voedingswaarde is displayed on the productDetails view  
         And the value Ingrediënten is displayed on the productDetails view  
         And the value Allergiewaarschuwingen is displayed on the productDetails view  
         And the value Veiligheid & gebruik is displayed on the productDetails view  
-        And the value Over de fabrikant is displayed on the productDetails view  
-        And the value Méér producten is displayed on the productDetails view  
-        And I tap the moreProducts tab 
-        Then the value Anderen kochten ook is displayed on the moreProducts view
-        And the value Lees meer is displayed on the moreProducts view
-
+        And the value Over de fabrikant is displayed on the productDetails view
+        And I tap the moreProducts button
+        Then the value Anderen kochten ook is displayed on the productDetails view
+        And the priceDisclaimer view is displayed
 
     @smoke_test
     Scenario: I want to see the details of a multipack product in the PDP screen from my jumbo floater
@@ -27,16 +25,14 @@ Feature: Product Detail Screen
         When I tap the myJumboFloater button
         And I set the value 125703STK on the search field 
         And I tap the enter button 
-        And I tap the firstValue view 
+        And I tap the textPrice view
         Then the value Productomschrijving is displayed on the productDetails view  
         And the value Voedingswaarde is displayed on the productDetails view  
         And the value Ingrediënten is displayed on the productDetails view  
-        And the value Over de fabrikant is displayed on the productDetails view  
-        And the inspirationalBanner image is displayed on the productDetails view  
-        And the value Méér producten is displayed on the productDetails view  
-        And I tap the inspirationalBanner image
-        Then the value Andere keuze is displayed on the moreProducts view
-        And the value Lees meer is displayed on the moreProducts view
+        And the value Over de fabrikant is displayed on the productDetails view
+        And I tap the inspirationalBanner view
+        Then the value Andere keuze is displayed on the productDetails view
+        And the priceDisclaimer view is displayed
 
     @smoke_test
     Scenario: I want to see the details of a product in the PDP screen from categories search floater 
@@ -45,37 +41,35 @@ Feature: Product Detail Screen
         And I tap the productFloater button 
         And I set the value 82086NET on the search field 
         And I tap the enter button 
-        And I tap the firstValue view 
+        And I tap the textPrice view
         Then the value Productomschrijving is displayed on the productDetails view  
         And the value Herkomst is displayed on the productDetails view   
         And the value Ingrediënten is displayed on the productDetails view  
-        And the value Veiligheid & gebruik is displayed  on the productDetails view  
-        And the value Over de fabrikant is displayed  on the productDetails view  
+        And the value Veiligheid & gebruik is displayed on the productDetails view
+        And the value Over de fabrikant is displayed on the productDetails view
         And the favorite button is displayed
-        And the value Méér producten is displayed  on the productDetails view  
-        And I tap the moreProducts tab 
-        Then the value Andere keuze is displayed on the moreProducts view
-        Then the value Anderen kochten ook is displayed on the moreProducts view
-        And the value Inspiratielijstjes met dit product is displayed
+        And I tap the moreProducts button
+        And I tap the productInfo button
+        And I tap the moreProducts button
+        And the value Inspiratielijstjes met dit product is displayed on the productDetails view
 
     @smoke_test
     Scenario: I want to see the details of a product in the PDP screen from shopping list search floater 
         Given I am a logged in B2C user
         When I tap the shoppingList button
-        And I tap the shoppingFloater button 
+        And I tap the tooltip view
+        And I tap the shoppingListAddProduct button
         And I set the value 82086NET on the search field 
         And I tap the enter button 
-        And I tap the firstValue view 
+        And I tap the textPrice view
         Then the value Productomschrijving is displayed on the productDetails view  
         And the value Herkomst is displayed on the productDetails view   
         And the value Ingrediënten is displayed on the productDetails view  
         And the value Veiligheid & gebruik is displayed on the productDetails view  
         And the value Over de fabrikant is displayed on the productDetails view  
-        And the favorite button is displayed 
-        And the value Méér producten is displayed on the productDetails view  
-        And I tap the moreProducts tab 
-        Then the value Andere keuze is displayed on the moreProducts view
-        And the value Inspiratielijstjes met dit product is displayed
+        And the favorite button is displayed
+        And I tap the moreProducts button
+        And the value Inspiratielijstjes met dit product is displayed on the productDetails view
 
     @smoke_test
     Scenario: I want to see the details of a product in the PDP screen from convert to SKU screen
@@ -84,15 +78,17 @@ Feature: Product Detail Screen
         And I tap the firstImage view 
         And I tap the addToShoppingList button
         And the ingredients view is displayed
-        And I tap the magnifyingGlass button 
-        Then the value Productomschrijving is displayed on the productDetails view  
+        And I tap the magnifyingGlass button
+        And I tap the textPrice view
+#        Then the value Productomschrijving is displayed on the productDetails view
         And the favorite button is displayed        
-        And the value Herkomst is displayed on the productDetails view   
+        And the value Voedingswaarde is displayed on the productDetails view
         And the value Ingrediënten is displayed on the productDetails view  
-        And the value Veiligheid & gebruik is displayed  on the productDetails view  
-        And the value Over de fabrikant is displayed
-                
-    @smoke_test
+        And the value Veiligheid & gebruik is displayed on the productDetails view
+        And the value Over de fabrikant is displayed on the productDetails view
+        And the priceDisclaimer view is displayed
+
+    @smoke_test @go
     Scenario: I want to see the details of a product in the PDP screen from update open order screen
         Given I am a logged in B2C user
         And I have placed a beer order
@@ -101,15 +97,14 @@ Feature: Product Detail Screen
         And I tap the changeOrderFloater button
         And I set the value 82086NET on the search field 
         And I tap the enter button 
-        And I tap the firstValue view 
+        And I tap the textPrice view
         Then the value Productomschrijving is displayed on the productDetails view  
         And the value Herkomst is displayed on the productDetails view   
         And the value Ingrediënten is displayed on the productDetails view  
         And the value Veiligheid & gebruik is displayed  on the productDetails view  
         And the value Over de fabrikant is displayed on the productDetails view  
         And the favorite button is displayed
-        And the value Méér producten is displayed on the productDetails view  
-        And I tap the moreProducts tab
+        And I tap the moreProducts button
         Then the value Andere keuze is displayed on the moreProducts view
         And the value Inspiratielijstjes met dit product is displayed
 
@@ -123,15 +118,14 @@ Feature: Product Detail Screen
         And I tap the Ok button 
         And I tap the orderDetail button
         And I tap the reorderProducts button 
-        And I tap the firstValue view 
+        And I tap the textPrice view
         Then the value Productomschrijving is displayed on the productDetails view  
         And the value Alcoholpercentage is displayed on the productDetails view  
         And the value Ingrediënten is displayed on the productDetails view  
         And the value Veiligheid & gebruik is displayed  on the productDetails view  
         And the value Over de fabrikant is displayed on the productDetails view  
-        And the favorite button is displayed 
-        And the value Méér producten is displayed on the productDetails view  
-        And I tap the moreProducts tab
+        And the favorite button is displayed
+        And I tap the moreProducts button
         Then the value Andere keuze is displayed on the moreProducts view
         And the value Anderen kochten ook is displayed on the moreProducts view
 
@@ -145,13 +139,12 @@ Feature: Product Detail Screen
         And I tap the favorite button 
         And I tap the close button 
         And I tap the favoriteProducts button 
-        And I tap the firstValue view 
+        And I tap the textPrice view
         Then the value Productomschrijving is displayed on the productDetails view  
         And the value Voedingswaarde is displayed on the productDetails view  
         And the value Ingrediënten is displayed on the productDetails view  
         And the value Veiligheid & gebruik is displayed  on the productDetails view  
-        And the value Over de fabrikant is displayed on the productDetails view   
-        And the value Méér producten is displayed on the productDetails view  
-        And I tap the moreProducts tab
+        And the value Over de fabrikant is displayed on the productDetails view
+        And I tap the moreProducts button
         Then the value Anderen kochten ook is displayed on the moreProducts view
         And the value Lees meer is displayed on the moreProducts view
