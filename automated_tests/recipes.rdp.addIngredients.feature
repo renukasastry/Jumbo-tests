@@ -11,7 +11,7 @@ Feature: recipes.rdp.addIngredients.feature
     And I tap the firstImage view
     And I tap the addToShoppingList button
     Then the ingredients view is displayed
-    And I tap the addToShoppingList button
+    And I tap the addIngredients button
     Then the recipes view is displayed
     And the shoppingListBadge view is displayed
 
@@ -24,11 +24,11 @@ Feature: recipes.rdp.addIngredients.feature
     And I tap the firstImage view
     And I tap the addToShoppingList button
     Then the ingredients view is displayed
-    And the value 6 sneetjes notenbrood is displayed on the firstTextTitle view
-    And I tap the addToShoppingList button
+    And the value 6 sneetjes notenbrood is displayed on the textTitle view
+    And I tap the addIngredients button
     And I tap the shoppingList button
     And I tap the tooltip view
-    And the value 6 sneetjes notenbrood is displayed on the firstRowTextTitle view
+    And the value 6 sneetjes notenbrood is displayed on the textTitle view
 
   Scenario: I want to exclude a product from being added to the SL
     Given I am on the myJumbo screen
@@ -40,15 +40,12 @@ Feature: recipes.rdp.addIngredients.feature
     And I tap the firstImage view
     And I tap the addToShoppingList button
     Then the ingredients view is displayed
-    And the value 6 sneetjes notenbrood is displayed on the firstTextTitle view
-    And I tap the first ingredientCheckbox
-    And I tap the addToShoppingList button
+    And the value 6 sneetjes notenbrood is displayed on the textTitle view
+    And I tap the firstIngredientCheckbox button
+    And I tap the addIngredients button
     And I tap the shoppingList button
     And I tap the tooltip view
-    Then the value 6 sneetjes notenbrood is not displayed on the firstRowTextTitle view
-    And I tap the addToShoppingList button
-    Then the recipes view is displayed
-    And the shoppingListBadge view is displayed
+    Then the value 6 sneetjes notenbrood is not displayed on the textTitle view
 
   Scenario: I want to swap an vague term for an SKU before adding it to the SL 
     Given I am on the myJumbo screen
@@ -59,12 +56,11 @@ Feature: recipes.rdp.addIngredients.feature
     And I tap the firstImage view
     And I tap the addToShoppingList button
     And the ingredients view is displayed
-    And the value 3 el olijfolie is displayed on the firstTextTitle view
+    And the value 3 el olijfolie is displayed on the textTitle view
     And I tap the magnifyingGlass button
-    Then the value olijfolie is displayed on the search field
-    And the value Voor dit recept heb je nodig: 3 el olijfolie is displayed on the requirement view
-    And I tap the replace button
-    And the value Bertolli Olijfolie Classico 500ml is displayed on the firstRowTextTitle view
+    And the value Voor dit recept heb je nodig: 3 el olijfolie is displayed on the olijfIngredientHeader view
+#    And I tap the firstReplace button
+#    And the value Bertolli Olijfolie Classico 500ml is displayed on the textTitle view
 
   Scenario: I want to swap an SKU term for another SKU before adding it to the SL 
     Given I am on the myJumbo screen
@@ -75,9 +71,8 @@ Feature: recipes.rdp.addIngredients.feature
     And I tap the firstImage view
     And I tap the addToShoppingList button
     And the ingredients view is displayed
-    And the value Go-Tan Miehoen Rice-Noodles 250g is displayed on the firstTextTitle view
-    And I tap the replace button
-    Then the value mihoen is displayed on the search field
-    And the value Voor dit recept heb je nodig: 250 g mihoen is displayed on the requirement view
-    And I tap the replace button
-    And the value Jumbo Mihoen Goreng 1000g is displayed on the firstRowTextTitle view
+    And the value Go-Tan Miehoen Rice-Noodles 250g is displayed on the textTitle view
+    And I tap the firstIngredientReplace button
+    And the value Voor dit recept heb je nodig: 250 g mihoen is displayed on the mihoenIngredientHeader view
+#    And I tap the firstReplace button
+#    And the value Jumbo Mihoen Goreng 1000g is displayed on the textTitle view
