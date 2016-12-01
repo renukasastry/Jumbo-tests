@@ -1,6 +1,7 @@
 Feature: myJumbo.favoriteRecipes.feature
   As a user I want to add, see and remove my favourites recipes
 
+
   Scenario: I want ADD a recipe to my favourites
     Given I am a logged in B2C user
     When I tap the recipes tab
@@ -10,7 +11,6 @@ Feature: myJumbo.favoriteRecipes.feature
     And I tap the myJumbo tab
     Then the favouriteRecipes view is displayed
     And I tap the favouriteRecipes view
-#    Then the recipeFavouriteHeader view is displayed
     And the imageRecipe view is displayed
 
   Scenario: I want REMOVE a recipe from my favourites
@@ -22,7 +22,6 @@ Feature: myJumbo.favoriteRecipes.feature
     And I tap the myJumbo tab
     Then the favouriteRecipes view is displayed
     And I tap the favouriteRecipes view
-#    Then the recipeFavouriteHeader view is displayed
     And the imageRecipe view is displayed
     And I tap the imageRecipe view
     And I tap the addToFavourite button
